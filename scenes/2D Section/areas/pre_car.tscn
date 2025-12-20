@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://knd3133nsnfw"]
+[gd_scene load_steps=38 format=4 uid="uid://knd3133nsnfw"]
 
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_63vqi"]
 [ext_resource type="Script" path="res://scenes/2D Section/areas/precar_player.gd" id="2_7w2lj"]
@@ -200,6 +200,9 @@ height = 60.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ohufv"]
 size = Vector2(91.6666, 53.3333)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_jaij1"]
+radius = 75.2957
+
 [node name="PreCar" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-145.0, 133.0]
 metadata/_edit_vertical_guides_ = [680.0, -70.0]
@@ -253,7 +256,7 @@ shape = SubResource("CapsuleShape2D_yqv4f")
 zoom = Vector2(2, 2)
 limit_left = -70
 limit_top = -145
-limit_right = 840
+limit_right = 700
 limit_bottom = 130
 position_smoothing_enabled = true
 
@@ -292,3 +295,11 @@ texture = ExtResource("12_qv686")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
 position = Vector2(0.833374, 5)
 shape = SubResource("RectangleShape2D_ohufv")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D/StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D/Area2D"]
+shape = SubResource("CircleShape2D_jaij1")
+debug_color = Color(0.875006, 0.303041, 0.433075, 0.42)
+
+[connection signal="area_entered" from="Sprite2D/StaticBody2D/Area2D" to="Player" method="_on_area_2d_area_entered"]

@@ -3,7 +3,7 @@ extends CharacterBody2D
 const speed = 60
 const MAP_LEFT = -70
 const MAP_TOP = -125
-const MAP_RIGHT = 840
+const MAP_RIGHT = 700
 const MAP_BOTTOM = 130
 var current_dir = "none"
 var has_plant: bool = false
@@ -274,3 +274,7 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	pass # Replace with function body.
