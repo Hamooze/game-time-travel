@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv0lby6524w0v"
-valid=false
+path="res://.godot/imported/font8x8.png-6de5435d9fc2c0cdb692e03abd7b38fc.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Font/font8x8.png"
+dest_files=["res://.godot/imported/font8x8.png-6de5435d9fc2c0cdb692e03abd7b38fc.ctex"]
 
 [params]
 

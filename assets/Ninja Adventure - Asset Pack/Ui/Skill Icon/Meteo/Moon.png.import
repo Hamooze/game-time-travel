@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm7825o1jmgyp"
-valid=false
+path="res://.godot/imported/Moon.png-6b69c49077505c9979e8a6db0dc0a13e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Meteo/Moon.png"
+dest_files=["res://.godot/imported/Moon.png-6b69c49077505c9979e8a6db0dc0a13e.ctex"]
 
 [params]
 

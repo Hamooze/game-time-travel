@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgu7mxqnc3ya1"
-valid=false
+path="res://.godot/imported/Shovel.png-64d79ba334de23204f81b28a94bf22cd.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Tool/Shovel.png"
+dest_files=["res://.godot/imported/Shovel.png-64d79ba334de23204f81b28a94bf22cd.ctex"]
 
 [params]
 

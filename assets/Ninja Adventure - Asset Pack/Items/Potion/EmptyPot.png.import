@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddkgt0bg0i8yy"
-valid=false
+path="res://.godot/imported/EmptyPot.png-e713012c3864385e6bc83d56bb20268d.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Potion/EmptyPot.png"
+dest_files=["res://.godot/imported/EmptyPot.png-e713012c3864385e6bc83d56bb20268d.ctex"]
 
 [params]
 

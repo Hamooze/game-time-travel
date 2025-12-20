@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqprll4nwfgy3"
-valid=false
+path="res://.godot/imported/AllPreview.png-1957586e3733e52ffd3e6f241860af57.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/AllPreview.png"
+dest_files=["res://.godot/imported/AllPreview.png-1957586e3733e52ffd3e6f241860af57.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q2tbncv8krxj"
-valid=false
+path="res://.godot/imported/Downgrade.png-4ff64f07a9f2d2a3bb3eb46a6e71803c.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Downgrade.png"
+dest_files=["res://.godot/imported/Downgrade.png-4ff64f07a9f2d2a3bb3eb46a6e71803c.ctex"]
 
 [params]
 

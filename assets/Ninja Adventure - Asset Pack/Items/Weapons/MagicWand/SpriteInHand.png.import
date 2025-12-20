@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b45eebmttm6jd"
-valid=false
+path="res://.godot/imported/SpriteInHand.png-18d372a50480be0d15c3053b2725da01.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Weapons/MagicWand/SpriteInHand.png"
+dest_files=["res://.godot/imported/SpriteInHand.png-18d372a50480be0d15c3053b2725da01.ctex"]
 
 [params]
 

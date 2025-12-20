@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5uw3i8w6psnf"
-valid=false
+path="res://.godot/imported/HelmetDisabled.png-0ed6f27ae5fc04adef448ea7519ffb22.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/HelmetDisabled.png"
+dest_files=["res://.godot/imported/HelmetDisabled.png-0ed6f27ae5fc04adef448ea7519ffb22.ctex"]
 
 [params]
 

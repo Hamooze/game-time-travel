@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsgpjlgma157o"
-valid=false
+path="res://.godot/imported/SpriteSheet.png-e7c26391a595a4602f651bdf0a7c0361.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Smoke/Smoke/SpriteSheet.png"
+dest_files=["res://.godot/imported/SpriteSheet.png-e7c26391a595a4602f651bdf0a7c0361.ctex"]
 
 [params]
 

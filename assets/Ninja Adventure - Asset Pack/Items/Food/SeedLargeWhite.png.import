@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvtxhmcd4xjxb"
-valid=false
+path="res://.godot/imported/SeedLargeWhite.png-266d7eefa7878f83a3e9d14b402e6de5.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/SeedLargeWhite.png"
+dest_files=["res://.godot/imported/SeedLargeWhite.png-266d7eefa7878f83a3e9d14b402e6de5.ctex"]
 
 [params]
 

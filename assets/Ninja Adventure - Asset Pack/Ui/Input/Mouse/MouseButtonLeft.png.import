@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://croc2hr60634o"
-valid=false
+path="res://.godot/imported/MouseButtonLeft.png-ee820e3f8ed361d293fdcab70d2d1c75.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Mouse/MouseButtonLeft.png"
+dest_files=["res://.godot/imported/MouseButtonLeft.png-ee820e3f8ed361d293fdcab70d2d1c75.ctex"]
 
 [params]
 

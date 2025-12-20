@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwtvtho8ultbm"
-valid=false
+path="res://.godot/imported/MouseButtonMiddle.png-e9009f02550eaeb9ceefe00885561f04.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Mouse/MouseButtonMiddle.png"
+dest_files=["res://.godot/imported/MouseButtonMiddle.png-e9009f02550eaeb9ceefe00885561f04.ctex"]
 
 [params]
 

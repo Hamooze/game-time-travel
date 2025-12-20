@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6x67y665e5qn"
-valid=false
+path="res://.godot/imported/BarGold.png-1826e9b39a8cc020fc6371e67d9cbe48.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Resource/BarGold.png"
+dest_files=["res://.godot/imported/BarGold.png-1826e9b39a8cc020fc6371e67d9cbe48.ctex"]
 
 [params]
 

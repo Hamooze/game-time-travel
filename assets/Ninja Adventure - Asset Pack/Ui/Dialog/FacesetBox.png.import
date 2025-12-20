@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv66bgeovdpxf"
-valid=false
+path="res://.godot/imported/FacesetBox.png-54b723ea0b67bafd89cd8dcc5faec1d4.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Dialog/FacesetBox.png"
+dest_files=["res://.godot/imported/FacesetBox.png-54b723ea0b67bafd89cd8dcc5faec1d4.ctex"]
 
 [params]
 

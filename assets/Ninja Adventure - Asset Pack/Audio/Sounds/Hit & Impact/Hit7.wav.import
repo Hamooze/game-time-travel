@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b2q5rwww5r6g"
-valid=false
+path="res://.godot/imported/Hit7.wav-74771014c64e49978b3e146378b3058d.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Hit & Impact/Hit7.wav"
+dest_files=["res://.godot/imported/Hit7.wav-74771014c64e49978b3e146378b3058d.sample"]
 
 [params]
 

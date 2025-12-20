@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs02wbjybi6nm"
-valid=false
+path="res://.godot/imported/SilverCup.png-8f25f5265f748fbd6bfea7ecfc617d87.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Treasure/SilverCup.png"
+dest_files=["res://.godot/imported/SilverCup.png-8f25f5265f748fbd6bfea7ecfc617d87.ctex"]
 
 [params]
 

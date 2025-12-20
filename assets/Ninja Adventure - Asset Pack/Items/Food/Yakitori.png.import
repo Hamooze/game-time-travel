@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0x5gnp30tmdo"
-valid=false
+path="res://.godot/imported/Yakitori.png-6f447579c6189a6fef773eb179e99c1a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Yakitori.png"
+dest_files=["res://.godot/imported/Yakitori.png-6f447579c6189a6fef773eb179e99c1a.ctex"]
 
 [params]
 

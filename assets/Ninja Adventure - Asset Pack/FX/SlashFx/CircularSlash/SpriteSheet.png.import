@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj73dqs1h5nol"
-valid=false
+path="res://.godot/imported/SpriteSheet.png-0cba124ac84a59ee73cbb15cb4e8fa78.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/SlashFx/CircularSlash/SpriteSheet.png"
+dest_files=["res://.godot/imported/SpriteSheet.png-0cba124ac84a59ee73cbb15cb4e8fa78.ctex"]
 
 [params]
 

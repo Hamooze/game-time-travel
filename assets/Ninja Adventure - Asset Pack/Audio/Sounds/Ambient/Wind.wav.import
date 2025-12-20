@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://vsmebmyh3oix"
-valid=false
+path="res://.godot/imported/Wind.wav-359fe5c6347af05ea18dd6266a983b63.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Ambient/Wind.wav"
+dest_files=["res://.godot/imported/Wind.wav-359fe5c6347af05ea18dd6266a983b63.sample"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfpf02btnxrov"
-valid=false
+path="res://.godot/imported/JoystickRight.png-af46ffa570d314099441f7c9b3ff96b4.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/JoystickRight.png"
+dest_files=["res://.godot/imported/JoystickRight.png-af46ffa570d314099441f7c9b3ff96b4.ctex"]
 
 [params]
 

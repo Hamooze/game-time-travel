@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd7nlwblrff4h"
-valid=false
+path="res://.godot/imported/Necromancy.png-1dd3fa01df0511c8c24a0bda093f21a7.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Necromancy.png"
+dest_files=["res://.godot/imported/Necromancy.png-1dd3fa01df0511c8c24a0bda093f21a7.ctex"]
 
 [params]
 

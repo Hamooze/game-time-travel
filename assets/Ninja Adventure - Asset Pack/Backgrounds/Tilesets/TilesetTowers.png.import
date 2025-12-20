@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcfhr13dg1agw"
-valid=false
+path="res://.godot/imported/TilesetTowers.png-d9aed2db139088918e90b664d89c5793.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetTowers.png"
+dest_files=["res://.godot/imported/TilesetTowers.png-d9aed2db139088918e90b664d89c5793.ctex"]
 
 [params]
 

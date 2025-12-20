@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx2p07p5d56ed"
-valid=false
+path="res://.godot/imported/VisionDisabled.png-028419b3bafa11278a589a1312bdb108.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/VisionDisabled.png"
+dest_files=["res://.godot/imported/VisionDisabled.png-028419b3bafa11278a589a1312bdb108.ctex"]
 
 [params]
 

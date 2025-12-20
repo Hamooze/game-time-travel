@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpaydk303y52b"
-valid=false
+path="res://.godot/imported/GoldKey.png-e6b308814fd50028bf10142b30566cfd.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Treasure/GoldKey.png"
+dest_files=["res://.godot/imported/GoldKey.png-e6b308814fd50028bf10142b30566cfd.ctex"]
 
 [params]
 

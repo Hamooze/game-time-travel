@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mberurx38gvf"
-valid=false
+path="res://.godot/imported/MilkPot.png-0ac46b833ce618f43df418b5c30c498d.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Potion/MilkPot.png"
+dest_files=["res://.godot/imported/MilkPot.png-0ac46b833ce618f43df418b5c30c498d.ctex"]
 
 [params]
 

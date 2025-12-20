@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://daobwb7rjxito"
-valid=false
+path="res://.godot/imported/Bubble.wav-7c91af9f5db9002598e51605d461a329.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Elemental/Bubble.wav"
+dest_files=["res://.godot/imported/Bubble.wav-7c91af9f5db9002598e51605d461a329.sample"]
 
 [params]
 

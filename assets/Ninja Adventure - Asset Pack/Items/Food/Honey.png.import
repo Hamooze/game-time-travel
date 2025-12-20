@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ulrb7a1yrhyu"
-valid=false
+path="res://.godot/imported/Honey.png-cf35258845edd06ab85f93a9f90f7a8b.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Honey.png"
+dest_files=["res://.godot/imported/Honey.png-cf35258845edd06ab85f93a9f90f7a8b.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dccd021hwnsrt"
-valid=false
+path="res://.godot/imported/UpgradeDisabled.png-0fe96df2fafbde18f43fd605f6679118.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/UpgradeDisabled.png"
+dest_files=["res://.godot/imported/UpgradeDisabled.png-0fe96df2fafbde18f43fd605f6679118.ctex"]
 
 [params]
 

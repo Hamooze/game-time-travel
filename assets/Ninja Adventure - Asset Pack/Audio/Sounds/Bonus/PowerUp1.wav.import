@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bwyoutglwsl1o"
-valid=false
+path="res://.godot/imported/PowerUp1.wav-e3a492189fb060e43faceaffdc0201e2.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Bonus/PowerUp1.wav"
+dest_files=["res://.godot/imported/PowerUp1.wav-e3a492189fb060e43faceaffdc0201e2.sample"]
 
 [params]
 

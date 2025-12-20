@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bupxvxa2b46ds"
-valid=false
+path="res://.godot/imported/MouseWheelDown.png-bdca19d454408bde2df57ffecad37414.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Mouse/MouseWheelDown.png"
+dest_files=["res://.godot/imported/MouseWheelDown.png-bdca19d454408bde2df57ffecad37414.ctex"]
 
 [params]
 

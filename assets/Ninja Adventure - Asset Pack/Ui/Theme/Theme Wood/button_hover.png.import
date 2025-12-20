@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceri5chggmjla"
-valid=false
+path="res://.godot/imported/button_hover.png-5db6138fc442049650b3e514ff01bdf1.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/button_hover.png"
+dest_files=["res://.godot/imported/button_hover.png-5db6138fc442049650b3e514ff01bdf1.ctex"]
 
 [params]
 

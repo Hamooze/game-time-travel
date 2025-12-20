@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yrnev73sfmrc"
-valid=false
+path="res://.godot/imported/DialogInfo.png-b2fcc55ab7ea957cc31fd5fb0da89c2a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Dialog/DialogInfo.png"
+dest_files=["res://.godot/imported/DialogInfo.png-b2fcc55ab7ea957cc31fd5fb0da89c2a.ctex"]
 
 [params]
 

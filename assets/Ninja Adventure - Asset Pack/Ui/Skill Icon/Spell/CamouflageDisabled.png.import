@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdxmgbfhhqx30"
-valid=false
+path="res://.godot/imported/CamouflageDisabled.png-1befe8eb3eb3bc259bf70fdbf0992e93.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/CamouflageDisabled.png"
+dest_files=["res://.godot/imported/CamouflageDisabled.png-1befe8eb3eb3bc259bf70fdbf0992e93.ctex"]
 
 [params]
 

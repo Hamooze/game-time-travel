@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp2hsiqj1rtt8"
-valid=false
+path="res://.godot/imported/SpriteSheet.png-24438b5d16c329581fd8c4978b82013b.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Elemental/Rock/SpriteSheet.png"
+dest_files=["res://.godot/imported/SpriteSheet.png-24438b5d16c329581fd8c4978b82013b.ctex"]
 
 [params]
 

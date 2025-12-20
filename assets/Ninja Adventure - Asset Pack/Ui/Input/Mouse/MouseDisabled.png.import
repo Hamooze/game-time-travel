@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yn5fv67goc6t"
-valid=false
+path="res://.godot/imported/MouseDisabled.png-17c38ada62986ee5ec71ebaa6f1a0d4a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Mouse/MouseDisabled.png"
+dest_files=["res://.godot/imported/MouseDisabled.png-17c38ada62986ee5ec71ebaa6f1a0d4a.ctex"]
 
 [params]
 

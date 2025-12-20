@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw6p1agyn6cyb"
-valid=false
+path="res://.godot/imported/button_pressed.png-1aa4a86e6789e282f1b32a4bf0ba4ea2.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/button_pressed.png"
+dest_files=["res://.godot/imported/button_pressed.png-1aa4a86e6789e282f1b32a4bf0ba4ea2.ctex"]
 
 [params]
 

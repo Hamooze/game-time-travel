@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu76n0x806t37"
-valid=false
+path="res://.godot/imported/GemGreen.png-2285685cd3b34ec089398eadda678158.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Resource/GemGreen.png"
+dest_files=["res://.godot/imported/GemGreen.png-2285685cd3b34ec089398eadda678158.ctex"]
 
 [params]
 

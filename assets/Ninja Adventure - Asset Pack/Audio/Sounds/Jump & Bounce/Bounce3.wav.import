@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bsg5gmtgcjvp8"
-valid=false
+path="res://.godot/imported/Bounce3.wav-9c60f0ef5695677027c5b7c0903a7a14.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Jump & Bounce/Bounce3.wav"
+dest_files=["res://.godot/imported/Bounce3.wav-9c60f0ef5695677027c5b7c0903a7a14.sample"]
 
 [params]
 

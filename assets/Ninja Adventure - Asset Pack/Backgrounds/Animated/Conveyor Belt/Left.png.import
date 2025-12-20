@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1i1r3ffptfom"
-valid=false
+path="res://.godot/imported/Left.png-138f0953dea17f376384fa572816f927.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/Conveyor Belt/Left.png"
+dest_files=["res://.godot/imported/Left.png-138f0953dea17f376384fa572816f927.ctex"]
 
 [params]
 

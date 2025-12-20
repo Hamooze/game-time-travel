@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0pccwil3ow02"
-valid=false
+path="res://.godot/imported/LittleTreasureChest.png-c291fe5e352a64a547364901b03ec8d1.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Treasure/LittleTreasureChest.png"
+dest_files=["res://.godot/imported/LittleTreasureChest.png-c291fe5e352a64a547364901b03ec8d1.ctex"]
 
 [params]
 

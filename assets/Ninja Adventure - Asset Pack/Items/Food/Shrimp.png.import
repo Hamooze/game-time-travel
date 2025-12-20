@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpvhtacr33i80"
-valid=false
+path="res://.godot/imported/Shrimp.png-24105254a4cc1bd17459c3e036e90350.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Shrimp.png"
+dest_files=["res://.godot/imported/Shrimp.png-24105254a4cc1bd17459c3e036e90350.ctex"]
 
 [params]
 

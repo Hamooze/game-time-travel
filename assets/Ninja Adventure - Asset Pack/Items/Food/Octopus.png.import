@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br473cj07bjfx"
-valid=false
+path="res://.godot/imported/Octopus.png-1ba636006f567b3969b85e37fc80c28f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Octopus.png"
+dest_files=["res://.godot/imported/Octopus.png-1ba636006f567b3969b85e37fc80c28f.ctex"]
 
 [params]
 

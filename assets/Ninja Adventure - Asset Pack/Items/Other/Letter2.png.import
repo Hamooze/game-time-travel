@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btn56dcl6hk2q"
-valid=false
+path="res://.godot/imported/Letter2.png-14b782f2e336142ac3f1cc3a6741417f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Other/Letter2.png"
+dest_files=["res://.godot/imported/Letter2.png-14b782f2e336142ac3f1cc3a6741417f.ctex"]
 
 [params]
 
