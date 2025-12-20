@@ -5,4 +5,4 @@
 [node name="Tree" type="Sprite2D"]
 texture = ExtResource("1_73vjc")
 region_enabled = true
-region_rect = Rect2(48, 290, 43, 41)
+region_rect = Rect2(32.2311, 129.486, 31.8631, 28.3581)

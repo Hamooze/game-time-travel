@@ -5,3 +5,6 @@ extends Area2D
 
 func action() -> void:
 	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
+
+func _on_area_entered(area: Area2D) -> void:
+	print("entered")

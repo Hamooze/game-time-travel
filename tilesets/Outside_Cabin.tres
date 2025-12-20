@@ -2086,6 +2086,7 @@ texture = ExtResource("5_grkfo")
 9:15/0 = 0
 10:15/0 = 0
 0:16/0 = 0
+0:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:16/0 = 0
 2:16/0 = 0
 3:16/0 = 0

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwtmc6ibi0ry"]
+
+[ext_resource type="Script" path="res://scripts/Dialogue/actionable.gd" id="1_607v5"]
+[ext_resource type="Resource" uid="uid://rj7i1xvxg7ms" path="res://scripts/Dialogue/HoodEncounter.dialogue" id="2_c6c83"]
+
+[node name="Actionable" type="Area2D"]
+collision_layer = 16
+collision_mask = 0
+priority = 1
+script = ExtResource("1_607v5")
+dialogue_resource = ExtResource("2_c6c83")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
