@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn7w0cr5xd6bj"
-valid=false
+path="res://.godot/imported/ButtonRB.png-45b89f45458a6fd5d6ec6fb7cd28cb2a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/ButtonRB.png"
+dest_files=["res://.godot/imported/ButtonRB.png-45b89f45458a6fd5d6ec6fb7cd28cb2a.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j6eynykr7bv5"
-valid=false
+path="res://.godot/imported/ScrollDisabled.png-8feb68f6f1dd9e95c5f62031bde227ae.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/ScrollDisabled.png"
+dest_files=["res://.godot/imported/ScrollDisabled.png-8feb68f6f1dd9e95c5f62031bde227ae.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxv1748sjch4u"
-valid=false
+path="res://.godot/imported/Watermill_B_34x36.png-8333a824f90aaf07d1c124413101142c.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/WaterMill/Watermill_B_34x36.png"
+dest_files=["res://.godot/imported/Watermill_B_34x36.png-8333a824f90aaf07d1c124413101142c.ctex"]
 
 [params]
 

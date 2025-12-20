@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxmr0vs68nqbn"
-valid=false
+path="res://.godot/imported/CrateDynamite.png-25ab08d4db15ff6669420c8c67e64376.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Projectile/CrateDynamite.png"
+dest_files=["res://.godot/imported/CrateDynamite.png-25ab08d4db15ff6669420c8c67e64376.ctex"]
 
 [params]
 

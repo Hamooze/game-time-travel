@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8q7sxghqagn"
-valid=false
+path="res://.godot/imported/TilesetVillageAbandoned.png-cbeed001e523b94551bcd907217882d4.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetVillageAbandoned.png"
+dest_files=["res://.godot/imported/TilesetVillageAbandoned.png-cbeed001e523b94551bcd907217882d4.ctex"]
 
 [params]
 

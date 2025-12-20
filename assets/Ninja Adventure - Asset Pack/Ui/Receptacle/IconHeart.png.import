@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bymy7ttr6dpl7"
-valid=false
+path="res://.godot/imported/IconHeart.png-ce2089dae32192e8d4b9dad6d60e913e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/IconHeart.png"
+dest_files=["res://.godot/imported/IconHeart.png-ce2089dae32192e8d4b9dad6d60e913e.ctex"]
 
 [params]
 

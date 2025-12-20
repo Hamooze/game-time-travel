@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chwafnybn7egm"
-valid=false
+path="res://.godot/imported/tab_unselected.png-0280a9860a3f80ccec9a9657dca5dd83.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/tab_unselected.png"
+dest_files=["res://.godot/imported/tab_unselected.png-0280a9860a3f80ccec9a9657dca5dd83.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caltr5qvpv4nc"
-valid=false
+path="res://.godot/imported/Raylight.png-bb99276d8cb5b77a4f1ac8ad0db5b5eb.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Environment/Raylight.png"
+dest_files=["res://.godot/imported/Raylight.png-bb99276d8cb5b77a4f1ac8ad0db5b5eb.ctex"]
 
 [params]
 

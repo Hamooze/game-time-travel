@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch50162wh2tde"
-valid=false
+path="res://.godot/imported/TalkDisabled.png-59982e6c7eefedfc1ccb84c3ca124575.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/TalkDisabled.png"
+dest_files=["res://.godot/imported/TalkDisabled.png-59982e6c7eefedfc1ccb84c3ca124575.ctex"]
 
 [params]
 

@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dis3vsi8f26pe"
-valid=false
+path="res://.godot/imported/Slash2.wav-384fcd59e3d4ed865273ad9fbf6aaea0.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Whoosh & Slash/Slash2.wav"
+dest_files=["res://.godot/imported/Slash2.wav-384fcd59e3d4ed865273ad9fbf6aaea0.sample"]
 
 [params]
 

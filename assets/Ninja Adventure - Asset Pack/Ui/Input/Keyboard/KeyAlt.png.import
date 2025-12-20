@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhh6htgswqonc"
-valid=false
+path="res://.godot/imported/KeyAlt.png-ecc635d854f7db53b49cafc3b1baed7c.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Keyboard/KeyAlt.png"
+dest_files=["res://.godot/imported/KeyAlt.png-ecc635d854f7db53b49cafc3b1baed7c.ctex"]
 
 [params]
 

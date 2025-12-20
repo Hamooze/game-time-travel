@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnbpltwmx8lnc"
-valid=false
+path="res://.godot/imported/Wood.png-ac42f61ae4d1c8ec4b21ec60bc31c47e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Wood.png"
+dest_files=["res://.godot/imported/Wood.png-ac42f61ae4d1c8ec4b21ec60bc31c47e.ctex"]
 
 [params]
 

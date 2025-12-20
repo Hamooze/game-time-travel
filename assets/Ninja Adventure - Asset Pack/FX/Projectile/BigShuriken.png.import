@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drimvs1mak62m"
-valid=false
+path="res://.godot/imported/BigShuriken.png-2377bfaf891d10f28365f706d7f0271e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/BigShuriken.png"
+dest_files=["res://.godot/imported/BigShuriken.png-2377bfaf891d10f28365f706d7f0271e.ctex"]
 
 [params]
 

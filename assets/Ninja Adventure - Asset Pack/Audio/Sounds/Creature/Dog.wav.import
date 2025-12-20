@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dhpari1il8nv8"
-valid=false
+path="res://.godot/imported/Dog.wav-52599911fc6fbd02ca512f36325e4d97.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Creature/Dog.wav"
+dest_files=["res://.godot/imported/Dog.wav-52599911fc6fbd02ca512f36325e4d97.sample"]
 
 [params]
 

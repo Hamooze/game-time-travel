@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbire6tan6w3y"
-valid=false
+path="res://.godot/imported/Scroll.png-c8c9b0f32d5972c77ece5ad8942de20d.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Scroll/Scroll.png"
+dest_files=["res://.godot/imported/Scroll.png-c8c9b0f32d5972c77ece5ad8942de20d.ctex"]
 
 [params]
 

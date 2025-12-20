@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgqwrwupu3o5r"
-valid=false
+path="res://.godot/imported/ChoiceBox.png-c8b50a16e27f41f61d86374e5c558758.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Dialog/ChoiceBox.png"
+dest_files=["res://.godot/imported/ChoiceBox.png-c8b50a16e27f41f61d86374e5c558758.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btupeuy0o381e"
-valid=false
+path="res://.godot/imported/DishDisabled.png-6f98172bf05169a02b8062a5a5a9394e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/DishDisabled.png"
+dest_files=["res://.godot/imported/DishDisabled.png-6f98172bf05169a02b8062a5a5a9394e.ctex"]
 
 [params]
 

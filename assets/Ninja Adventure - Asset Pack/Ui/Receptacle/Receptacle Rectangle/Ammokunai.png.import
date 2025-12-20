@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjx1g20r2jkx8"
-valid=false
+path="res://.godot/imported/Ammokunai.png-6106d01feb5774ce3872046010063481.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Rectangle/Ammokunai.png"
+dest_files=["res://.godot/imported/Ammokunai.png-6106d01feb5774ce3872046010063481.ctex"]
 
 [params]
 

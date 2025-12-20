@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nekteoa3wdm1"
-valid=false
+path="res://.godot/imported/Arrow.png-eb1f718a7df0c22061418025c4794788.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Weapons/Bow2/Arrow.png"
+dest_files=["res://.godot/imported/Arrow.png-eb1f718a7df0c22061418025c4794788.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4egtq43e4wej"
-valid=false
+path="res://.godot/imported/Bamboo.png-0aa1576e5a198013f84d7a3fb95b7707.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Bamboo.png"
+dest_files=["res://.godot/imported/Bamboo.png-0aa1576e5a198013f84d7a3fb95b7707.ctex"]
 
 [params]
 

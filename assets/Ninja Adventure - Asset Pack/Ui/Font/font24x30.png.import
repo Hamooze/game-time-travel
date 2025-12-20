@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcb7vwioj1gas"
-valid=false
+path="res://.godot/imported/font24x30.png-07ef73f61262c78ded6496d7a17bb05a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Font/font24x30.png"
+dest_files=["res://.godot/imported/font24x30.png-07ef73f61262c78ded6496d7a17bb05a.ctex"]
 
 [params]
 

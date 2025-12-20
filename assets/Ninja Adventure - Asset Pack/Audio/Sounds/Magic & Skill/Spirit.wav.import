@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ddsa57kvmrwap"
-valid=false
+path="res://.godot/imported/Spirit.wav-b25ec9663170339cf9c7ab73ed26a403.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Magic & Skill/Spirit.wav"
+dest_files=["res://.godot/imported/Spirit.wav-b25ec9663170339cf9c7ab73ed26a403.sample"]
 
 [params]
 

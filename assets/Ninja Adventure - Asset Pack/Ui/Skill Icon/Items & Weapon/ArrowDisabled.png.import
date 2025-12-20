@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh1ghr5tfmeu3"
-valid=false
+path="res://.godot/imported/ArrowDisabled.png-f421469868a73d9e9351f57fb04829f4.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/ArrowDisabled.png"
+dest_files=["res://.godot/imported/ArrowDisabled.png-f421469868a73d9e9351f57fb04829f4.ctex"]
 
 [params]
 

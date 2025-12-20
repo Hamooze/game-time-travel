@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq60e7eo1ogua"
-valid=false
+path="res://.godot/imported/ProgressPurple.png-9dd84be2c10e5e74e7fe93d7508c19df.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Sphere/ProgressPurple.png"
+dest_files=["res://.godot/imported/ProgressPurple.png-9dd84be2c10e5e74e7fe93d7508c19df.ctex"]
 
 [params]
 

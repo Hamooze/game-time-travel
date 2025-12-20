@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfkk485b6vfyo"
-valid=false
+path="res://.godot/imported/Preview.png-2dd98149bd9f81a09cc2bb157465022e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Preview.png"
+dest_files=["res://.godot/imported/Preview.png-2dd98149bd9f81a09cc2bb157465022e.ctex"]
 
 [params]
 

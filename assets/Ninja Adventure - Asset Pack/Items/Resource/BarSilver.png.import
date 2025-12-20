@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq8q1bu803pyt"
-valid=false
+path="res://.godot/imported/BarSilver.png-1381922e553bbe368c8a468c00042e61.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Resource/BarSilver.png"
+dest_files=["res://.godot/imported/BarSilver.png-1381922e553bbe368c8a468c00042e61.ctex"]
 
 [params]
 

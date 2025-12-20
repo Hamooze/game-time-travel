@@ -3,11 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://diq232qy62u0i"
-valid=false
+path="res://.godot/imported/Voice9.wav-1d57978f76093986c9c1a536ee32c641.sample"
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Voice/Voice9.wav"
+dest_files=["res://.godot/imported/Voice9.wav-1d57978f76093986c9c1a536ee32c641.sample"]
 
 [params]
 

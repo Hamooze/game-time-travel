@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ge81sqbvsks0"
-valid=false
+path="res://.godot/imported/emote8.png-3349d9accc42743a701c18d932839893.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Emote/emote8.png"
+dest_files=["res://.godot/imported/emote8.png-3349d9accc42743a701c18d932839893.ctex"]
 
 [params]
 

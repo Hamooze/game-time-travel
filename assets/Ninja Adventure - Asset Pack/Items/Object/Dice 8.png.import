@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnnoi86mkjgoy"
-valid=false
+path="res://.godot/imported/Dice 8.png-7725245484376fd4afec90740bcbbfb5.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Object/Dice 8.png"
+dest_files=["res://.godot/imported/Dice 8.png-7725245484376fd4afec90740bcbbfb5.ctex"]
 
 [params]
 

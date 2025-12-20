@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wpvhy8ok1ep1"
-valid=false
+path="res://.godot/imported/SpriteSheet16x16.png-c4c36df6bf4d49f54e4243653ae5385f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/Water Ripples/SpriteSheet16x16.png"
+dest_files=["res://.godot/imported/SpriteSheet16x16.png-c4c36df6bf4d49f54e4243653ae5385f.ctex"]
 
 [params]
 

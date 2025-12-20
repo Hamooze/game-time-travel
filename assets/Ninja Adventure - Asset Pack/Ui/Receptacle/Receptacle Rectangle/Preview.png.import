@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://evybmovv3h5e"
-valid=false
+path="res://.godot/imported/Preview.png-f19542f75efd9fba7e8ca378bf9c430e.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Rectangle/Preview.png"
+dest_files=["res://.godot/imported/Preview.png-f19542f75efd9fba7e8ca378bf9c430e.ctex"]
 
 [params]
 

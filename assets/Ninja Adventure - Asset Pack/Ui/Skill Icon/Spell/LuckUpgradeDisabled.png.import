@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmvixmqj7b55n"
-valid=false
+path="res://.godot/imported/LuckUpgradeDisabled.png-fc919bacd95f14429fd4c6c7ca8c1742.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/LuckUpgradeDisabled.png"
+dest_files=["res://.godot/imported/LuckUpgradeDisabled.png-fc919bacd95f14429fd4c6c7ca8c1742.ctex"]
 
 [params]
 

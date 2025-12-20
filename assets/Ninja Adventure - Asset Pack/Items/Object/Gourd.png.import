@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsid5x1ro0thl"
-valid=false
+path="res://.godot/imported/Gourd.png-855c8381db7d34a57749dafdc2de7107.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Object/Gourd.png"
+dest_files=["res://.godot/imported/Gourd.png-855c8381db7d34a57749dafdc2de7107.ctex"]
 
 [params]
 

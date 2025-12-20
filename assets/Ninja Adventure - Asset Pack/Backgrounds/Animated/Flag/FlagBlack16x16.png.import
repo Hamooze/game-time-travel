@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c52avkyqjbcia"
-valid=false
+path="res://.godot/imported/FlagBlack16x16.png-64b4817d455f6e631f731013fb9b07b3.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/Flag/FlagBlack16x16.png"
+dest_files=["res://.godot/imported/FlagBlack16x16.png-64b4817d455f6e631f731013fb9b07b3.ctex"]
 
 [params]
 

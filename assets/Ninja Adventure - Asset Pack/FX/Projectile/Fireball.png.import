@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvftelnl6t04n"
-valid=false
+path="res://.godot/imported/Fireball.png-9c273e015f9eb7837a6f432f14d4ebde.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/Fireball.png"
+dest_files=["res://.godot/imported/Fireball.png-9c273e015f9eb7837a6f432f14d4ebde.ctex"]
 
 [params]
 

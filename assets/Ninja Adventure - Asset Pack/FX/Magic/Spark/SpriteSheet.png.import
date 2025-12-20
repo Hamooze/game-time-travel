@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bso8u3uuqpx75"
-valid=false
+path="res://.godot/imported/SpriteSheet.png-4fe357791a8a6f4ea599319e870cf5c5.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Magic/Spark/SpriteSheet.png"
+dest_files=["res://.godot/imported/SpriteSheet.png-4fe357791a8a6f4ea599319e870cf5c5.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkv2qrpdjhosa"
-valid=false
+path="res://.godot/imported/Vase.png-5ec8ec0aac6274c568039179924c79d9.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Vase.png"
+dest_files=["res://.godot/imported/Vase.png-5ec8ec0aac6274c568039179924c79d9.ctex"]
 
 [params]
 

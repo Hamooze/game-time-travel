@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo4uq85b6dmec"
-valid=false
+path="res://.godot/imported/ProgressWhite.png-99d6bc8c348b707f19208bc71b6fc354.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Sphere/ProgressWhite.png"
+dest_files=["res://.godot/imported/ProgressWhite.png-99d6bc8c348b707f19208bc71b6fc354.ctex"]
 
 [params]
 

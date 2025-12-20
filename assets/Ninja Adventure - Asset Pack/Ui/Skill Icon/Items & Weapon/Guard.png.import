@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8684ihttdxkq"
-valid=false
+path="res://.godot/imported/Guard.png-d69b658d910cbb26935c3e77f1b2d3aa.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/Guard.png"
+dest_files=["res://.godot/imported/Guard.png-d69b658d910cbb26935c3e77f1b2d3aa.ctex"]
 
 [params]
 

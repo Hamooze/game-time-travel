@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://d35ww84yebdhe"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_ipa5l"]
+[ext_resource type="Script" path="res://scenes/2D Section/characters/character_body_2d.gd" id="1_ipa5l"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="2_iwnse"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="3_4gv10"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="5_n1kfi"]

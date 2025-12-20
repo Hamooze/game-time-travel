@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdpv4ws7wgqgb"
-valid=false
+path="res://.godot/imported/TilesetFloor.png-f5604612e07f3a7bcdbe8963b4d26d1f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetFloor.png"
+dest_files=["res://.godot/imported/TilesetFloor.png-f5604612e07f3a7bcdbe8963b4d26d1f.ctex"]
 
 [params]
 
