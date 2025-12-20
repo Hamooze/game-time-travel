@@ -8,9 +8,6 @@ signal interacted  # New signal for when player presses E
 var player_in_range: bool = false
 
 func _ready():
-	# Connect signals
-	body_entered.connect(_on_body_entered)
-	body_exited.connect(_on_body_exited)
 	print("InteractableComponent ready")
 
 func _process(_delta):
