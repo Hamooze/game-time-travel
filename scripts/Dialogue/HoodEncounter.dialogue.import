@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://rj7i1xvxg7ms"
+path="res://.godot/imported/HoodEncounter.dialogue-6006584be87387e8eb16edfc939c01b7.tres"
+
+[deps]
+
+source_file="res://scripts/Dialogue/HoodEncounter.dialogue"
+dest_files=["res://.godot/imported/HoodEncounter.dialogue-6006584be87387e8eb16edfc939c01b7.tres"]
+
+[params]
+
+defaults=true

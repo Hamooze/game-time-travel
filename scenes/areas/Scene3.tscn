@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://bcgten0x0wvpr"]
+[gd_scene load_steps=43 format=4 uid="uid://bcgten0x0wvpr"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_rqomm"]
@@ -14,9 +14,13 @@
 [ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="11_83v7c"]
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="12_81qss"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="13_qkvn4"]
+[ext_resource type="Script" path="res://scripts/Dialogue/actionable.gd" id="15_nu8ol"]
+[ext_resource type="Resource" uid="uid://rj7i1xvxg7ms" path="res://scripts/Dialogue/HoodEncounter.dialogue" id="16_oitlf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
 radius = 6.58966
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_47tap"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("3_ku2sy")
@@ -202,6 +206,10 @@ animations = [{
 radius = 12.0
 height = 40.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ad21"]
+radius = 12.0
+height = 48.0
+
 [node name="Scene3" type="Node2D"]
 
 [node name="grass" type="TileMapLayer" parent="."]
@@ -250,9 +258,20 @@ script = ExtResource("5_jpams")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="paper1/CollectableComponent"]
 shape = SubResource("CircleShape2D_m3cg5")
 
+[node name="Actionable" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+priority = 1
+script = ExtResource("15_nu8ol")
+dialogue_resource = ExtResource("16_oitlf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
+position = Vector2(-113, -4)
+shape = SubResource("CircleShape2D_47tap")
+
 [node name="Player" type="CharacterBody2D" parent="."]
 z_index = 4
-position = Vector2(-112, -1)
+position = Vector2(-113, 0)
 scale = Vector2(0.3, 0.3)
 script = ExtResource("2_rqomm")
 
@@ -261,19 +280,19 @@ position = Vector2(0, -37)
 sprite_frames = SubResource("SpriteFrames_oc8hy")
 animation = &"side_walk"
 autoplay = "front_idle"
-frame_progress = 0.12656
+frame_progress = 0.827616
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(0, -24)
 shape = SubResource("CapsuleShape2D_yqv4f")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(3, 3)
+scale = Vector2(3, 3)
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [node name="Papers" type="Node2D" parent="Player/Camera2D"]
 visible = false
-z_index = 7
 
 [node name="Paper1" type="Sprite2D" parent="Player/Camera2D/Papers"]
 scale = Vector2(4, 4)
@@ -294,3 +313,11 @@ texture = ExtResource("12_81qss")
 [node name="Paper5" type="Sprite2D" parent="Player/Camera2D/Papers"]
 scale = Vector2(4, 4)
 texture = ExtResource("13_qkvn4")
+
+[node name="ActionableFinder" type="Area2D" parent="Player"]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ActionableFinder"]
+position = Vector2(0, -28)
+shape = SubResource("CapsuleShape2D_0ad21")

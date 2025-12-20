@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dys5go1fdj6li"
-path="res://.godot/imported/FishNetFull.png-9a203fd5315b4cff7d58e024b6cef2f0.ctex"
+uid="uid://bj85yeiant4fj"
+path="res://.godot/imported/Boat.png-8e9357b9c900d0aba893923c5f97d1ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ninja Adventure/Backgrounds/Vehicles/FishNetFull.png"
-dest_files=["res://.godot/imported/FishNetFull.png-9a203fd5315b4cff7d58e024b6cef2f0.ctex"]
+source_file="res://assets/Ninja Adventure/Backgrounds/Tilesets/Vehicles/Boat.png"
+dest_files=["res://.godot/imported/Boat.png-8e9357b9c900d0aba893923c5f97d1ba.ctex"]
 
 [params]
 

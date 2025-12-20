@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g5jwxkjqpy8w"
-path="res://.godot/imported/Sail.png-ebd183ed84736c100ab3ccbec8be6521.ctex"
+uid="uid://bvkeopc6q18d6"
+path="res://.godot/imported/FishNet.png-dd15ab4a585aebc43a05fd517d79473f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ninja Adventure/Backgrounds/Vehicles/Sail.png"
-dest_files=["res://.godot/imported/Sail.png-ebd183ed84736c100ab3ccbec8be6521.ctex"]
+source_file="res://assets/Ninja Adventure/Backgrounds/Tilesets/Vehicles/FishNet.png"
+dest_files=["res://.godot/imported/FishNet.png-dd15ab4a585aebc43a05fd517d79473f.ctex"]
 
 [params]
 
