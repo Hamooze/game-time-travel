@@ -1,0 +1,73 @@
+[gd_scene load_steps=14 format=3 uid="uid://b0go2qe2nudg3"]
+
+[ext_resource type="Texture2D" uid="uid://bulnuoiemu36b" path="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/animations/walking-4-frames/south/frame_000.png" id="1_jq48s"]
+[ext_resource type="Script" path="res://scenes/characters/npc.gd" id="1_sxtkj"]
+[ext_resource type="Texture2D" uid="uid://i8sjljhriyfp" path="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/animations/walking-4-frames/east/frame_000.png" id="2_t7kns"]
+[ext_resource type="Texture2D" uid="uid://c4lilh1k15mvn" path="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/animations/walking-4-frames/east/frame_001.png" id="3_l2086"]
+[ext_resource type="Texture2D" uid="uid://ckpv00122dirt" path="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/animations/walking-4-frames/east/frame_002.png" id="4_bj6xb"]
+[ext_resource type="Texture2D" uid="uid://byw63afb6fclc" path="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/animations/walking-4-frames/east/frame_003.png" id="5_gqxe2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tuvb"]
+atlas = ExtResource("1_jq48s")
+region = Rect2(13, 0, 72, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vvvx"]
+atlas = ExtResource("2_t7kns")
+region = Rect2(13, 0, 72, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ek43"]
+atlas = ExtResource("3_l2086")
+region = Rect2(13, 0, 72, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5bq5"]
+atlas = ExtResource("4_bj6xb")
+region = Rect2(13, 0, 72, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6t73"]
+atlas = ExtResource("5_gqxe2")
+region = Rect2(13, 0, 72, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pmtbg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tuvb")
+}],
+"loop": false,
+"name": &"front_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vvvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ek43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n5bq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6t73")
+}],
+"loop": true,
+"name": &"side_walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bnxqx"]
+radius = 12.0
+height = 40.0
+
+[node name="Npc" type="CharacterBody2D"]
+script = ExtResource("1_sxtkj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -37)
+sprite_frames = SubResource("SpriteFrames_pmtbg")
+animation = &"side_walk"
+autoplay = "front_idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -24)
+shape = SubResource("CapsuleShape2D_bnxqx")

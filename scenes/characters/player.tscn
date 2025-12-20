@@ -197,8 +197,9 @@ script = ExtResource("1_ipa5l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -37)
 sprite_frames = SubResource("SpriteFrames_oc8hy")
-animation = &"back_walk"
+animation = &"side_walk"
 autoplay = "front_idle"
+frame_progress = 0.283567
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -24)
