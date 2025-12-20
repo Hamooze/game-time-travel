@@ -16,6 +16,7 @@ var available_papers = []
 
 var papers = []
 var papers_container = null
+var is_near_car = false  # Track if player is near the car
 
 func _ready():
 	print("=== PLAYER READY - SETTING UP PAPERS ===")
@@ -102,6 +103,15 @@ func plant():
 		return false
 
 func _physics_process(_delta):
+	# Check for car interaction (E key when near car)
+	if Input.is_action_just_pressed("interact"):
+		print("Interact pressed! is_near_car = ", is_near_car)
+		if is_near_car:
+			print("Interacting with car - transitioning to side scroller")
+			# Use call_deferred to ensure we're not in the middle of physics processing
+			call_deferred("_transition_to_car_scene")
+			return
+	
 	# Check for paper viewing toggle (R key)
 	if Input.is_action_just_pressed("ui_focus_next"):  # Map R key to this action in Project Settings
 		print("Tab key pressed - toggling paper view")
@@ -119,6 +129,10 @@ func _physics_process(_delta):
 		# Only allow movement when not viewing papers
 		if movement_locked == 0:
 			player_movement(_delta)
+
+func _transition_to_car_scene():
+	print("_transition_to_car_scene called")
+	AreaManager.transition_to_scene("SideScroller", Vector2.ZERO)
 
 func toggle_paper_view():
 	if viewing_papers:
@@ -276,5 +290,20 @@ func play_anim(movement):
 			anim.play("back_idle")
 
 
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
+func _on_body_entered(body: Node2D) -> void:
+	# Player entered the car's interaction area
+	print("Body entered car area: ", body.name, " (", body.get_class(), ")")
+	if body == self:  # Make sure it's the player
+		is_near_car = true
+		print("Player entered car area - press E to interact")
+	else:
+		print("Not the player, ignoring")
+
+func _on_body_exited(body: Node2D) -> void:
+	# Player left the car's interaction area
+	print("Body exited car area: ", body.name, " (", body.get_class(), ")")
+	if body == self:  # Make sure it's the player
+		is_near_car = false
+		print("Player left car area")
+	else:
+		print("Not the player, ignoring")
