@@ -3,7 +3,7 @@
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="1_sq25h"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_t8yj0"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="1_y5q8d"]
-[ext_resource type="PackedScene" path="res://scenes/objects/SpecialItem.tscn" id="3_i6wja"]
+[ext_resource type="PackedScene" uid="uid://dwi8miivcudpi" path="res://scenes/objects/SpecialItem.tscn" id="3_i6wja"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gvxlq"]
 shader = ExtResource("1_sq25h")
@@ -49,7 +49,7 @@ scale = Vector2(0.5, 0.5)
 tile_map_data = PackedByteArray("AABCAP3/BAAAAAAAAABBAP3/BAAAAAAAAABDAP7/BAAAAAAAAABDAP//BAAAAAAAAABDAAAABAAAAAAAAABCAAEABAAAAAAAAABBAAEABAAAAAAAAABAAAEABAAAAAAAAABAAP3/BAAAAAAAAAA/AP7/BAAAAAAAAAA/AP//BAAAAAAAAAA/AAAABAAAAAAAAABAAP7/BQABAAUAAABBAP7/BQACAAUAAABCAP7/BQADAAUAAABCAP//BQADAAYAAABCAAAABQADAAcAAABBAP//BQACAAYAAABAAP//BQABAAYAAABAAAAABQABAAcAAABBAAAABQACAAcAAAA=")
 tile_set = ExtResource("1_t8yj0")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_y5q8d")]
+[node name="Player" parent="." instance=ExtResource("1_y5q8d")]
 z_index = 2
 y_sort_enabled = true
 scale = Vector2(0.4, 0.4)

@@ -18,27 +18,46 @@ func transition_to_scene(scene_name: String, spawn_position: Vector2 = Vector2.Z
 			next_scene_path = "res://scenes/areas/home.tscn"
 		"Route":
 			next_scene_path = "res://scenes/areas/route.tscn"
+		"SideScroller":
+			next_scene_path = "res://scenes/areas/side_scroller.tscn"
 		_:
 			print("Unknown scene name: ", scene_name)
 			return
-			
+	
 	# Use call_deferred to load and change the scene
 	call_deferred("_deferred_transition_to_scene", next_scene_path, spawn_position, scene_name)
 
 # New method to handle the deferred transition
 func _deferred_transition_to_scene(next_scene_path: String, spawn_position: Vector2, scene_name: String) -> void:
-	# Load the new scene
-	var next_scene = load(next_scene_path).instantiate()
+	print("Loading scene: ", next_scene_path)
 	
-	# Add it to the tree and remove the old scene
+	# Get the current scene before removing it
+	var old_scene = get_tree().current_scene
+	
+	# Load the new scene
+	var next_scene_resource = load(next_scene_path)
+	if next_scene_resource == null:
+		push_error("Failed to load scene: " + next_scene_path)
+		return
+	
+	var next_scene = next_scene_resource.instantiate()
+	if next_scene == null:
+		push_error("Failed to instantiate scene: " + next_scene_path)
+		return
+	
+	# Remove old scene
+	if old_scene:
+		old_scene.queue_free()
+	
+	# Add new scene to root
 	get_tree().root.add_child(next_scene)
-	get_tree().current_scene.queue_free()
 	get_tree().current_scene = next_scene
 	
 	# Find the player in the new scene and set its position
-	var player = next_scene.find_child("Player")
+	var player = next_scene.find_child("Player", true, false)
 	if player and spawn_position != Vector2.ZERO:
 		player.global_position = spawn_position
+		print("Set player position to: ", spawn_position)
 	
 	current_scene = scene_name
 	print("Transition complete to: ", scene_name)

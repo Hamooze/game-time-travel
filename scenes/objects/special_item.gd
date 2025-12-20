@@ -1,6 +1,8 @@
 class_name SpecialItem
 extends Sprite2D
 
+@export_file("*.tscn") var on_collect_scene_path := "res://scenes/ANIMATION2/PreAnimation2.tscn"
+
 var player_in_range: bool = false
 var area: Area2D
 
@@ -18,9 +20,7 @@ func _process(_delta):
 	# Check if player is in range and presses the interact button
 	if player_in_range and Input.is_action_just_pressed("interact"):
 		print("✓ Collected Special Item!")
-		# You can add custom behavior here specific to this item
-		# For example: play a special sound, add to inventory, trigger event, etc.
-		queue_free()  # Destroy this item
+		_handle_collection()
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player:
@@ -30,3 +30,10 @@ func _on_body_entered(body: Node2D) -> void:
 func _on_body_exited(body: Node2D) -> void:
 	if body is Player:
 		player_in_range = false
+
+
+func _handle_collection() -> void:
+	if not on_collect_scene_path.is_empty():
+		get_tree().change_scene_to_file(on_collect_scene_path)
+	else:
+		queue_free()
