@@ -13,8 +13,11 @@ var available_papers = []
 
 var papers = []
 var papers_container = null
+var movement_restricted = false
+var restricted_directions = {}
 
 func _ready():
+	add_to_group("player")
 	print("=== PLAYER READY - SETTING UP PAPERS ===")
 	
 	# Get reference to Papers Node2D container
@@ -202,14 +205,32 @@ func player_movement(_delta):
 	velocity = Vector2.ZERO
 	
 	# Check all directions independently (not elif)
-	if Input.is_action_pressed("ui_right"):
+	# Check for movement restrictions (set by facility_entrance when pushing)
+	var right_pressed = Input.is_action_pressed("ui_right")
+	var left_pressed = Input.is_action_pressed("ui_left")
+	var down_pressed = Input.is_action_pressed("ui_down")
+	var up_pressed = Input.is_action_pressed("ui_up")
+	
+	# Check horizontal restrictions
+	if right_pressed and not restricted_directions.get("right", false):
 		velocity.x = speed
-	if Input.is_action_pressed("ui_left"):
+	if left_pressed and not restricted_directions.get("left", false):
 		velocity.x = -speed
-	if Input.is_action_pressed("ui_down"):
-		velocity.y = speed
-	if Input.is_action_pressed("ui_up"):
-		velocity.y = -speed
+	
+	# Check vertical restrictions - allow if diagonal, block if pure vertical
+	var is_diagonal = (right_pressed or left_pressed) and (up_pressed or down_pressed)
+	
+	if down_pressed:
+		# Allow down if it's diagonal OR if pure down is not blocked
+		if is_diagonal or not restricted_directions.get("down_only", false):
+			if not restricted_directions.get("down", false):
+				velocity.y = speed
+	
+	if up_pressed:
+		# Allow up if it's diagonal OR if pure up is not blocked
+		if is_diagonal or not restricted_directions.get("up_only", false):
+			if not restricted_directions.get("up", false):
+				velocity.y = -speed
 	if Input.is_action_pressed("plant"):  
 		plant()
 	

@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://cxejwlnbeygf1"]
+[gd_resource type="TileSet" load_steps=12 format=3 uid="uid://cxejwlnbeygf1"]
 
 [ext_resource type="Texture2D" uid="uid://de3gs43t47qsy" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetField.png" id="1_4jrlh"]
 [ext_resource type="Texture2D" uid="uid://5bvljnl1y84d" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloor.png" id="2_ascnr"]
@@ -2095,6 +2095,12 @@ texture = ExtResource("5_grkfo")
 7:16/0 = 0
 8:16/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a44ey"]
+texture = ExtResource("4_p251x")
+18:14/size_in_atlas = Vector2i(1, 2)
+18:14/0 = 0
+18:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 12, -7, 12, -7, 14, -6, 14, -6, 15, -4, 15, -4, 15.5, -4, 15.5, -4, 16, 4, 16, 4, 15, 6, 15, 6, 14, 7, 14, 7, 12, 8, 12, 8, -2, 7, -2, 7, -3, 6, -3, 6, -4, 5, -4, 5, -5, 3, -5, 3, -6, -3, -6, -3, -5, -5, -5, -5, -4, -6, -4, -6, -3.5, -6, -3, -7, -3, -7, -2, -8, -2)
+
 [resource]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
@@ -2105,3 +2111,4 @@ sources/1 = SubResource("TileSetAtlasSource_ykliq")
 sources/2 = SubResource("TileSetAtlasSource_lot25")
 sources/3 = SubResource("TileSetAtlasSource_7ieur")
 sources/4 = SubResource("TileSetAtlasSource_jx6xh")
+sources/5 = SubResource("TileSetAtlasSource_a44ey")

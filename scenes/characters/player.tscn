@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://sa0nnuy2uefd"]
+[gd_scene load_steps=41 format=3 uid="uid://sa0nnuy2uefd"]
 
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="1_ipa5l"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="2_iwnse"]
@@ -66,6 +66,30 @@ region = Rect2(384, 192, 96, 96)
 [sub_resource type="AtlasTexture" id="AtlasTexture_6vi3j"]
 atlas = ExtResource("5_ywm7l")
 region = Rect2(480, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjhn1"]
+atlas = ExtResource("5_ywm7l")
+region = Rect2(0, 480, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_553sb"]
+atlas = ExtResource("5_ywm7l")
+region = Rect2(96, 480, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ro8lc"]
+atlas = ExtResource("5_ywm7l")
+region = Rect2(192, 480, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrbhx"]
+atlas = ExtResource("5_ywm7l")
+region = Rect2(288, 480, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mvuu"]
+atlas = ExtResource("5_ywm7l")
+region = Rect2(384, 480, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw7xb"]
+atlas = ExtResource("5_ywm7l")
+region = Rect2(480, 480, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f6tft"]
 atlas = ExtResource("5_n1kfi")
@@ -161,6 +185,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_vjhn1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_553sb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ro8lc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrbhx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mvuu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw7xb")
+}],
+"loop": true,
+"name": &"push",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_f6tft")
 }],
 "loop": false,
@@ -192,12 +239,12 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yqv4f"]
-radius = 12.0
-height = 36.0
+radius = 26.0
+height = 60.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ad21"]
 radius = 12.0
-height = 48.0
+height = 28.0
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
@@ -206,9 +253,9 @@ script = ExtResource("1_ipa5l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -37)
 sprite_frames = SubResource("SpriteFrames_oc8hy")
-animation = &"side_walk"
+animation = &"push"
 autoplay = "front_idle"
-frame_progress = 0.959081
+frame_progress = 0.488108
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -36)

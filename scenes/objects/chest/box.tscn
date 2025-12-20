@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://kst0mlexa64g"]
+
+[ext_resource type="Script" path="res://scenes/objects/chest/box.gd" id="1_nqypo"]
+[ext_resource type="Texture2D" uid="uid://4hh18wdb6wki" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetHouse.png" id="2_njnos"]
+[ext_resource type="PackedScene" uid="uid://hgkikyq4o5i4" path="res://scenes/components/interactable_component.tscn" id="3_mwl2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v48gr"]
+atlas = ExtResource("2_njnos")
+region = Rect2(288, 232, 16, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f45jf"]
+size = Vector2(14, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vtp5"]
+size = Vector2(25, 13)
+
+[node name="Box" type="CharacterBody2D"]
+position = Vector2(-1, -8)
+script = ExtResource("1_nqypo")
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+texture = SubResource("AtlasTexture_v48gr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_f45jf")
+debug_color = Color(4.33177e-06, 0.639782, 0.359661, 0.42)
+
+[node name="InteractableComponent" parent="." instance=ExtResource("3_mwl2e")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_7vtp5")
+debug_color = Color(0.93603, 0.458373, 0.957603, 0.42)

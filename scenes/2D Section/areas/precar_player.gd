@@ -233,9 +233,12 @@ func player_movement(_delta):
 	# Normalize diagonal movement so speed is consistent
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-		
-		# Determine animation direction based on velocity
-		# Check for diagonal down movement (down + left/right)
+	
+	move_and_slide()
+	
+	# Determine animation direction based on velocity
+	# Check for diagonal down movement (down + left/right)
+	if velocity.length() > 0:
 		if velocity.y > 0 and velocity.x != 0:
 			# Diagonal down - use side animation
 			if velocity.x > 0:
@@ -255,8 +258,6 @@ func player_movement(_delta):
 		play_anim(1)
 	else:
 		play_anim(0)
-	
-	move_and_slide()
 	
 	# Clamp position to camera limits
 	global_position.x = clamp(global_position.x, MAP_LEFT, MAP_RIGHT)
@@ -288,7 +289,6 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
-
 
 func _on_body_entered(body: Node2D) -> void:
 	# Player entered the car's interaction area
