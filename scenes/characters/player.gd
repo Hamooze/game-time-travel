@@ -18,6 +18,9 @@ func plant():
 		if plant_scene:
 			var plant_instance = plant_scene.instantiate()
 			plant_instance.global_position = global_position
+			# Prevent the planted instance from being picked up again.
+			if plant_instance.has_method("set_pickup_enabled"):
+				plant_instance.call("set_pickup_enabled", false)
 			get_parent().add_child(plant_instance)
 		else:
 			print("Plant scene not assigned!")

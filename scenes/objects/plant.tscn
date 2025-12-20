@@ -1,8 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbena8yitr3qt"]
+[gd_scene load_steps=5 format=3 uid="uid://dbena8yitr3qt"]
 
 [ext_resource type="Texture2D" uid="uid://cjj7uumk1mcdh" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloorDetail.png" id="1_cs3rh"]
+[ext_resource type="Script" path="res://scenes/objects/plant_pickup.gd" id="2_plant_pickup"]
+[ext_resource type="PackedScene" uid="uid://hgkikyq4o5i4" path="res://scenes/components/interactable_component.tscn" id="3_interactable"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_plant_interact"]
 
 [node name="Plant" type="Sprite2D"]
 texture = ExtResource("1_cs3rh")
 region_enabled = true
 region_rect = Rect2(96.1366, 32.4685, 14.4832, 15.6419)
+script = ExtResource("2_plant_pickup")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("3_interactable")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+shape = SubResource("CircleShape2D_plant_interact")
