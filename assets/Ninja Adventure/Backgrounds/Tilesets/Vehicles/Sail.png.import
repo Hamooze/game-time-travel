@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgx3awn4wdfva"
-path="res://.godot/imported/Crane.png-4768811d0c69dee1eb00c658bc177da9.ctex"
+uid="uid://g5jwxkjqpy8w"
+path="res://.godot/imported/Sail.png-b22a74557c87a3173f9a344ac582b02c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ninja Adventure/Backgrounds/Vehicles/Crane.png"
-dest_files=["res://.godot/imported/Crane.png-4768811d0c69dee1eb00c658bc177da9.ctex"]
+source_file="res://assets/Ninja Adventure/Backgrounds/Tilesets/Vehicles/Sail.png"
+dest_files=["res://.godot/imported/Sail.png-b22a74557c87a3173f9a344ac582b02c.ctex"]
 
 [params]
 
