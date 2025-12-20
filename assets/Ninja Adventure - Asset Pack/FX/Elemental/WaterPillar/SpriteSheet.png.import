@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmr7p10oq7vbh"
-path="res://.godot/imported/SpriteSheet.png-65f29eba14cf4ab58bffdf9dece652a8.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://b147f3n5b5sa0"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Elemental/WaterPillar/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-65f29eba14cf4ab58bffdf9dece652a8.ctex"]
 
 [params]
 

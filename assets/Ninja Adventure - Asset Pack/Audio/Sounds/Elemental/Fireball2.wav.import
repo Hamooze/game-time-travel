@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cn56fjfe7aaud"
-path="res://.godot/imported/Fireball2.wav-303a0a3ecb24b48262b50338248aa484.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Elemental/Fireball2.wav"
-dest_files=["res://.godot/imported/Fireball2.wav-303a0a3ecb24b48262b50338248aa484.sample"]
 
 [params]
 

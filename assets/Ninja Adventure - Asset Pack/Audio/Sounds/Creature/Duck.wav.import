@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cgri60ibec6nw"
-path="res://.godot/imported/Duck.wav-6694676613584a491662748829f3db52.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Creature/Duck.wav"
-dest_files=["res://.godot/imported/Duck.wav-6694676613584a491662748829f3db52.sample"]
 
 [params]
 

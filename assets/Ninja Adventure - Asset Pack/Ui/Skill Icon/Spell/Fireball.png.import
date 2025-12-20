@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyldhi81fbvvf"
-path="res://.godot/imported/Fireball.png-51372bd851cbf61985e0df6171f08285.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Fireball.png"
-dest_files=["res://.godot/imported/Fireball.png-51372bd851cbf61985e0df6171f08285.ctex"]
 
 [params]
 

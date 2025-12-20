@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqga5f4fcouqf"
-path="res://.godot/imported/Armor.png-8bd78520902c922e469af059a346c296.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/Armor.png"
-dest_files=["res://.godot/imported/Armor.png-8bd78520902c922e469af059a346c296.ctex"]
 
 [params]
 

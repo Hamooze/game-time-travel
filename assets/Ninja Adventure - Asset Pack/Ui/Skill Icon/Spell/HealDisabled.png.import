@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mtwcbfcji70h"
-path="res://.godot/imported/HealDisabled.png-913989bccd36373e31eb5ccf596e0a35.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/HealDisabled.png"
-dest_files=["res://.godot/imported/HealDisabled.png-913989bccd36373e31eb5ccf596e0a35.ctex"]
 
 [params]
 

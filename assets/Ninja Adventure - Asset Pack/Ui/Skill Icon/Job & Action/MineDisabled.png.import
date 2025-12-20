@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dod5q56p840ek"
-path="res://.godot/imported/MineDisabled.png-950c2f1b5dceaa1b769cab74b4ee65fe.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/MineDisabled.png"
-dest_files=["res://.godot/imported/MineDisabled.png-950c2f1b5dceaa1b769cab74b4ee65fe.ctex"]
 
 [params]
 

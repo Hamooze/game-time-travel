@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk7aoj8byyhnk"
-path="res://.godot/imported/Noodle.png-cd462717125e606817d38077604f8e5c.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cxr4pmqcsr8dg"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Noodle.png"
-dest_files=["res://.godot/imported/Noodle.png-cd462717125e606817d38077604f8e5c.ctex"]
 
 [params]
 

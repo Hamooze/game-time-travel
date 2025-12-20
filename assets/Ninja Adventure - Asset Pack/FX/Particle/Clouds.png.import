@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1fp70c1k5r4o"
-path="res://.godot/imported/Clouds.png-59afa5e79ad370eb57620bc039bef3b9.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bnap272ylo6ey"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Clouds.png"
-dest_files=["res://.godot/imported/Clouds.png-59afa5e79ad370eb57620bc039bef3b9.ctex"]
 
 [params]
 

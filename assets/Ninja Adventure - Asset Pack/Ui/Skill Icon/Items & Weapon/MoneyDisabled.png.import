@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blqgcisw6d6w0"
-path="res://.godot/imported/MoneyDisabled.png-2b388497995781fab50802a90597122f.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/MoneyDisabled.png"
-dest_files=["res://.godot/imported/MoneyDisabled.png-2b388497995781fab50802a90597122f.ctex"]
 
 [params]
 

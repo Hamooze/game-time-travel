@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkanvrknn22ou"
-path="res://.godot/imported/BookIceDisabled.png-4c79579d39dd216d84bdc8fa25ba53ca.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/BookIceDisabled.png"
-dest_files=["res://.godot/imported/BookIceDisabled.png-4c79579d39dd216d84bdc8fa25ba53ca.ctex"]
 
 [params]
 

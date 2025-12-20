@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://sf86howgmgd8"
-path="res://.godot/imported/Move5.wav-49ef30d490f9c1d657b5319d3a802dbf.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Menu/Move5.wav"
-dest_files=["res://.godot/imported/Move5.wav-49ef30d490f9c1d657b5319d3a802dbf.sample"]
 
 [params]
 

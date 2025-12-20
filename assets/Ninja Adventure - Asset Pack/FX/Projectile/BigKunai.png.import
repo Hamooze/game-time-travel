@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8imb4ii6i6d5"
-path="res://.godot/imported/BigKunai.png-cc8f8e778d4d27bb34888f28e2ed1f2e.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://in1vgj3jqe5c"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/BigKunai.png"
-dest_files=["res://.godot/imported/BigKunai.png-cc8f8e778d4d27bb34888f28e2ed1f2e.ctex"]
 
 [params]
 

@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mfbdbm536lq1"
-path="res://.godot/imported/SpriteSheet.png-40de3af2a3afbd6fd9bb2e24aa84b742.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bear4mdhomgif"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/Shuriken/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-40de3af2a3afbd6fd9bb2e24aa84b742.ctex"]
 
 [params]
 

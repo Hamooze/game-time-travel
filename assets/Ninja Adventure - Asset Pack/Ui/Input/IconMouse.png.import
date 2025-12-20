@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do5kyfn3b0rgy"
-path="res://.godot/imported/IconMouse.png-2acc225b2750a0a2faf1a9f4e4cfec4e.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/IconMouse.png"
-dest_files=["res://.godot/imported/IconMouse.png-2acc225b2750a0a2faf1a9f4e4cfec4e.ctex"]
 
 [params]
 

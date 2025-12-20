@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjk1o8uhln4cy"
-path="res://.godot/imported/ShurikenMagic.png-c7ae329096c355048e2dd961efa94f43.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cswto7plea87m"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/ShurikenMagic.png"
-dest_files=["res://.godot/imported/ShurikenMagic.png-c7ae329096c355048e2dd961efa94f43.ctex"]
 
 [params]
 

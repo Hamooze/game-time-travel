@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://re2tefiqmsan"
-path="res://.godot/imported/MagicWeapon.png-444830a1d8f1270699b408c797ef44e6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/MagicWeapon.png"
-dest_files=["res://.godot/imported/MagicWeapon.png-444830a1d8f1270699b408c797ef44e6.ctex"]
 
 [params]
 

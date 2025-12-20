@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7v1cfj0cso0u"
-path="res://.godot/imported/Rain.png-52d420432db124ebc5b0c69830534ca4.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://c8jqgv2dx7win"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Rain.png"
-dest_files=["res://.godot/imported/Rain.png-52d420432db124ebc5b0c69830534ca4.ctex"]
 
 [params]
 

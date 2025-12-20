@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqefqi5a64ike"
-path="res://.godot/imported/BookFire.png-b9974b294dc57f5aca53426c471a0e13.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/BookFire.png"
-dest_files=["res://.godot/imported/BookFire.png-b9974b294dc57f5aca53426c471a0e13.ctex"]
 
 [params]
 

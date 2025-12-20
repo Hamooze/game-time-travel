@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw7tjq5erjdjk"
-path="res://.godot/imported/TilesetWater.png-0b3809235c7172205205a4fcfb2179f2.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://mv6q1lksxbtm"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetWater.png"
-dest_files=["res://.godot/imported/TilesetWater.png-0b3809235c7172205205a4fcfb2179f2.ctex"]
 
 [params]
 

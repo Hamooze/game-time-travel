@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cojiub08tyi3a"
-path="res://.godot/imported/ExplosionDisabled.png-c35b75e498be853052b6682839bc1880.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/ExplosionDisabled.png"
-dest_files=["res://.godot/imported/ExplosionDisabled.png-c35b75e498be853052b6682839bc1880.ctex"]
 
 [params]
 

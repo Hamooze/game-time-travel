@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkg2ra68r3gpj"
-path="res://.godot/imported/AttackUpgradeDisabled.png-061711bdabecf3fe043517d878671d38.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/AttackUpgradeDisabled.png"
-dest_files=["res://.godot/imported/AttackUpgradeDisabled.png-061711bdabecf3fe043517d878671d38.ctex"]
 
 [params]
 

@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dagkt81u3kins"
-path="res://.godot/imported/SunDisabled.png-af60fef6dab3dd0ae163b67a5b394602.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Meteo/SunDisabled.png"
-dest_files=["res://.godot/imported/SunDisabled.png-af60fef6dab3dd0ae163b67a5b394602.ctex"]
 
 [params]
 

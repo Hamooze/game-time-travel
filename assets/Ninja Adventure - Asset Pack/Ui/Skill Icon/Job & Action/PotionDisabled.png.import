@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4gae3a8rg0kt"
-path="res://.godot/imported/PotionDisabled.png-1607f75fea5317f6632eec52bf14e813.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/PotionDisabled.png"
-dest_files=["res://.godot/imported/PotionDisabled.png-1607f75fea5317f6632eec52bf14e813.ctex"]
 
 [params]
 

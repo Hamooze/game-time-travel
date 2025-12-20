@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d321yikqj4ru4"
-path="res://.godot/imported/WaterCanon.png-01205c18cd3dcf2f0b39c49a0f265b9d.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/WaterCanon.png"
-dest_files=["res://.godot/imported/WaterCanon.png-01205c18cd3dcf2f0b39c49a0f265b9d.ctex"]
 
 [params]
 

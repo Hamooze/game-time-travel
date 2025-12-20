@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chqhckknaiq4"
-path="res://.godot/imported/Idle.png-f16cc5151ee52227ef3ef16769dab144.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/ButtonX/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-f16cc5151ee52227ef3ef16769dab144.ctex"]
 
 [params]
 

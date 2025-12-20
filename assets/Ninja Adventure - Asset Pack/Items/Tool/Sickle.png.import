@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3oe4db0ol5yr"
-path="res://.godot/imported/Sickle.png-dab68c150a5387f1c9ed46ff12fe4d74.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Tool/Sickle.png"
-dest_files=["res://.godot/imported/Sickle.png-dab68c150a5387f1c9ed46ff12fe4d74.ctex"]
 
 [params]
 

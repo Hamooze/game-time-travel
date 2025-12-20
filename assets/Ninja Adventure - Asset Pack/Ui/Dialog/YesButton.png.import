@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pe2iwf77it0q"
-path="res://.godot/imported/YesButton.png-79fc3502e343659c711cd471754209ba.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Dialog/YesButton.png"
-dest_files=["res://.godot/imported/YesButton.png-79fc3502e343659c711cd471754209ba.ctex"]
 
 [params]
 

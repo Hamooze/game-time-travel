@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beoues4j8tvvb"
-path="res://.godot/imported/GoldCup.png-5afa41409b402ad1e1523c2e7dc180bb.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Treasure/GoldCup.png"
-dest_files=["res://.godot/imported/GoldCup.png-5afa41409b402ad1e1523c2e7dc180bb.ctex"]
 
 [params]
 

@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c3r5fovfa1i0u"
-path="res://.godot/imported/Magic2.wav-f651f97257a59e677a531fa5341034e6.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Magic & Skill/Magic2.wav"
-dest_files=["res://.godot/imported/Magic2.wav-f651f97257a59e677a531fa5341034e6.sample"]
 
 [params]
 

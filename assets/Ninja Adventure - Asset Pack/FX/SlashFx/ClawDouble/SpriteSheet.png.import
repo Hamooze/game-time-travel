@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5uxenc4ty258"
-path="res://.godot/imported/SpriteSheet.png-9970b581ea63e45b9f813825f80d7b74.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cx2t2vbd5p3yh"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/SlashFx/ClawDouble/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-9970b581ea63e45b9f813825f80d7b74.ctex"]
 
 [params]
 

@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyewk7a6q3g05"
-path="res://.godot/imported/ButtonDown.png-690d6c25acbef94c320c5793f7df02bc.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/ButtonDown.png"
-dest_files=["res://.godot/imported/ButtonDown.png-690d6c25acbef94c320c5793f7df02bc.ctex"]
 
 [params]
 

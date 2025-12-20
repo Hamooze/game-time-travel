@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n1uimwynpums"
-path="res://.godot/imported/KeyI.png-c9c53864d07ac14467cea7943845ac95.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Keyboard/KeyI.png"
-dest_files=["res://.godot/imported/KeyI.png-c9c53864d07ac14467cea7943845ac95.ctex"]
 
 [params]
 

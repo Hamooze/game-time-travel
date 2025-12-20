@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8dhwllwg5vbg"
-path="res://.godot/imported/ProgressHealth.png-45a6d5fb14ba3c5e064794e9aa941fef.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Sphere/ProgressHealth.png"
-dest_files=["res://.godot/imported/ProgressHealth.png-45a6d5fb14ba3c5e064794e9aa941fef.ctex"]
 
 [params]
 

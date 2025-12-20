@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxe20hbvwusok"
-path="res://.godot/imported/nine_path_focus.png-1011e9dac26eb69e03fbdec11c407951.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/nine_path_focus.png"
-dest_files=["res://.godot/imported/nine_path_focus.png-1011e9dac26eb69e03fbdec11c407951.ctex"]
 
 [params]
 

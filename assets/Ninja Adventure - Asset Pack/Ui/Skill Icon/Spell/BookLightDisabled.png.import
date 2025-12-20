@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcv86aoqtd2mn"
-path="res://.godot/imported/BookLightDisabled.png-b8b99bbc62a9363260bb029aef79f990.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/BookLightDisabled.png"
-dest_files=["res://.godot/imported/BookLightDisabled.png-b8b99bbc62a9363260bb029aef79f990.ctex"]
 
 [params]
 

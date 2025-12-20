@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxu2qdtvjbhd5"
-path="res://.godot/imported/DialogueBoxSimple.png-1707547c5993d56e75ea3f8ba4fecc0b.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Dialog/DialogueBoxSimple.png"
-dest_files=["res://.godot/imported/DialogueBoxSimple.png-1707547c5993d56e75ea3f8ba4fecc0b.ctex"]
 
 [params]
 

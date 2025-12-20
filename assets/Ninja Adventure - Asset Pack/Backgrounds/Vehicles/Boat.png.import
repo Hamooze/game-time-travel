@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byxncgda058yi"
-path="res://.godot/imported/Boat.png-da324d38262eb9ed30109e7ebc01681d.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bj85yeiant4fj"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Vehicles/Boat.png"
-dest_files=["res://.godot/imported/Boat.png-da324d38262eb9ed30109e7ebc01681d.ctex"]
 
 [params]
 

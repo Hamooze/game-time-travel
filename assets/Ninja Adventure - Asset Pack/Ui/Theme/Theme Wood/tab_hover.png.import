@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpouxa7qjd0na"
-path="res://.godot/imported/tab_hover.png-120a05ad9969b6db7f51ea49e930e403.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/tab_hover.png"
-dest_files=["res://.godot/imported/tab_hover.png-120a05ad9969b6db7f51ea49e930e403.ctex"]
 
 [params]
 

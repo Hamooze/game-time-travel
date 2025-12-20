@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwin32n7v1jrp"
-path="res://.godot/imported/Preview.png-76ea490cdf3e4764b5159b6aa62987d8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Sphere/Preview.png"
-dest_files=["res://.godot/imported/Preview.png-76ea490cdf3e4764b5159b6aa62987d8.ctex"]
 
 [params]
 

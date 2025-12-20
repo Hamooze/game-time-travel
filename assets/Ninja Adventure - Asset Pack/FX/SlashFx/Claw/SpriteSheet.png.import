@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c47m68euv3sq8"
-path="res://.godot/imported/SpriteSheet.png-ef09e42c6969fb76dce312827f214a6d.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://b51368e625kvt"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/SlashFx/Claw/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-ef09e42c6969fb76dce312827f214a6d.ctex"]
 
 [params]
 

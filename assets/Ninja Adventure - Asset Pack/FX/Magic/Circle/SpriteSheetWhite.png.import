@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2632hrqrit62"
-path="res://.godot/imported/SpriteSheetWhite.png-82129d47bd2c3a3fcae0490b1f3dc7c0.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://dv167wb680jyw"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Magic/Circle/SpriteSheetWhite.png"
-dest_files=["res://.godot/imported/SpriteSheetWhite.png-82129d47bd2c3a3fcae0490b1f3dc7c0.ctex"]
 
 [params]
 

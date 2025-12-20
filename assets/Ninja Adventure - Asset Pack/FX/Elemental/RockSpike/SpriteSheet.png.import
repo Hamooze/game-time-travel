@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbg7g32pe1ysn"
-path="res://.godot/imported/SpriteSheet.png-eb4862d12261df59434b14467e6a533b.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cdlifip17s7vy"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Elemental/RockSpike/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-eb4862d12261df59434b14467e6a533b.ctex"]
 
 [params]
 

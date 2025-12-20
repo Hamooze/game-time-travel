@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqav5uwwiaafr"
-path="res://.godot/imported/TilesetLogic.png-a5a4679e44b44c43c2de3568dc189702.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://maq5rpm02fwj"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetLogic.png"
-dest_files=["res://.godot/imported/TilesetLogic.png-a5a4679e44b44c43c2de3568dc189702.ctex"]
 
 [params]
 

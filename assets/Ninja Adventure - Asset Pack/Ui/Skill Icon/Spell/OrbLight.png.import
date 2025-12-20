@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duct2qrvp86kd"
-path="res://.godot/imported/OrbLight.png-4f273913a65cbb2d33729f5d7f51944b.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/OrbLight.png"
-dest_files=["res://.godot/imported/OrbLight.png-4f273913a65cbb2d33729f5d7f51944b.ctex"]
 
 [params]
 

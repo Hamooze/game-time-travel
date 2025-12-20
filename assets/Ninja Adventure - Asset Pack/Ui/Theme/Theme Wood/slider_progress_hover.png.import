@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gd83ad8eikof"
-path="res://.godot/imported/slider_progress_hover.png-0b79012ceea60d90e5958b81321e70fd.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/slider_progress_hover.png"
-dest_files=["res://.godot/imported/slider_progress_hover.png-0b79012ceea60d90e5958b81321e70fd.ctex"]
 
 [params]
 

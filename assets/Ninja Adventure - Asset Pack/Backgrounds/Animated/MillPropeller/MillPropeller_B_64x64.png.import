@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp6xxbpelbuha"
-path="res://.godot/imported/MillPropeller_B_64x64.png-032c893a17c9258017f3a8a56878af70.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bf8wrq6coy106"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/MillPropeller/MillPropeller_B_64x64.png"
-dest_files=["res://.godot/imported/MillPropeller_B_64x64.png-032c893a17c9258017f3a8a56878af70.ctex"]
 
 [params]
 

@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjcupsxpdo16o"
-path="res://.godot/imported/PlantSpike.png-5e353213116af7e5ccd2767ad9eddb70.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://4ol8ffiui1o"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/PlantSpike.png"
-dest_files=["res://.godot/imported/PlantSpike.png-5e353213116af7e5ccd2767ad9eddb70.ctex"]
 
 [params]
 

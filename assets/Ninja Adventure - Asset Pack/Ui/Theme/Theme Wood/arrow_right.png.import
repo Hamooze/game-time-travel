@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e7vyp241us48"
-path="res://.godot/imported/arrow_right.png-0bb1910f4d0d8e0cadfd94bd9b643cc6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/arrow_right.png"
-dest_files=["res://.godot/imported/arrow_right.png-0bb1910f4d0d8e0cadfd94bd9b643cc6.ctex"]
 
 [params]
 

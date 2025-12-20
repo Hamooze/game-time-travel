@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7tnmv61sl8pc"
-path="res://.godot/imported/Shuriken.png-ccd8153b9c8b9b3275ae4b54646765de.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/Shuriken.png"
-dest_files=["res://.godot/imported/Shuriken.png-ccd8153b9c8b9b3275ae4b54646765de.ctex"]
 
 [params]
 

@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvf53h3txtnkr"
-path="res://.godot/imported/Fish.png-cf88da60bf3900741cdada56afcafc25.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://0qodg4cf1j1p"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Fish.png"
-dest_files=["res://.godot/imported/Fish.png-cf88da60bf3900741cdada56afcafc25.ctex"]
 
 [params]
 

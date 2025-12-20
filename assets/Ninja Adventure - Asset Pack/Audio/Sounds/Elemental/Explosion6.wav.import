@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dq6dj7akcuu"
-path="res://.godot/imported/Explosion6.wav-bc4c8f93e1a110c0e6ea358306126199.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Elemental/Explosion6.wav"
-dest_files=["res://.godot/imported/Explosion6.wav-bc4c8f93e1a110c0e6ea358306126199.sample"]
 
 [params]
 

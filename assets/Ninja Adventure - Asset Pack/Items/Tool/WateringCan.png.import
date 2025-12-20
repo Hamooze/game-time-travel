@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwsfrr358jm0b"
-path="res://.godot/imported/WateringCan.png-b28b715d3ab287afe99b0ea8ed619c36.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Tool/WateringCan.png"
-dest_files=["res://.godot/imported/WateringCan.png-b28b715d3ab287afe99b0ea8ed619c36.ctex"]
 
 [params]
 

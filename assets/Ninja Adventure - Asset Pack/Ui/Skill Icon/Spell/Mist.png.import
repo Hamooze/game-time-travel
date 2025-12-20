@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bga0a03wudjsm"
-path="res://.godot/imported/Mist.png-318a05ce42472335c2a4381f73cb2ab5.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Mist.png"
-dest_files=["res://.godot/imported/Mist.png-318a05ce42472335c2a4381f73cb2ab5.ctex"]
 
 [params]
 

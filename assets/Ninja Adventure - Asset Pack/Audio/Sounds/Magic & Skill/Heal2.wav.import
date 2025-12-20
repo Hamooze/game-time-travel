@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dl1r0etuld64j"
-path="res://.godot/imported/Heal2.wav-27b72bad83715a959648303e58f69cab.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Magic & Skill/Heal2.wav"
-dest_files=["res://.godot/imported/Heal2.wav-27b72bad83715a959648303e58f69cab.sample"]
 
 [params]
 
