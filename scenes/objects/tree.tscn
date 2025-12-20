@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgypwy6x1u8si"]
+
+[ext_resource type="Texture2D" uid="uid://daucowobf6x7w" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetNature.png" id="1_73vjc"]
+
+[sub_resource type="GDScript" id="GDScript_0mjas"]
+resource_name = "t"
+script/source = "extends Sprite2D
+
+
+@export var teleport_position: Vector2 = Vector2(500, 100)
+
+var player_nearby: bool = false
+
+func _ready():
+	connect(\"body_entered\", _on_body_entered)
+	connect(\"body_exited\", _on_body_exited)
+
+func _on_body_entered(body):
+	if body.name == \"Player\":
+		player_nearby = true
+		print(\"Player near tree\")
+
+func _on_body_exited(body):
+	if body.name == \"Player\":
+		player_nearby = false
+		print(\"Player left tree\")
+
+func _input(event):
+	if event.is_action_pressed(\"interact\") and player_nearby:
+		climb_tree()
+
+func climb_tree():
+	var player = get_tree().get_first_node_in_group(\"player\")
+	if player:
+		player.global_position = teleport_position
+		print(\"Climbing tree!\")
+"
+
+[node name="Tree" type="Sprite2D"]
+texture = ExtResource("1_73vjc")
+region_enabled = true
+region_rect = Rect2(48, 290, 43, 41)
+script = SubResource("GDScript_0mjas")
+teleport_position = Vector2(362, 169)

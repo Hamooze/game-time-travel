@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbena8yitr3qt"]
+
+[ext_resource type="Texture2D" uid="uid://cjj7uumk1mcdh" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloorDetail.png" id="1_cs3rh"]
+
+[node name="Plant" type="Sprite2D"]
+texture = ExtResource("1_cs3rh")
+region_enabled = true
+region_rect = Rect2(96.1366, 32.4685, 14.4832, 15.6419)

@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=4 uid="uid://d1jrvdtboj38j"]
+[gd_scene load_steps=6 format=4 uid="uid://d1jrvdtboj38j"]
 
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_t8yj0"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="1_y5q8d"]
 [ext_resource type="PackedScene" uid="uid://kst0mlexa64g" path="res://scenes/objects/chest/chest.tscn" id="3_7lgjl"]
+[ext_resource type="PackedScene" uid="uid://bqjneqlsrltrl" path="res://scenes/objects/egg.tscn" id="4_cbvl7"]
+
+[sub_resource type="GDScript" id="GDScript_vu1tu"]
+script/source = "extends Sprite2D
+"
 
 [node name="DreamSequence" type="Node2D"]
 
@@ -43,3 +48,9 @@ scale = Vector2(0.4, 0.4)
 z_index = 1
 y_sort_enabled = true
 position = Vector2(78, -7)
+
+[node name="Egg" parent="." instance=ExtResource("4_cbvl7")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(93, 29)
+script = SubResource("GDScript_vu1tu")

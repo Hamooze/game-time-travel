@@ -2,6 +2,33 @@ class_name Player
 extends CharacterBody2D
 const speed = 60
 var current_dir = "none"
+var has_plant: bool = false
+@export var plant_scene: PackedScene
+
+func collect_plant():
+	has_plant = true
+	print("Plant collected!")
+	
+	
+func plant():
+	if Global.has_plant:
+		Global.has_plant = false
+		Global.plant_planted_position = global_position 
+		print("plant false")
+		if plant_scene:
+			var plant_instance = plant_scene.instantiate()
+			plant_instance.global_position = global_position
+			get_parent().add_child(plant_instance)
+		else:
+			print("Plant scene not assigned!")
+			
+
+		return true
+	else:
+		print("No plant to plant!")
+		return false
+	
+
 
 func _physics_process(_delta):
 	player_movement(_delta)
@@ -19,6 +46,13 @@ func player_movement(_delta):
 		velocity.y = speed
 	if Input.is_action_pressed("ui_up"):
 		velocity.y = -speed
+	if Input.is_action_pressed("plant"):  
+		plant()
+		
+	
+		
+		
+	
 	
 	# Normalize diagonal movement so speed is consistent
 	if velocity.length() > 0:
@@ -74,3 +108,5 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
+			
+			
