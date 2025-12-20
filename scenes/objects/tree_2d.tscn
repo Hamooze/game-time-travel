@@ -12,7 +12,6 @@ radius = 17.0294
 script = ExtResource("1_sn5ym")
 
 [node name="Tree" parent="Area2D" instance=ExtResource("1_03nx2")]
-script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_4y7eb")
