@@ -188,9 +188,10 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yqv4f"]
 radius = 12.0
-height = 54.0
+height = 32.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_ipa5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
