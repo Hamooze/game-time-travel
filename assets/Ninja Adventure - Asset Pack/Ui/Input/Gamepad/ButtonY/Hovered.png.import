@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bacuxyd1gubq7"
-path="res://.godot/imported/Hovered.png-836490ebc8e2d005f66a30ab3620fa04.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/ButtonY/Hovered.png"
-dest_files=["res://.godot/imported/Hovered.png-836490ebc8e2d005f66a30ab3620fa04.ctex"]
 
 [params]
 

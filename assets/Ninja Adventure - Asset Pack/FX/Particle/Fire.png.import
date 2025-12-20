@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di640wwu8xnoi"
-path="res://.godot/imported/Fire.png-1eef09198db358010c72f4df1c7a6480.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://b50luvhwi5ujw"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Fire.png"
-dest_files=["res://.godot/imported/Fire.png-1eef09198db358010c72f4df1c7a6480.ctex"]
 
 [params]
 

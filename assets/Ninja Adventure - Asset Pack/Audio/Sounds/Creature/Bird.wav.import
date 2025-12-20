@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://chodnw67ykib3"
-path="res://.godot/imported/Bird.wav-0341edc90591fd14a373b4cde34171cc.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Creature/Bird.wav"
-dest_files=["res://.godot/imported/Bird.wav-0341edc90591fd14a373b4cde34171cc.sample"]
 
 [params]
 

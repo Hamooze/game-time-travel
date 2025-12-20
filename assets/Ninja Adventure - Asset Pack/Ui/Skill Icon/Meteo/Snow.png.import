@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b86dbprmj7ijl"
-path="res://.godot/imported/Snow.png-a5911d53faaf1219de6cf563dbfa5eb6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Meteo/Snow.png"
-dest_files=["res://.godot/imported/Snow.png-a5911d53faaf1219de6cf563dbfa5eb6.ctex"]
 
 [params]
 

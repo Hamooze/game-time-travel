@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdp55c337najo"
-path="res://.godot/imported/BigEnergyBall.png-adb1d5094ef527205014d2ff0e959d21.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://4j4h6sncvc60"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/BigEnergyBall.png"
-dest_files=["res://.godot/imported/BigEnergyBall.png-adb1d5094ef527205014d2ff0e959d21.ctex"]
 
 [params]
 

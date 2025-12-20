@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqsbu4vkmq7mu"
-path="res://.godot/imported/PermutationDisabled.png-de0e3d33b6883f2f2314fb628162e953.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/PermutationDisabled.png"
-dest_files=["res://.godot/imported/PermutationDisabled.png-de0e3d33b6883f2f2314fb628162e953.ctex"]
 
 [params]
 

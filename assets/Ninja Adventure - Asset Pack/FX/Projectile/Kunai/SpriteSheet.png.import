@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc07ti443uoi4"
-path="res://.godot/imported/SpriteSheet.png-2ddbdb59198cf9714e8316ff8b742668.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://dqbamg7ek32mv"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/Kunai/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-2ddbdb59198cf9714e8316ff8b742668.ctex"]
 
 [params]
 

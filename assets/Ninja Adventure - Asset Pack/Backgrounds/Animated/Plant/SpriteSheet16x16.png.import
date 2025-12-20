@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkrpuabb5rv2r"
-path="res://.godot/imported/SpriteSheet16x16.png-ad950d87c822e8be26c340230003a873.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://d2yw0ey4acnih"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/Plant/SpriteSheet16x16.png"
-dest_files=["res://.godot/imported/SpriteSheet16x16.png-ad950d87c822e8be26c340230003a873.ctex"]
 
 [params]
 

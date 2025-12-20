@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s26pbjycqbo5"
-path="res://.godot/imported/Beaf.png-c9eed11e139b025e5d25e4fc377f8de7.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://b6s1ugypbumqj"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Beaf.png"
-dest_files=["res://.godot/imported/Beaf.png-c9eed11e139b025e5d25e4fc377f8de7.ctex"]
 
 [params]
 

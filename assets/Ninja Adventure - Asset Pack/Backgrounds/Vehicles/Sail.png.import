@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brknunafc06ms"
-path="res://.godot/imported/Sail.png-e87e1e28926ede056810bc46029bd374.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://g5jwxkjqpy8w"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Vehicles/Sail.png"
-dest_files=["res://.godot/imported/Sail.png-e87e1e28926ede056810bc46029bd374.ctex"]
 
 [params]
 

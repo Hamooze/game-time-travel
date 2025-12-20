@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqvpnv1wmrl4i"
-path="res://.godot/imported/Crane.png-7dbaa87d95eb1bd8fde789813c63dc5d.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cgx3awn4wdfva"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Vehicles/Crane.png"
-dest_files=["res://.godot/imported/Crane.png-7dbaa87d95eb1bd8fde789813c63dc5d.ctex"]
 
 [params]
 

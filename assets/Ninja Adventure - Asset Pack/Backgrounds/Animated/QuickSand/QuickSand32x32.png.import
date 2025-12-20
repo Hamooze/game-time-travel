@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bag4garsrfnrp"
-path="res://.godot/imported/QuickSand32x32.png-ce6e044c30636a9b19c87481fa10ff72.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://b0pmtod8nae1r"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/QuickSand/QuickSand32x32.png"
-dest_files=["res://.godot/imported/QuickSand32x32.png-ce6e044c30636a9b19c87481fa10ff72.ctex"]
 
 [params]
 

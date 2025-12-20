@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uqmmxjhvfhx6"
-path="res://.godot/imported/Anvil.png-5533f19e5dc43104b989a6778986acfe.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Tool/Anvil.png"
-dest_files=["res://.godot/imported/Anvil.png-5533f19e5dc43104b989a6778986acfe.ctex"]
 
 [params]
 

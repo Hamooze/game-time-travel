@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0pbhm1w60pl1"
-path="res://.godot/imported/ScrollThunder.png-9a94756f1715383e27d1239412bd01db.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Scroll/ScrollThunder.png"
-dest_files=["res://.godot/imported/ScrollThunder.png-9a94756f1715383e27d1239412bd01db.ctex"]
 
 [params]
 

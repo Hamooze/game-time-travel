@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2ta3l78y0rai"
-path="res://.godot/imported/Disabled.png-711aa45843b79125df01ae555589e9e0.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/ButtonX/Disabled.png"
-dest_files=["res://.godot/imported/Disabled.png-711aa45843b79125df01ae555589e9e0.ctex"]
 
 [params]
 

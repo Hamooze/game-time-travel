@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bejbrei6q74gl"
-path="res://.godot/imported/RainOnFloor.png-dedeaa59820f3c42cbc10d3643d20f76.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://7bepxydgy0wo"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/RainOnFloor.png"
-dest_files=["res://.godot/imported/RainOnFloor.png-dedeaa59820f3c42cbc10d3643d20f76.ctex"]
 
 [params]
 

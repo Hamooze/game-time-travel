@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ltxxetenqvwx"
-path="res://.godot/imported/Sprite.png-def0184e63c6b5a7a0d321e6cd0a6144.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Weapons/Fork/Sprite.png"
-dest_files=["res://.godot/imported/Sprite.png-def0184e63c6b5a7a0d321e6cd0a6144.ctex"]
 
 [params]
 

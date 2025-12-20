@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5e6ua2854vp8"
-path="res://.godot/imported/AlchemyDisabled.png-cb81b98fe6172556649a12c9a01fa5a9.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/AlchemyDisabled.png"
-dest_files=["res://.godot/imported/AlchemyDisabled.png-cb81b98fe6172556649a12c9a01fa5a9.ctex"]
 
 [params]
 

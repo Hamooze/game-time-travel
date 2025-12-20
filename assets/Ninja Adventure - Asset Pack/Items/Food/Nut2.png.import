@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kesx7sxshdos"
-path="res://.godot/imported/Nut2.png-cc41a3c5ac294a30575e2ad65478144c.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bbx66fo1fba1i"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Nut2.png"
-dest_files=["res://.godot/imported/Nut2.png-cc41a3c5ac294a30575e2ad65478144c.ctex"]
 
 [params]
 

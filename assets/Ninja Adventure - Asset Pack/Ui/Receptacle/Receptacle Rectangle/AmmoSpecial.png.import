@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg0vgxg5y7j6p"
-path="res://.godot/imported/AmmoSpecial.png-77733c47b4e3cd4218623ab5f42d836d.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Rectangle/AmmoSpecial.png"
-dest_files=["res://.godot/imported/AmmoSpecial.png-77733c47b4e3cd4218623ab5f42d836d.ctex"]
 
 [params]
 

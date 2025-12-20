@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbhmhtdpwswxd"
-path="res://.godot/imported/Repair.png-14c9ff835398327dad9d083dde76c5fe.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/Repair.png"
-dest_files=["res://.godot/imported/Repair.png-14c9ff835398327dad9d083dde76c5fe.ctex"]
 
 [params]
 

@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://box78ntqidi3c"
-path="res://.godot/imported/Coin2.wav-b107e81eb46f00698e48896217f7e134.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Bonus/Coin2.wav"
-dest_files=["res://.godot/imported/Coin2.wav-b107e81eb46f00698e48896217f7e134.sample"]
 
 [params]
 

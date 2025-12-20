@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lhjju17j3q7o"
-path="res://.godot/imported/TilesetDesert.png-20ca7b1658a5c5838e6adbf21032233d.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://jlsp8x0eshnh"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetDesert.png"
-dest_files=["res://.godot/imported/TilesetDesert.png-20ca7b1658a5c5838e6adbf21032233d.ctex"]
 
 [params]
 

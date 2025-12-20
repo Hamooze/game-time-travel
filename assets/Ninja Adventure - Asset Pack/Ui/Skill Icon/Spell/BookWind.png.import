@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://40g08n60b6uf"
-path="res://.godot/imported/BookWind.png-06526de396f82a9d2f48f33fd9968021.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/BookWind.png"
-dest_files=["res://.godot/imported/BookWind.png-06526de396f82a9d2f48f33fd9968021.ctex"]
 
 [params]
 

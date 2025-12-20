@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://box180cf137na"
-path="res://.godot/imported/DPadUp.png-6fe5b486b0e1609b77771ad1ed8c91c9.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Input/Gamepad/DPadUp.png"
-dest_files=["res://.godot/imported/DPadUp.png-6fe5b486b0e1609b77771ad1ed8c91c9.ctex"]
 
 [params]
 

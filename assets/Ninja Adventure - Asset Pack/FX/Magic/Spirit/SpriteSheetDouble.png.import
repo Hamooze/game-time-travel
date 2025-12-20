@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bykfiuo17mi06"
-path="res://.godot/imported/SpriteSheetDouble.png-658e75f9a099cec0afc80f7eeba3a1fc.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bcd2ar3j7n2n"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Magic/Spirit/SpriteSheetDouble.png"
-dest_files=["res://.godot/imported/SpriteSheetDouble.png-658e75f9a099cec0afc80f7eeba3a1fc.ctex"]
 
 [params]
 

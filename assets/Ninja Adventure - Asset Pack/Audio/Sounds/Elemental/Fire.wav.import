@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dlrgt822kxqxf"
-path="res://.godot/imported/Fire.wav-1efef14b28e2d39bc12cff8d36013698.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Elemental/Fire.wav"
-dest_files=["res://.godot/imported/Fire.wav-1efef14b28e2d39bc12cff8d36013698.sample"]
 
 [params]
 

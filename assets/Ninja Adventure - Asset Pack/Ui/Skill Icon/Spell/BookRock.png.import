@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ugsoomwcno6"
-path="res://.godot/imported/BookRock.png-be345a695548eab6ae180632fd211715.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/BookRock.png"
-dest_files=["res://.godot/imported/BookRock.png-be345a695548eab6ae180632fd211715.ctex"]
 
 [params]
 

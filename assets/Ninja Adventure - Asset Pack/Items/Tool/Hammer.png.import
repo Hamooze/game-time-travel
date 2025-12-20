@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gg6wu0c2p08d"
-path="res://.godot/imported/Hammer.png-e65367c2a3eada6c4dba8f6c9132ea1a.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Tool/Hammer.png"
-dest_files=["res://.godot/imported/Hammer.png-e65367c2a3eada6c4dba8f6c9132ea1a.ctex"]
 
 [params]
 

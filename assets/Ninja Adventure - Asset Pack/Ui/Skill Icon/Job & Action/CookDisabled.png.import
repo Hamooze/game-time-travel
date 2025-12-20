@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bphhkhek88p3i"
-path="res://.godot/imported/CookDisabled.png-6772750fdda0f594dab4f7542a10c2c4.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/CookDisabled.png"
-dest_files=["res://.godot/imported/CookDisabled.png-6772750fdda0f594dab4f7542a10c2c4.ctex"]
 
 [params]
 

@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5spyduyg6in4"
-path="res://.godot/imported/LifeBarMiniUnder.png-e4abdb6f992c8b6318b5f0f03a6d3cff.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/LifeBarMiniUnder.png"
-dest_files=["res://.godot/imported/LifeBarMiniUnder.png-e4abdb6f992c8b6318b5f0f03a6d3cff.ctex"]
 
 [params]
 

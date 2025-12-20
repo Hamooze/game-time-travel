@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0vcfixag6aid"
-path="res://.godot/imported/Fog.png-9eb9e68c815679f354d5d0a35cc94a11.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bv7mhyn0roctl"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Environment/Fog.png"
-dest_files=["res://.godot/imported/Fog.png-9eb9e68c815679f354d5d0a35cc94a11.ctex"]
 
 [params]
 

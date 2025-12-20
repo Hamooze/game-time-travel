@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcs1hsvbkfk7b"
-path="res://.godot/imported/RepairDisabled.png-efa60a7ba8812b0344bd583d437139c8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/RepairDisabled.png"
-dest_files=["res://.godot/imported/RepairDisabled.png-efa60a7ba8812b0344bd583d437139c8.ctex"]
 
 [params]
 

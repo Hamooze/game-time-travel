@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdgyl8kwnamcb"
-path="res://.godot/imported/Upgrade.png-0ce07ff4b2847f165344a44d99fd3adb.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Upgrade.png"
-dest_files=["res://.godot/imported/Upgrade.png-0ce07ff4b2847f165344a44d99fd3adb.ctex"]
 
 [params]
 

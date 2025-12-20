@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1gf7emqcfsy5"
-path="res://.godot/imported/Vision.png-60d977dd86c7428e0d37b2bff4054c1d.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Vision.png"
-dest_files=["res://.godot/imported/Vision.png-60d977dd86c7428e0d37b2bff4054c1d.ctex"]
 
 [params]
 

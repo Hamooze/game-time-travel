@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caerah2fykapv"
-path="res://.godot/imported/BackgroundScroll.png-28c9923ffca6b1c514a2df18e1729fb6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Rectangle/BackgroundScroll.png"
-dest_files=["res://.godot/imported/BackgroundScroll.png-28c9923ffca6b1c514a2df18e1729fb6.ctex"]
 
 [params]
 

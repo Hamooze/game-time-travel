@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6tp6vu4popx7"
-path="res://.godot/imported/Middle.png-ba82c59fa23e2b9d2b8b493adb05fa18.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://c50bixrhq6u8i"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/Conveyor Belt/Middle.png"
-dest_files=["res://.godot/imported/Middle.png-ba82c59fa23e2b9d2b8b493adb05fa18.ctex"]
 
 [params]
 

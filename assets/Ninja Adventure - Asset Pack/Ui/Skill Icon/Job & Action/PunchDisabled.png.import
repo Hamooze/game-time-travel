@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bph6pjhcoelqj"
-path="res://.godot/imported/PunchDisabled.png-0d7552f81f19f3af92cbe68a8f973dee.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/PunchDisabled.png"
-dest_files=["res://.godot/imported/PunchDisabled.png-0d7552f81f19f3af92cbe68a8f973dee.ctex"]
 
 [params]
 

@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c75g4okm4y5ct"
-path="res://.godot/imported/BackgroundWood.png-1d93473e314e841b0426ca83d4fbc030.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Rectangle/BackgroundWood.png"
-dest_files=["res://.godot/imported/BackgroundWood.png-1d93473e314e841b0426ca83d4fbc030.ctex"]
 
 [params]
 

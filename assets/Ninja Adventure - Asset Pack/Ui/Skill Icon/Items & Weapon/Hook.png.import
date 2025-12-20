@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbryt2m7ctety"
-path="res://.godot/imported/Hook.png-b4c023c016428d0b5770fc46ae6cad10.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/Hook.png"
-dest_files=["res://.godot/imported/Hook.png-b4c023c016428d0b5770fc46ae6cad10.ctex"]
 
 [params]
 

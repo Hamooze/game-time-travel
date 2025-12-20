@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ddw5sc7cns0p3"
-path="res://.godot/imported/Wings.wav-e0ca868ebc9c2bab05a1d1ddde2a5af4.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Creature/Wings.wav"
-dest_files=["res://.godot/imported/Wings.wav-e0ca868ebc9c2bab05a1d1ddde2a5af4.sample"]
 
 [params]
 

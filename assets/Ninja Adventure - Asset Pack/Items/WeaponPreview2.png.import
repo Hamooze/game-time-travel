@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfimx4ds1vxih"
-path="res://.godot/imported/WeaponPreview2.png-704bf5c0b6c37c94ab2f2e3a8af88649.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/WeaponPreview2.png"
-dest_files=["res://.godot/imported/WeaponPreview2.png-704bf5c0b6c37c94ab2f2e3a8af88649.ctex"]
 
 [params]
 

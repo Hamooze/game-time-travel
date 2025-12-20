@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cavnq22nc0ec"
-path="res://.godot/imported/button_unchecked.png-7d4cc7fd06818f0e0113c917933eb31b.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/button_unchecked.png"
-dest_files=["res://.godot/imported/button_unchecked.png-7d4cc7fd06818f0e0113c917933eb31b.ctex"]
 
 [params]
 

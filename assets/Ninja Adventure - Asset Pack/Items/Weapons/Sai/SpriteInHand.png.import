@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byslerd2m0lyn"
-path="res://.godot/imported/SpriteInHand.png-9c53478716de9c4a99f5e8826158b800.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Weapons/Sai/SpriteInHand.png"
-dest_files=["res://.godot/imported/SpriteInHand.png-9c53478716de9c4a99f5e8826158b800.ctex"]
 
 [params]
 

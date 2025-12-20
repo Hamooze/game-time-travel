@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddmrvum6sl3i7"
-path="res://.godot/imported/DeathDisabled.png-f38dba99045f375ddde43339a5bd12db.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/DeathDisabled.png"
-dest_files=["res://.godot/imported/DeathDisabled.png-f38dba99045f375ddde43339a5bd12db.ctex"]
 
 [params]
 

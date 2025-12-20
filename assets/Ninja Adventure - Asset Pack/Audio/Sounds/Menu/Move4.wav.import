@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dqdeo2mqruae8"
-path="res://.godot/imported/Move4.wav-693c7d71929fbe7b5a3aa43d410a0953.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Menu/Move4.wav"
-dest_files=["res://.godot/imported/Move4.wav-693c7d71929fbe7b5a3aa43d410a0953.sample"]
 
 [params]
 

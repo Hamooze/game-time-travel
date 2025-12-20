@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl1d0o338ak4d"
-path="res://.godot/imported/FlagGreen16x16.png-c3950f312bfbf7652a8358429de36b6d.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://coov32piq4fl0"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Animated/Flag/FlagGreen16x16.png"
-dest_files=["res://.godot/imported/FlagGreen16x16.png-c3950f312bfbf7652a8358429de36b6d.ctex"]
 
 [params]
 

@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmek5imjwm6nj"
-path="res://.godot/imported/Calamari.png-d7485ea3e08e5a25484be546958d969b.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cu37c2hcwwdwk"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Food/Calamari.png"
-dest_files=["res://.godot/imported/Calamari.png-d7485ea3e08e5a25484be546958d969b.ctex"]
 
 [params]
 

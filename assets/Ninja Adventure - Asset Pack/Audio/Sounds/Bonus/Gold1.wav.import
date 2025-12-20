@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cqwmkctbk1pdg"
-path="res://.godot/imported/Gold1.wav-af648c34eee6346caab985df2be19cdf.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Bonus/Gold1.wav"
-dest_files=["res://.godot/imported/Gold1.wav-af648c34eee6346caab985df2be19cdf.sample"]
 
 [params]
 

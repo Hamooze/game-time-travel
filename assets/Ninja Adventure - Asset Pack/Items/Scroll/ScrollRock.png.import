@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4mcd0i6m50e7"
-path="res://.godot/imported/ScrollRock.png-a76b5117344a8f567714dc01b6348cea.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Scroll/ScrollRock.png"
-dest_files=["res://.godot/imported/ScrollRock.png-a76b5117344a8f567714dc01b6348cea.ctex"]
 
 [params]
 

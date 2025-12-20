@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvnk5mdhpc0cc"
-path="res://.godot/imported/SpriteSheet.png-e517e57d3fec979e5ae6bf3b16bc94c7.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://btims1u06on14"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Elemental/Thunder/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-e517e57d3fec979e5ae6bf3b16bc94c7.ctex"]
 
 [params]
 

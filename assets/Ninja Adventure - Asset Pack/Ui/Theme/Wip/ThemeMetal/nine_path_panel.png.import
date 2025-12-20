@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3gt8fpnfoeko"
-path="res://.godot/imported/nine_path_panel.png-ddb8406ef5ad4b6b544d37342fb67472.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Wip/ThemeMetal/nine_path_panel.png"
-dest_files=["res://.godot/imported/nine_path_panel.png-ddb8406ef5ad4b6b544d37342fb67472.ctex"]
 
 [params]
 

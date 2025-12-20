@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c18kr5js87pax"
-path="res://.godot/imported/SilverKey.png-ae0920c1baec64b79a8f9346db016366.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Treasure/SilverKey.png"
-dest_files=["res://.godot/imported/SilverKey.png-ae0920c1baec64b79a8f9346db016366.ctex"]
 
 [params]
 

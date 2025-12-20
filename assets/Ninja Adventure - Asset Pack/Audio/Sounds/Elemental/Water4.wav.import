@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bilhp0x2kkeuo"
-path="res://.godot/imported/Water4.wav-15b148d61fa9ca36e3c4aaedb472bfe3.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Elemental/Water4.wav"
-dest_files=["res://.godot/imported/Water4.wav-15b148d61fa9ca36e3c4aaedb472bfe3.sample"]
 
 [params]
 

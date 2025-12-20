@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w8jxjmk3dk1x"
-path="res://.godot/imported/Cut.png-50d4bb38b733c4b9a48350aeeb35640a.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/Cut.png"
-dest_files=["res://.godot/imported/Cut.png-50d4bb38b733c4b9a48350aeeb35640a.ctex"]
 
 [params]
 

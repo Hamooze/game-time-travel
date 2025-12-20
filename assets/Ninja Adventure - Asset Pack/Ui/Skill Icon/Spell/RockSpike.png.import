@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3hjakylnuncy"
-path="res://.godot/imported/RockSpike.png-eaa3f8701bcc371957e55f98878c44c6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/RockSpike.png"
-dest_files=["res://.godot/imported/RockSpike.png-eaa3f8701bcc371957e55f98878c44c6.ctex"]
 
 [params]
 

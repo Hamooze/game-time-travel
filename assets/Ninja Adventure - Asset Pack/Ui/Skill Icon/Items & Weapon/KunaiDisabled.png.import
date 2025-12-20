@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj6n43x7eq1ik"
-path="res://.godot/imported/KunaiDisabled.png-0c425b55c5767b09b2e011dd882ba395.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Items & Weapon/KunaiDisabled.png"
-dest_files=["res://.godot/imported/KunaiDisabled.png-0c425b55c5767b09b2e011dd882ba395.ctex"]
 
 [params]
 

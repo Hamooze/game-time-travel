@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y8l7ad1k7cab"
-path="res://.godot/imported/SpriteSheetRock.png-e63b44aa63db88b7582131d597e298cf.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://doly1ds3ai5vl"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Projectile/SpriteSheetRock.png"
-dest_files=["res://.godot/imported/SpriteSheetRock.png-e63b44aa63db88b7582131d597e298cf.ctex"]
 
 [params]
 

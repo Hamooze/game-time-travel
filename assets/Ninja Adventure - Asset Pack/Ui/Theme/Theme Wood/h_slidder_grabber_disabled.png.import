@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s8meqjbwqtdh"
-path="res://.godot/imported/h_slidder_grabber_disabled.png-73ac1dc8254150789f76cab23193f70d.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/h_slidder_grabber_disabled.png"
-dest_files=["res://.godot/imported/h_slidder_grabber_disabled.png-73ac1dc8254150789f76cab23193f70d.ctex"]
 
 [params]
 

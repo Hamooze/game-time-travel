@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bym0c15yswkm5"
-path="res://.godot/imported/OrbFire.png-e05c4cd382b6ebe004a989afcd67ab51.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/OrbFire.png"
-dest_files=["res://.godot/imported/OrbFire.png-e05c4cd382b6ebe004a989afcd67ab51.ctex"]
 
 [params]
 

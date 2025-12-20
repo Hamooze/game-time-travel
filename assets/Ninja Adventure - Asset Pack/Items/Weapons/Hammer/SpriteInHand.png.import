@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byykwvk10ejwq"
-path="res://.godot/imported/SpriteInHand.png-17d894ba9dab3dc2c3741433bd2ed2e0.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Items/Weapons/Hammer/SpriteInHand.png"
-dest_files=["res://.godot/imported/SpriteInHand.png-17d894ba9dab3dc2c3741433bd2ed2e0.ctex"]
 
 [params]
 

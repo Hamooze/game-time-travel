@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjtdgicmjciyp"
-path="res://.godot/imported/Over.png-3ff879a1bf1f8579112a6c004796c617.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Sphere/Over.png"
-dest_files=["res://.godot/imported/Over.png-3ff879a1bf1f8579112a6c004796c617.ctex"]
 
 [params]
 

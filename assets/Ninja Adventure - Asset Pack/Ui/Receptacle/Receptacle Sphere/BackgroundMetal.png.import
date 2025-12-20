@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vbhspbtuydmh"
-path="res://.godot/imported/BackgroundMetal.png-ac5a759a9ebe17a83347c8eca545d6c9.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Sphere/BackgroundMetal.png"
-dest_files=["res://.godot/imported/BackgroundMetal.png-ac5a759a9ebe17a83347c8eca545d6c9.ctex"]
 
 [params]
 

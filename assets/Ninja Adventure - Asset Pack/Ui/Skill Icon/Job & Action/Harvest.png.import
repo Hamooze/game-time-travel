@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be7sejoevlg5r"
-path="res://.godot/imported/Harvest.png-d4d39e73190319a1300dc89bde358563.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Job & Action/Harvest.png"
-dest_files=["res://.godot/imported/Harvest.png-d4d39e73190319a1300dc89bde358563.ctex"]
 
 [params]
 

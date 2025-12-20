@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd81x15dttikn"
-path="res://.godot/imported/SpriteSheet.png-07462c0e2da108160d48738bc3809e48.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://uj6tj3gnw3r2"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Magic/Boost/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-07462c0e2da108160d48738bc3809e48.ctex"]
 
 [params]
 

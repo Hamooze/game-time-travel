@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhuuh57m4gl8b"
-path="res://.godot/imported/OrbDarkness.png-9ba4bd5db922df9eecf51402d5c1ff3d.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Skill Icon/Spell/OrbDarkness.png"
-dest_files=["res://.godot/imported/OrbDarkness.png-9ba4bd5db922df9eecf51402d5c1ff3d.ctex"]
 
 [params]
 

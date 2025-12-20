@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnb6t3ave2qly"
-path="res://.godot/imported/RockGray.png-7608bd12ff230e44f8dee294811d8877.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cnh2ijqsept0e"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/RockGray.png"
-dest_files=["res://.godot/imported/RockGray.png-7608bd12ff230e44f8dee294811d8877.ctex"]
 
 [params]
 

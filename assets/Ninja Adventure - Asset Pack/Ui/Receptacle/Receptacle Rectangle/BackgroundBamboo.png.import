@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx46u305uv6ib"
-path="res://.godot/imported/BackgroundBamboo.png-bdb284031b8349cbc3ca6ecc4c64b304.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Ui/Receptacle/Receptacle Rectangle/BackgroundBamboo.png"
-dest_files=["res://.godot/imported/BackgroundBamboo.png-bdb284031b8349cbc3ca6ecc4c64b304.ctex"]
 
 [params]
 

@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0bhxaruu7084"
-path="res://.godot/imported/Rock.png-9a7fd573d05de5f6e83ed66cf207f611.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://bshrvm4c14wqw"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/FX/Particle/Rock.png"
-dest_files=["res://.godot/imported/Rock.png-9a7fd573d05de5f6e83ed66cf207f611.ctex"]
 
 [params]
 

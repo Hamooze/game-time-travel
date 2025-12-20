@@ -3,12 +3,11 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://4vlwyn3s1mjg"
-path="res://.godot/imported/Cancel2.wav-36429fb493b638514e87b55e9f6bfabb.sample"
+valid=false
 
 [deps]
 
 source_file="res://assets/Ninja Adventure - Asset Pack/Audio/Sounds/Menu/Cancel2.wav"
-dest_files=["res://.godot/imported/Cancel2.wav-36429fb493b638514e87b55e9f6bfabb.sample"]
 
 [params]
 
