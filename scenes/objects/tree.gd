@@ -1,5 +1,5 @@
 extends Area2D
-
+#//
 @export var teleport_position: Vector2 = Vector2(362, 169)
 
 var player_nearby := false
