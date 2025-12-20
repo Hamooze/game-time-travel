@@ -22,7 +22,7 @@ func on_interactable_deactivated() -> void:
 		is_open = false
 		print("close")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if is_player_in_range and Input.is_action_just_pressed("interact") and not is_open:
 		animated_sprite_2d.play("open")
 		is_open = true

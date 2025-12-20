@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://gn5awjpabt2x"]
 
-[ext_resource type="Shader" path="res://scenes/objects/shake.gdshader" id="1_8cw6a"]
-[ext_resource type="Texture2D" uid="uid://droupe08evt1e" path="res://assets/2D_assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_Grass_Biom_things.png" id="1_gylq1"]
+[ext_resource type="Shader" path="res://shaders/shake.gdshader" id="1_8cw6a"]
+[ext_resource type="Texture2D" uid="uid://droupe08evt1e" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_Grass_Biom_things.png" id="1_gylq1"]
 [ext_resource type="Script" path="res://scenes/objects/rocks/rock.gd" id="2_8hnpv"]
-[ext_resource type="PackedScene" uid="uid://4e57km3toiwx" path="res://scenes/components/hurt_component.tscn" id="2_idytw"]
-[ext_resource type="PackedScene" uid="uid://ceyr5kpctigqb" path="res://scenes/components/damage_component.tscn" id="3_onsgd"]
+[ext_resource type="PackedScene" path="res://scenes/components/hurt_component.tscn" id="2_idytw"]
+[ext_resource type="PackedScene" path="res://scenes/components/damage_component.tscn" id="3_onsgd"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ci0qj"]
 resource_local_to_scene = true

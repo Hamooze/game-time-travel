@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwi8miivcudpi"]
+
+[ext_resource type="Texture2D" uid="uid://c06uhnd0hor6d" path="res://assets/pixellab-TimeTravel-Clock--Small--Handh-1766238037954.png" id="2_10mvp"]
+[ext_resource type="Script" path="res://scenes/objects/special_item.gd" id="2_mbf0i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m7o3o"]
+radius = 51.0098
+
+[node name="SpecialItem" type="Sprite2D"]
+position = Vector2(4.76837e-07, -4.76837e-07)
+texture = ExtResource("2_10mvp")
+script = ExtResource("2_mbf0i")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4.76837e-07, 5)
+shape = SubResource("CircleShape2D_m7o3o")
