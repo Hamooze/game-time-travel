@@ -195,7 +195,7 @@ radius = 12.0
 height = 40.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
-radius = 7.07107
+radius = 6.58966
 
 [node name="Scene3" type="Node2D"]
 
@@ -263,7 +263,6 @@ texture = ExtResource("8_ciric")
 [node name="CollectableComponent" parent="paper1" instance=ExtResource("9_hso7u")]
 y_sort_enabled = true
 scale = Vector2(4, 4)
-collectable_name = "egg"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="paper1/CollectableComponent"]
 shape = SubResource("CircleShape2D_m3cg5")
