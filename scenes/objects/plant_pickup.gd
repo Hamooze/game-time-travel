@@ -24,4 +24,5 @@ func _on_interacted() -> void:
 
 	Global.has_plant = true
 	Global.plant_collected = true
+	print("Plant Collected")
 	queue_free()

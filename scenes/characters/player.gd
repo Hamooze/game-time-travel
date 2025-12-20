@@ -90,6 +90,7 @@ func plant():
 			if plant_instance.has_method("set_pickup_enabled"):
 				plant_instance.call("set_pickup_enabled", false)
 			get_parent().add_child(plant_instance)
+			print("planted")
 		else:
 			print("Plant scene not assigned!")
 			
