@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://sa0nnuy2uefd"]
+[gd_scene load_steps=34 format=3 uid="uid://sa0nnuy2uefd"]
 
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="1_ipa5l"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="2_iwnse"]
@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="5_ywm7l"]
 [ext_resource type="Texture2D" uid="uid://ba2ehvswy5jao" path="res://assets/Papers/Note1_EMT_Text_White.png" id="6_jagbw"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="7_fe88y"]
+[ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="8_7ylf1"]
+[ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="9_nxs2a"]
+[ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="10_0ud48"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("2_iwnse")
@@ -201,7 +204,7 @@ position = Vector2(0, -37)
 sprite_frames = SubResource("SpriteFrames_oc8hy")
 animation = &"side_walk"
 autoplay = "front_idle"
-frame_progress = 0.0505116
+frame_progress = 0.952915
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -24)
@@ -212,11 +215,23 @@ zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [node name="Papers" type="Node2D" parent="Camera2D"]
-visible = false
 
 [node name="Paper1" type="Sprite2D" parent="Camera2D/Papers"]
 scale = Vector2(4, 4)
 texture = ExtResource("6_jagbw")
 
 [node name="Paper2" type="Sprite2D" parent="Camera2D/Papers"]
+scale = Vector2(4, 4)
 texture = ExtResource("7_fe88y")
+
+[node name="Paper3" type="Sprite2D" parent="Camera2D/Papers"]
+scale = Vector2(4, 4)
+texture = ExtResource("8_7ylf1")
+
+[node name="Paper4" type="Sprite2D" parent="Camera2D/Papers"]
+scale = Vector2(4, 4)
+texture = ExtResource("9_nxs2a")
+
+[node name="Paper5" type="Sprite2D" parent="Camera2D/Papers"]
+scale = Vector2(4, 4)
+texture = ExtResource("10_0ud48")
