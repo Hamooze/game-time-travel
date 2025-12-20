@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 const speed = 100
 var current_dir = "none"
 
@@ -7,32 +6,45 @@ func _physics_process(_delta):
 	player_movement(_delta)
 	
 func player_movement(_delta):
+	# Reset velocity
+	velocity = Vector2.ZERO
 	
+	# Check all directions independently (not elif)
 	if Input.is_action_pressed("ui_right"):
-		current_dir = "right"
-		play_anim(1)
 		velocity.x = speed
-		velocity.y = 0
-	elif Input.is_action_pressed("ui_left"):
-		current_dir = "left"
-		play_anim(1)
+	if Input.is_action_pressed("ui_left"):
 		velocity.x = -speed
-		velocity.y = 0
-	elif Input.is_action_pressed("ui_down"):
-		current_dir = "down"
-		play_anim(1)
-		velocity.x = 0
+	if Input.is_action_pressed("ui_down"):
 		velocity.y = speed
-	elif Input.is_action_pressed("ui_up"):
-		current_dir = "up"
-		play_anim(1)
-		velocity.x = 0
+	if Input.is_action_pressed("ui_up"):
 		velocity.y = -speed
+	
+	# Normalize diagonal movement so speed is consistent
+	if velocity.length() > 0:
+		velocity = velocity.normalized() * speed
+		
+		# Determine animation direction based on velocity
+		# Check for diagonal down movement (down + left/right)
+		if velocity.y > 0 and velocity.x != 0:
+			# Diagonal down - use side animation
+			if velocity.x > 0:
+				current_dir = "right"
+			else:
+				current_dir = "left"
+		# Prioritize vertical movement for other diagonals
+		elif velocity.y < 0:
+			current_dir = "up"
+		elif velocity.y > 0:
+			current_dir = "down"
+		elif velocity.x > 0:
+			current_dir = "right"
+		elif velocity.x < 0:
+			current_dir = "left"
+		
+		play_anim(1)
 	else:
 		play_anim(0)
-		velocity.x = 0
-		velocity.y = 0
-
+	
 	move_and_slide()
 
 func play_anim(movement):
@@ -43,24 +55,21 @@ func play_anim(movement):
 		anim.flip_h = false
 		if movement == 1:
 			anim.play("side_walk")
-		elif movement ==0:
+		elif movement == 0:
 			anim.play("side_idle")
-
-	if dir == "left":
+	elif dir == "left":
 		anim.flip_h = true
 		if movement == 1:
 			anim.play("side_walk")
-		elif movement ==0:
+		elif movement == 0:
 			anim.play("side_idle")
-
-	if dir == "down":
+	elif dir == "down":
 		if movement == 1:
 			anim.play("front_walk")
-		elif movement ==0:
+		elif movement == 0:
 			anim.play("front_idle")
-
-	if dir == "up":
+	elif dir == "up":
 		if movement == 1:
 			anim.play("back_walk")
-		elif movement ==0:
+		elif movement == 0:
 			anim.play("back_idle")
