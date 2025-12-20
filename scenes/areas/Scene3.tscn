@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=4 uid="uid://bcgten0x0wvpr"]
 
-[ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
-[ext_resource type="Script" path="res://scenes/2D Section/characters/character_body_2d.gd" id="2_tjrr8"]
+[ext_resource type="TileSet" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
+[ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_tjrr8"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="3_ku2sy"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="4_0rc83"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="5_ff1w4"]
