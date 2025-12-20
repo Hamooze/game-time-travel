@@ -10,6 +10,7 @@ var current_paper_index = 0
 var available_papers = []
 
 @export var plant_scene: PackedScene
+@onready var actionable_finder:Area2D = $ActionableFinder
 
 var papers = []
 var papers_container = null
@@ -267,3 +268,11 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
+			
+
+func _unhandled_input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		var actionable = actionable_finder.get_overlapping_areas()
+		if actionable.size() > 0:
+			actionable[0].action()
+			return
