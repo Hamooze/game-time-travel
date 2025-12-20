@@ -1,6 +1,6 @@
 extends Node2D
 
-@export_file("*.tscn") var next_scene_path := "res://scenes/MainScreen/MainMenu.tscn"
+@export_file("*.tscn") var next_scene_path := "res://scenes/areas/Scene3.tscn"
 @export_file("*.mp3", "*.ogg", "*.wav") var audio_path := ""
 # Defaults now point to your uploaded frames.
 @export_file("*.png", "*.jpg", "*.jpeg", "*.webp", "*.gif") var panel1_path := "res://assets/ANIMATION2/PICS/Scene1.jpg"

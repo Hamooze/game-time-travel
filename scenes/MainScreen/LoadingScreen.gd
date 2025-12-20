@@ -4,9 +4,11 @@ extends Node2D
 @export_dir var frames_dir := "res://assets/MAINMENU/Frames"
 @export var animation_fps: float = 12.0
 @export var wait_time_seconds: float = 7.0
+@export var fade_duration: float = 0.6
 
 @onready var anim: AnimatedSprite2D = $Background/SpriteA
 @onready var _viewport := get_viewport()
+@onready var _fade_rect: ColorRect = $FadeLayer/FadeRect
 
 var _frame_count := 0
 
@@ -18,15 +20,26 @@ func _ready() -> void:
 
 func _start_timer() -> void:
 	if wait_time_seconds <= 0.0:
-		_go_next_scene()
+		await _fade_and_go_next_scene()
 		return
 	await get_tree().create_timer(wait_time_seconds).timeout
-	_go_next_scene()
+	await _fade_and_go_next_scene()
 
 func _go_next_scene() -> void:
 	if next_scene_path.is_empty():
 		return
 	get_tree().change_scene_to_file(next_scene_path)
+
+func _fade_and_go_next_scene() -> void:
+	if _fade_rect == null:
+		_go_next_scene()
+		return
+	_fade_rect.visible = true
+	_fade_rect.modulate.a = 0.0
+	var tw := create_tween()
+	tw.tween_property(_fade_rect, "modulate:a", 1.0, max(fade_duration, 0.05))
+	await tw.finished
+	_go_next_scene()
 
 func _setup_animation() -> void:
 	var frames := _load_frames()

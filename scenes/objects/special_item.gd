@@ -1,7 +1,7 @@
 class_name SpecialItem
 extends Sprite2D
 
-@export_file("*.tscn") var on_collect_scene_path := "res://scenes/ANIMATION2/Animation2.tscn"
+@export_file("*.tscn") var on_collect_scene_path := "res://scenes/ANIMATION2/PreAnimation2.tscn"
 
 var player_in_range: bool = false
 var area: Area2D
