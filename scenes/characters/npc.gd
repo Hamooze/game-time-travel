@@ -2,16 +2,11 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 @onready var sprite = $AnimatedSprite2D  # Change to your actual sprite node name
-var paper1  # Will get reference in _ready()
 var is_moving = false
 
 func _ready():
-	# Get reference to paper1 (sibling node)
-	paper1 = get_parent().get_node("paper1")  # Use exact name from scene tree
-	
 	# Start invisible
-	visible = false
-	paper1.visible = false
+	visible = true
 	
 	# Wait 1 second
 	await get_tree().create_timer(1.0).timeout
@@ -22,7 +17,6 @@ func _ready():
 	# Make visible and start moving
 	visible = true
 	is_moving = true
-	paper1.visible = true  # Make paper1 visible when NPC starts moving
 	
 	# Move right for 5 seconds
 	await get_tree().create_timer(5.0).timeout

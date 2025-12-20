@@ -1,5 +1,11 @@
 extends Node
 
+var paper1_up = false
+var paper2_up = false
+var paper3_up = false
+var paper4_up = false
+var paper5_up = false
+
 var has_plant: bool = false
 var plant_collected: bool = false
 var plant_planted_position: Vector2 = Vector2.ZERO
