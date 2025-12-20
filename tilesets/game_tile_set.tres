@@ -1,7 +1,7 @@
 [gd_resource type="TileSet" load_steps=5 format=3 uid="uid://qsmhr00ow66q"]
 
 [ext_resource type="Texture2D" uid="uid://co7vy6d8kuh72" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_36g5x"]
-[ext_resource type="Texture2D" uid="uid://devmx52q7srs0" path="res://assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetFloorB.png" id="2_pd1vd"]
+[ext_resource type="Texture2D" uid="uid://7btmdn5co4uc" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloorB.png" id="2_pd1vd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4xvvk"]
 texture = ExtResource("1_36g5x")
