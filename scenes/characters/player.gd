@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 const speed = 60
 var current_dir = "none"

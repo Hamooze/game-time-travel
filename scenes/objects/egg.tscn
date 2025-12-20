@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqjneqlsrltrl"]
+
+[ext_resource type="Texture2D" uid="uid://dbu0rxfxn6c7c" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="1_0lbbr"]
+[ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="2_t0car"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
+radius = 7.07107
+
+[node name="Egg" type="Sprite2D"]
+texture = ExtResource("1_0lbbr")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_t0car")]
+y_sort_enabled = true
+collectable_name = "egg"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_m3cg5")
