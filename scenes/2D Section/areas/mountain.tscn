@@ -1,5 +1,6 @@
-[gd_scene load_steps=35 format=4 uid="uid://ddifrcts5g1yx"]
+[gd_scene load_steps=33 format=4 uid="uid://ddifrcts5g1yx"]
 
+[ext_resource type="Script" path="res://scenes/2D Section/areas/mountain.gd" id="1_3snc4"]
 [ext_resource type="Texture2D" uid="uid://c1ubd7mt04w2b" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_42x6o"]
 [ext_resource type="PackedScene" uid="uid://y6g56wbmmlie" path="res://scenes/objects/tree_2d.tscn" id="1_ai5wx"]
 [ext_resource type="Texture2D" uid="uid://r7iyr6j4x3gl" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png" id="2_x8gyq"]
@@ -11,30 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://5bvljnl1y84d" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloor.png" id="7_fxj7s"]
 [ext_resource type="Texture2D" uid="uid://dkgr4n84waj55" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetVillageAbandoned.png" id="9_32jaj"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="9_xf0u7"]
-[ext_resource type="PackedScene" uid="uid://bqjneqlsrltrl" path="res://scenes/objects/egg.tscn" id="10_0bf2w"]
 [ext_resource type="PackedScene" uid="uid://dbena8yitr3qt" path="res://scenes/objects/plant.tscn" id="10_4imja"]
-[ext_resource type="Texture2D" uid="uid://cjj7uumk1mcdh" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloorDetail.png" id="11_7ebbb"]
-
-[sub_resource type="GDScript" id="GDScript_mhr65"]
-resource_name = "mountain"
-script/source = "extends Node2D
-@export var tree_scene: PackedScene
-@export var plant_scene: PackedScene
-@export var original_plant_position: Vector2 = Vector2(79, 26.5)  
-
-func _ready():
-	# Spawn tree if plant was planted in the past
-	if Global.plant_planted_position != Vector2.ZERO:
-		var tree_instance = tree_scene.instantiate()
-		tree_instance.global_position = Global.plant_planted_position
-		add_child(tree_instance)
-	
-	# Spawn plant if not collected yet
-	if not Global.plant_collected and plant_scene:
-		var plant_instance = plant_scene.instantiate()
-		plant_instance.global_position = original_plant_position
-		add_child(plant_instance)
-"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rpafr"]
 texture = ExtResource("1_42x6o")
@@ -2461,7 +2439,7 @@ func _input(event):
 normal = Vector2(-1, 0)
 
 [node name="mountain" type="Node2D"]
-script = SubResource("GDScript_mhr65")
+script = ExtResource("1_3snc4")
 tree_scene = ExtResource("1_ai5wx")
 plant_scene = ExtResource("10_4imja")
 
@@ -2499,15 +2477,6 @@ scale = Vector2(0.4, 0.4)
 disable_mode = 1
 script = SubResource("GDScript_bp02o")
 plant_scene = ExtResource("10_4imja")
-
-[node name="Plant" parent="." instance=ExtResource("10_0bf2w")]
-z_index = 1
-y_sort_enabled = true
-position = Vector2(80, 31)
-scale = Vector2(0.927083, 0.985119)
-texture = ExtResource("11_7ebbb")
-region_enabled = true
-region_rect = Rect2(95.2312, 30.5289, 16.2212, 17.6695)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

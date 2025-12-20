@@ -1,5 +1,6 @@
-[gd_scene load_steps=26 format=4 uid="uid://cbvaf1fx4cuf3"]
+[gd_scene load_steps=30 format=4 uid="uid://cbvaf1fx4cuf3"]
 
+[ext_resource type="Script" path="res://scenes/2D Section/areas/mountain_past.gd" id="1_ikg6p"]
 [ext_resource type="Texture2D" uid="uid://c1ubd7mt04w2b" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_n1r3g"]
 [ext_resource type="Texture2D" uid="uid://r7iyr6j4x3gl" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png" id="2_3tesx"]
 [ext_resource type="Texture2D" uid="uid://my6baw0x1f1a" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt_Wide_v2.png" id="3_wh57e"]
@@ -10,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dss76h47eg0ji" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetRelief.png" id="8_u5c13"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="10_pad16"]
 [ext_resource type="PackedScene" uid="uid://dbena8yitr3qt" path="res://scenes/objects/plant.tscn" id="11_c66bs"]
+[ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="11_egn4a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wif7f"]
 texture = ExtResource("1_n1r3g")
@@ -1805,7 +1807,16 @@ func _input(event):
 		get_tree().change_scene_to_file(\"res://scenes/2D Section/areas/mountain.tscn\")
 "
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6osp5"]
+shader = ExtResource("11_egn4a")
+
+[sub_resource type="QuadMesh" id="QuadMesh_2etfo"]
+size = Vector2(640, 360)
+center_offset = Vector3(320, 180, 0)
+
 [node name="mountain_past" type="Node2D"]
+script = ExtResource("1_ikg6p")
+plant_scene = ExtResource("11_c66bs")
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -1836,3 +1847,10 @@ position = Vector2(38, 188)
 scale = Vector2(0.4, 0.4)
 script = SubResource("GDScript_c640u")
 plant_scene = ExtResource("11_c66bs")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_6osp5")
+position = Vector2(-3, -1)
+mesh = SubResource("QuadMesh_2etfo")
