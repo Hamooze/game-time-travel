@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://bjwp5ba00i2di"]
+[gd_scene load_steps=8 format=4 uid="uid://bjwp5ba00i2di"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_mdb2s"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="2_4h470"]
@@ -8,6 +8,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
 radius = 27.1448
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nujgt"]
+size = Vector2(15, 12)
 
 [node name="Lab" type="Node2D"]
 
@@ -36,8 +39,16 @@ y_sort_enabled = true
 script = ExtResource("3_tqmar")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="paper5/CollectableComponent"]
+visible = false
 position = Vector2(-1.13043, 3.71933e-05)
 shape = SubResource("CircleShape2D_m3cg5")
 
 [node name="Player" parent="." instance=ExtResource("4_o1cfd")]
+visible = false
 position = Vector2(38, 49)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(72, -18)
+shape = SubResource("RectangleShape2D_nujgt")

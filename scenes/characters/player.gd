@@ -384,7 +384,6 @@ func player_movement(_delta):
 				velocity.y = -speed
 	if Input.is_action_just_pressed("plant"):
 		print("Plant key (K) pressed - Global.has_box: ", Global.has_box, ", Global.has_plant: ", Global.has_plant)
-		# Check for box placement first, then plant
 		if Global.has_box:
 			place_box()
 		elif Global.has_plant:

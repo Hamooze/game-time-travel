@@ -273,6 +273,34 @@ visible = false
 scale = Vector2(4, 4)
 texture = ExtResource("10_nhhkk")
 
+[node name="Label" type="Label" parent="Camera2D/Papers/Paper5"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "Day 47. 
+The temporal displacem
+went wrong. Everyone's 
+gone. Erased from this 
+timeline like we never existed.
+I'm heading to the laboratory. 
+If the equations are right, I 
+can still fix this.
+The facility in Sector 4 has 
+everything I need. 
+"
+
+[node name="Label2" type="Label" parent="Camera2D/Papers/Paper5"]
+z_index = 100
+offset_left = 10.5
+offset_top = 8.0
+offset_right = 20.5
+offset_bottom = 31.0
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "4"
+
 [node name="ActionableFinder" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 16
