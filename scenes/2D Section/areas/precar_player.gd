@@ -233,11 +233,11 @@ func player_movement(_delta):
 	# Normalize diagonal movement so speed is consistent
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-	
+		
 	move_and_slide()
 	
-	# Determine animation direction based on velocity
-	# Check for diagonal down movement (down + left/right)
+		# Determine animation direction based on velocity
+		# Check for diagonal down movement (down + left/right)
 	if velocity.length() > 0:
 		if velocity.y > 0 and velocity.x != 0:
 			# Diagonal down - use side animation

@@ -1,22 +1,16 @@
-[gd_scene load_steps=12 format=4 uid="uid://bjwp5ba00i2di"]
+[gd_scene load_steps=8 format=4 uid="uid://dotlbgdybctn6"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_mdb2s"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="2_4h470"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="3_i7763"]
 [ext_resource type="Script" path="res://scripts/Papers/paper5.gd" id="3_tqmar"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="4_o1cfd"]
-[ext_resource type="Texture2D" uid="uid://cant5p6foffev" path="res://assets/Robot/south.png" id="6_teesr"]
-[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="7_jw084"]
-[ext_resource type="Resource" uid="uid://jalls03cj6w" path="res://scripts/Dialogue/Robot.dialogue" id="8_brev0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
 radius = 27.1448
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nujgt"]
 size = Vector2(15, 12)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_fcc7b"]
-radius = 23.1038
 
 [node name="Lab" type="Node2D"]
 
@@ -50,6 +44,7 @@ position = Vector2(-1.13043, 3.71933e-05)
 shape = SubResource("CircleShape2D_m3cg5")
 
 [node name="Player" parent="." instance=ExtResource("4_o1cfd")]
+visible = false
 position = Vector2(38, 49)
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -57,14 +52,3 @@ position = Vector2(38, 49)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(72, -18)
 shape = SubResource("RectangleShape2D_nujgt")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(253, 36)
-scale = Vector2(0.348958, 0.348958)
-texture = ExtResource("6_teesr")
-
-[node name="Actionable" parent="Sprite2D" instance=ExtResource("7_jw084")]
-dialogue_resource = ExtResource("8_brev0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Actionable"]
-shape = SubResource("CircleShape2D_fcc7b")

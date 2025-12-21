@@ -286,7 +286,9 @@ position = Vector2(0, -28)
 shape = SubResource("CapsuleShape2D_5rlxb")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
 script = ExtResource("12_m502m")
+spawn_position = Vector2(93, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1005, 25.5)
