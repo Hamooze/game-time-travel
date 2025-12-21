@@ -1,22 +1,25 @@
-[gd_scene load_steps=45 format=4 uid="uid://ddifrcts5g1yx"]
+[gd_scene load_steps=49 format=4 uid="uid://ddifrcts5g1yx"]
 
 [ext_resource type="Script" path="res://scenes/2D Section/areas/mountain.gd" id="1_3snc4"]
 [ext_resource type="PackedScene" uid="uid://y6g56wbmmlie" path="res://scenes/objects/tree_2d.tscn" id="1_ai5wx"]
 [ext_resource type="AudioStream" uid="uid://ovymkm81sqxq" path="res://assets/Ninja Adventure/Audio/Sounds/Alert/Alert4.wav" id="5_vuxhu"]
 [ext_resource type="AudioStream" uid="uid://c6lhbf3vm1xj" path="res://assets/Ninja Adventure/Audio/Sounds/Elemental/Grass.wav" id="6_lbmq3"]
-[ext_resource type="PackedScene" uid="uid://bobwccdgk5ke2" path="res://scenes/objects/plant.tscn" id="10_4imja"]
+[ext_resource type="PackedScene" uid="uid://dbena8yitr3qt" path="res://scenes/objects/plant.tscn" id="10_4imja"]
+[ext_resource type="Texture2D" uid="uid://l14cltfsxkba" path="res://assets/Papers/Empty/Note1_EMT.png" id="11_g7umi"]
+[ext_resource type="Texture2D" uid="uid://cq3y2ixonadi5" path="res://assets/Papers/Empty/Note2_EMT.png" id="12_sajkn"]
+[ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="13_8ujjv"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="13_nv75f"]
+[ext_resource type="Texture2D" uid="uid://djpkg7g3u3ouv" path="res://assets/Papers/Empty/Note4_Taped_EMT.png" id="14_u3ocs"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="15_0mf34"]
+[ext_resource type="Texture2D" uid="uid://dh3nyeekbxyw3" path="res://assets/Papers/Empty/Note5_EMT.png" id="15_tj868"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="16_8jo3j"]
 [ext_resource type="Script" path="res://scenes/2D Section/areas/player_2.gd" id="16_f1y5y"]
 [ext_resource type="Script" path="res://scenes/2D Section/areas/walking_to_mountain.gd" id="16_v8u5n"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="17_nq5d4"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="18_l0q4u"]
-[ext_resource type="Texture2D" uid="uid://ba2ehvswy5jao" path="res://assets/Papers/Note1_EMT_Text_White.png" id="19_mckha"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="20_1530e"]
-[ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="21_j2cl3"]
-[ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="22_3uy5h"]
-[ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="23_unapj"]
+[ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="21_ii6vx"]
+[ext_resource type="Script" path="res://scripts/Papers/paper2.gd" id="22_620hg"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="24_tn364"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="25_interaction_prompt"]
 
@@ -211,6 +214,9 @@ height = 48.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flprn"]
 size = Vector2(33, 90)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
+radius = 29.4667
+
 [node name="mountain" type="Node2D" node_paths=PackedStringArray("fixed_bridge", "broke_bridge")]
 script = ExtResource("1_3snc4")
 tree_scene = ExtResource("1_ai5wx")
@@ -221,7 +227,7 @@ broke_bridge = NodePath("Node2D/Bridge")
 [node name="Player2" type="CharacterBody2D" parent="."]
 z_index = 3
 position = Vector2(93, 5)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.3, 0.3)
 script = ExtResource("16_f1y5y")
 travel_sfx = ExtResource("5_vuxhu")
 plant_sfx = ExtResource("6_lbmq3")
@@ -237,35 +243,181 @@ position = Vector2(0, -24)
 shape = SubResource("CapsuleShape2D_jscvo")
 
 [node name="Camera2D" type="Camera2D" parent="Player2"]
-zoom = Vector2(1.5, 1.5)
-limit_left = -200
-limit_top = -160
-limit_right = 440
-limit_bottom = 160
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [node name="Papers" type="Node2D" parent="Player2/Camera2D"]
-visible = false
+z_index = 20
+scale = Vector2(2, 2)
 
 [node name="Paper1" type="Sprite2D" parent="Player2/Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("19_mckha")
+texture = ExtResource("11_g7umi")
+
+[node name="Label" type="Label" parent="Player2/Camera2D/Papers/Paper1"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "Day 47. 
+The temporal displacem
+went wrong. Everyone's 
+gone. Erased from this 
+timeline like we never existed.
+I'm heading to the laboratory. 
+If the equations are right, I 
+can still fix this.
+The facility in Sector 4 has 
+everything I need. 
+"
+
+[node name="Label2" type="Label" parent="Player2/Camera2D/Papers/Paper1"]
+z_index = 100
+offset_left = 10.5
+offset_top = 8.0
+offset_right = 20.5
+offset_bottom = 31.0
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "4"
 
 [node name="Paper2" type="Sprite2D" parent="Player2/Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("20_1530e")
+texture = ExtResource("12_sajkn")
+
+[node name="Label" type="Label" parent="Player2/Camera2D/Papers/Paper2"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "Day 49.
+Everything looks the same 
+but feels hollow. 
+Empty buildings that no one 
+built. Echoes of a world that 
+never was.
+The lab is close, just 2 miles 
+north of here.
+ The machine should be there.
+"
+
+[node name="Label2" type="Label" parent="Player2/Camera2D/Papers/Paper2"]
+z_index = 100
+offset_left = 10.0833
+offset_top = -0.75
+offset_right = 20.0833
+offset_bottom = 22.25
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "2"
 
 [node name="Paper3" type="Sprite2D" parent="Player2/Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("21_j2cl3")
+texture = ExtResource("13_8ujjv")
+
+[node name="Label" type="Label" parent="Player2/Camera2D/Papers/Paper3"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "         53.
+     ade it. Doors are sealed, 
+no one ever opened them in 
+this timeline.
+Everything I need should be 
+inside. The security clearance
+is Level 0, so I can bypass the
+ locks easily.
+The safe inside has the 
+important document. 
+I got this."
+
+[node name="Label2" type="Label" parent="Player2/Camera2D/Papers/Paper3"]
+z_index = 100
+offset_left = -7.08333
+offset_top = -1.25
+offset_right = 2.91667
+offset_bottom = 21.75
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0"
 
 [node name="Paper4" type="Sprite2D" parent="Player2/Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("22_3uy5h")
+texture = ExtResource("14_u3ocs")
+
+[node name="Label" type="Label" parent="Player2/Camera2D/Papers/Paper4"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.17, 0.17)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Day 54.
+I'm inside. There's a helper 
+robot here, AEON, designed
+to help around the lab, but 
+it's dormant without 
+activation protocols.
+The safe is in the main 
+research hall, row 6, it has the
+activation manual and other
+important document. I'm 
+running out of time. The
+ instability is tearing me apart, 
+but I can do this.
+"
+
+[node name="Label2" type="Label" parent="Player2/Camera2D/Papers/Paper4"]
+z_index = 100
+offset_left = 6.25
+offset_top = 1.66667
+offset_right = 16.25
+offset_bottom = 24.6667
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "6
+"
 
 [node name="Paper5" type="Sprite2D" parent="Player2/Camera2D/Papers"]
 scale = Vector2(4, 4)
-texture = ExtResource("23_unapj")
+texture = ExtResource("15_tj868")
+
+[node name="Label" type="Label" parent="Player2/Camera2D/Papers/Paper5"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "Day 54. Final entry.
+AEON is broken and the 
+pieces are missing.
+If I could activate the robot in 
+a stable timeline with the 
+blueprints and manual. It will 
+build what I couldn't.
+Well in 7 days I couldn’t do it… 
+I’m sorry everyone.
+
+Sean C"
+
+[node name="Label2" type="Label" parent="Player2/Camera2D/Papers/Paper5"]
+z_index = 100
+offset_left = -7.91667
+offset_top = 3.75
+offset_right = 2.08333
+offset_bottom = 26.75
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "7
+"
 
 [node name="ActionableFinder" type="Area2D" parent="Player2"]
 collision_layer = 0
@@ -322,3 +474,15 @@ anchor_right = 0.5
 offset_top = -50.0
 offset_bottom = 0.0
 grow_horizontal = 2
+
+[node name="Egg" type="Sprite2D" parent="."]
+position = Vector2(262.5, 28)
+scale = Vector2(0.288462, 0.282051)
+texture = ExtResource("20_1530e")
+
+[node name="CollectableComponent" parent="Egg" instance=ExtResource("21_ii6vx")]
+y_sort_enabled = true
+script = ExtResource("22_620hg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Egg/CollectableComponent"]
+shape = SubResource("CircleShape2D_m3cg5")
