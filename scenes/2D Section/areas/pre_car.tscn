@@ -290,7 +290,7 @@ texture = ExtResource("11_xvw1p")
 z_index = 1
 y_sort_enabled = true
 position = Vector2(643, -75)
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("12_qv686")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Car"]
