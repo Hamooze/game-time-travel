@@ -259,21 +259,7 @@ visible = false
 scale = Vector2(4, 4)
 texture = ExtResource("7_oh1xr")
 
-[node name="Paper3" type="Sprite2D" parent="Camera2D/Papers"]
-visible = false
-scale = Vector2(4, 4)
-texture = ExtResource("8_7pa8e")
-
-[node name="Paper4" type="Sprite2D" parent="Camera2D/Papers"]
-visible = false
-scale = Vector2(4, 4)
-texture = ExtResource("9_8yga8")
-
-[node name="Paper5" type="Sprite2D" parent="Camera2D/Papers"]
-scale = Vector2(4, 4)
-texture = ExtResource("10_nhhkk")
-
-[node name="Label" type="Label" parent="Camera2D/Papers/Paper5"]
+[node name="Label" type="Label" parent="Camera2D/Papers/Paper2"]
 offset_left = -18.5
 offset_top = -29.0
 offset_right = 797.5
@@ -290,7 +276,7 @@ north of here.
  The machine should be there.
 "
 
-[node name="Label2" type="Label" parent="Camera2D/Papers/Paper5"]
+[node name="Label2" type="Label" parent="Camera2D/Papers/Paper2"]
 z_index = 100
 offset_left = 10.0833
 offset_top = -0.75
@@ -299,6 +285,110 @@ offset_bottom = 22.25
 scale = Vector2(0.19, 0.19)
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 text = "2"
+
+[node name="Paper3" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
+scale = Vector2(4, 4)
+texture = ExtResource("8_7pa8e")
+
+[node name="Label" type="Label" parent="Camera2D/Papers/Paper3"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "         53.
+     ade it. Doors are sealed, 
+no one ever opened them in 
+this timeline.
+Everything I need should be 
+inside. The security clearance
+is Level 0, so I can bypass the
+ locks easily.
+The safe inside has the 
+important document. 
+I got this."
+
+[node name="Label2" type="Label" parent="Camera2D/Papers/Paper3"]
+z_index = 100
+offset_left = -7.08333
+offset_top = -1.25
+offset_right = 2.91667
+offset_bottom = 21.75
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0"
+
+[node name="Paper4" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
+scale = Vector2(4, 4)
+texture = ExtResource("9_8yga8")
+
+[node name="Label" type="Label" parent="Camera2D/Papers/Paper4"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.17, 0.17)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Day 54.
+I'm inside. There's a helper 
+robot here, AEON, designed
+to help around the lab, but 
+it's dormant without 
+activation protocols.
+The safe is in the main 
+research hall, row 6, it has the
+activation manual and other
+important document. I'm 
+running out of time. The
+ instability is tearing me apart, 
+but I can do this.
+"
+
+[node name="Label2" type="Label" parent="Camera2D/Papers/Paper4"]
+z_index = 100
+offset_left = 6.25
+offset_top = 1.66667
+offset_right = 16.25
+offset_bottom = 24.6667
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "6
+"
+
+[node name="Paper5" type="Sprite2D" parent="Camera2D/Papers"]
+scale = Vector2(4, 4)
+texture = ExtResource("10_nhhkk")
+
+[node name="Label" type="Label" parent="Camera2D/Papers/Paper5"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "Day 54. Final entry.
+AEON is broken and the 
+pieces are missing.
+If I could activate the robot in 
+a stable timeline with the 
+blueprints and manual. It will 
+build what I couldn't.
+Well in 7 days I couldn’t do it… 
+I’m sorry everyone.
+
+Sean C"
+
+[node name="Label2" type="Label" parent="Camera2D/Papers/Paper5"]
+z_index = 100
+offset_left = -7.91667
+offset_top = 3.75
+offset_right = 2.08333
+offset_bottom = 26.75
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "7
+"
 
 [node name="ActionableFinder" type="Area2D" parent="."]
 collision_layer = 0
