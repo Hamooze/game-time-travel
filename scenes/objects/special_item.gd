@@ -7,6 +7,9 @@ var player_in_range: bool = false
 var area: Area2D
 
 func _ready():
+	# Add to group for interaction prompt detection
+	add_to_group("special_item")
+	
 	# Get the Area2D child node
 	area = $Area2D
 	

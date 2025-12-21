@@ -13,12 +13,14 @@ var plant_sfx_player: AudioStreamPlayer
 
 
 @export var plant_scene: PackedScene
+@export var box_scene: PackedScene
 @onready var actionable_finder:Area2D = $ActionableFinder
 
 var papers = []
 var papers_container = null
 var movement_restricted = false
 var restricted_directions = {}
+var placement_indicator: Sprite2D = null
 
 func _ready():
 	plant_sfx_player = AudioStreamPlayer.new()
@@ -82,6 +84,91 @@ func _ready():
 	
 	print("Total papers found: ", papers.size())
 	print("=== PAPER SETUP COMPLETE ===")
+	
+	# Create placement indicator (X marker)
+	create_placement_indicator()
+
+func create_placement_indicator():
+	# Create a Sprite2D node to display the X marker (works in 2D world space)
+	placement_indicator = Sprite2D.new()
+	
+	# Create a simple X texture programmatically
+	var size = 32
+	var image = Image.create(size, size, false, Image.FORMAT_RGBA8)
+	image.fill(Color.TRANSPARENT)  # Transparent background
+	
+	# Draw X shape with thicker lines
+	var thickness = 3
+	for i in range(size):
+		for j in range(-thickness/2, thickness/2 + 1):
+			# Diagonal from top-left to bottom-right
+			var x1 = i + j
+			var y1 = i
+			if x1 >= 0 and x1 < size and y1 >= 0 and y1 < size:
+				image.set_pixel(x1, y1, Color.RED)
+			
+			# Diagonal from top-right to bottom-left
+			var x2 = (size - 1 - i) + j
+			var y2 = i
+			if x2 >= 0 and x2 < size and y2 >= 0 and y2 < size:
+				image.set_pixel(x2, y2, Color.RED)
+	
+	var texture = ImageTexture.create_from_image(image)
+	placement_indicator.texture = texture
+	placement_indicator.visible = false
+	placement_indicator.z_index = 10  # Make sure it's visible above other elements
+	add_child(placement_indicator)
+
+func get_placement_position() -> Vector2:
+	# Calculate position in front of player based on current direction
+	var place_offset = Vector2.ZERO
+	var place_distance = 40.0  # Distance in front of player
+	
+	match current_dir:
+		"up":
+			place_offset = Vector2(0, -place_distance)
+		"down":
+			place_offset = Vector2(0, place_distance)
+		"left":
+			place_offset = Vector2(-place_distance, 0)
+		"right":
+			place_offset = Vector2(place_distance, 0)
+		_:
+			# Default to down if no direction
+			place_offset = Vector2(0, place_distance)
+	
+	return global_position + place_offset
+
+func get_scene_identifier() -> String:
+	# Get consistent scene identifier based on current scene
+	var scene = get_tree().current_scene
+	if scene == null:
+		return "unknown"
+	
+	var scene_name = scene.name.to_lower()
+	var scene_path = scene.scene_file_path.to_lower()
+	
+	# Use scene path to determine identifier
+	if "facility_entrance" in scene_path or "facilityentrance" in scene_path or scene_name.contains("entrance"):
+		return "facility_entrance"
+	elif "facility_past" in scene_path or "facilitypast" in scene_path or scene_name.contains("past"):
+		return "facility_past"
+	else:
+		# Fallback to scene name
+		return scene_name.replace(" ", "_")
+
+func update_placement_indicator():
+	if placement_indicator == null:
+		return
+	
+	# Show/hide based on whether player has a box
+	if Global.has_box:
+		placement_indicator.visible = true
+		
+		# Set the indicator to the exact placement position (in world space)
+		placement_indicator.global_position = get_placement_position()
+	else:
+		placement_indicator.visible = false
 
 func collect_plant():
 	has_plant = true
@@ -116,7 +203,58 @@ func plant():
 		print("No plant to plant!")
 		return false
 
+func place_box():
+	print("place_box() called - Global.has_box: ", Global.has_box)
+	if not Global.has_box:
+		print("No box to place!")
+		return false
+	
+	if not box_scene:
+		print("Box scene not assigned! Please assign BoxCollectable.tscn to box_scene in the player scene.")
+		return false
+	
+	# Use the exact same position as the indicator (if visible)
+	var placement_pos: Vector2
+	if placement_indicator != null and placement_indicator.visible:
+		# Use the indicator's exact position
+		placement_pos = placement_indicator.global_position
+	else:
+		# Fallback to calculation if indicator not available
+		placement_pos = get_placement_position()
+	
+	var box_instance = box_scene.instantiate()
+	box_instance.global_position = placement_pos
+	
+	# Set z_index to appear above Lab (z_index=1) and Door (z_index=2) layers
+	box_instance.z_index = 3
+	
+	# Give placed boxes a unique ID so multiple can exist in the same time zone
+	# Use consistent scene identifier + position + timestamp to ensure uniqueness
+	var scene_id = get_scene_identifier()
+	var pos_str = str(int(placement_pos.x)) + "_" + str(int(placement_pos.y))
+	var timestamp = str(Time.get_ticks_msec())  # Unique timestamp
+	var box_id = scene_id + ":placed_box_" + pos_str + "_" + timestamp
+	box_instance.collectable_id = box_id
+	
+	# Track this placed box globally so it persists across scene transitions
+	var box_data = {
+		"scene_id": scene_id,
+		"position": placement_pos,
+		"collectable_id": box_id
+	}
+	Global.placed_boxes.append(box_data)
+	print("Placed box tracked: ", box_data, " | Total placed boxes: ", Global.placed_boxes.size())
+	
+	get_parent().add_child(box_instance)
+	
+	Global.has_box = false
+	print("Box placed at position: ", box_instance.global_position, " (player at: ", global_position, ", placement pos: ", placement_pos, ", ID: ", box_id, ")")
+	return true
+
 func _physics_process(_delta):
+	# Update placement indicator
+	update_placement_indicator()
+	
 	# Check for paper viewing toggle (R key)
 	if Input.is_action_just_pressed("ui_focus_next"):  # Map R key to this action in Project Settings
 		print("Tab key pressed - toggling paper view")
@@ -244,8 +382,13 @@ func player_movement(_delta):
 		if is_diagonal or not restricted_directions.get("up_only", false):
 			if not restricted_directions.get("up", false):
 				velocity.y = -speed
-	if Input.is_action_pressed("plant"):  
-		plant()
+	if Input.is_action_just_pressed("plant"):
+		print("Plant key (K) pressed - Global.has_box: ", Global.has_box, ", Global.has_plant: ", Global.has_plant)
+		# Check for box placement first, then plant
+		if Global.has_box:
+			place_box()
+		elif Global.has_plant:
+			plant()
 	
 	# Normalize diagonal movement so speed is consistent
 	if velocity.length() > 0:
