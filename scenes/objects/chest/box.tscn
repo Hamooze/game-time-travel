@@ -9,13 +9,13 @@ atlas = ExtResource("2_njnos")
 region = Rect2(288, 232, 16, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f45jf"]
-size = Vector2(14, 17)
+size = Vector2(22, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vtp5"]
-size = Vector2(25, 14.5)
+size = Vector2(30, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_can5p"]
-size = Vector2(10, 29)
+size = Vector2(12, 29)
 
 [node name="Box" type="CharacterBody2D"]
 position = Vector2(-1, -8)
@@ -33,7 +33,7 @@ debug_color = Color(4.33177e-06, 0.639782, 0.359661, 0.42)
 [node name="InteractableComponent" parent="." instance=ExtResource("3_mwl2e")]
 
 [node name="CollisionShapeXaxis" type="CollisionShape2D" parent="InteractableComponent"]
-position = Vector2(1, 1.25)
+position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7vtp5")
 debug_color = Color(0.93603, 0.458373, 0.957603, 0.42)
 
