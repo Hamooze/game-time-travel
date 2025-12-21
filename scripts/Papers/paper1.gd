@@ -7,7 +7,8 @@ func _ready():
 	# Connect the signal in code to ensure it's connected
 	body_entered.connect(_on_body_entered)
 	print("CollectableComponent ready: ", collectable_name)
-	if Global.plant_collected:
+	# Check if this paper was already collected
+	if Global.paper1_up:
 		queue_free()
 	
 

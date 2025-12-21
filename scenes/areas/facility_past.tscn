@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://bxocro7om86il"]
+[gd_scene load_steps=44 format=4 uid="uid://bxocro7om86il"]
 
 [ext_resource type="Script" path="res://scenes/areas/facility_past.gd" id="1_eyh3b"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_b5sdx"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="12_1ynsx"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="13_wi1nk"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="14_kca6d"]
-[ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="15_sogr2"]
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="16_77heq"]
 [ext_resource type="AudioStream" uid="uid://b50i7h7fnl31k" path="res://assets/Music_final/Music_final/time_freeze.mp3" id="17_shhhb"]
 
@@ -206,9 +205,6 @@ height = 60.0
 radius = 12.0
 height = 28.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_11cya"]
-size = Vector2(91.6666, 53.3333)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_83w3h"]
 shader = ExtResource("16_77heq")
 
@@ -222,7 +218,7 @@ size = Vector2(66, 20)
 [node name="FacilityEntrance" type="Node2D"]
 script = ExtResource("1_eyh3b")
 metadata/_edit_horizontal_guides_ = [-48.0, 384.0]
-metadata/_edit_vertical_guides_ = [-32.0]
+metadata/_edit_vertical_guides_ = [-32.0, 944.0]
 
 [node name="MapTileSet" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -282,6 +278,7 @@ shape = SubResource("CapsuleShape2D_yqv4f")
 zoom = Vector2(1.5, 1.5)
 limit_left = -32
 limit_top = -48
+limit_right = 944
 limit_bottom = 384
 position_smoothing_enabled = true
 
@@ -325,19 +322,6 @@ anchor_right = 0.5
 offset_top = -50.0
 offset_bottom = 0.0
 grow_horizontal = 2
-
-[node name="Car" type="Sprite2D" parent="."]
-z_index = 2
-y_sort_enabled = true
-position = Vector2(176, 25)
-texture = ExtResource("15_sogr2")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Car"]
-position = Vector2(-293.333, 33.3333)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Car/StaticBody2D"]
-position = Vector2(293.333, -28.3333)
-shape = SubResource("RectangleShape2D_11cya")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

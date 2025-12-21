@@ -8,6 +8,10 @@ var paper5_up = false
 
 var tab_papers = false
 
+var transition = false
+
+var future = false
+
 var has_bp = false
 
 var in_dialogue = false

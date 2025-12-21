@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="5_area_transition"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sqmtc"]
-radius = 14.0357
+radius = 31.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjjr2"]
 size = Vector2(18, 21.5)

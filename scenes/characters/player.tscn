@@ -240,7 +240,7 @@ timeline like we never existed.
 I'm heading to the laboratory. 
 If the equations are right, I 
 can still fix this.
-The facility in Sector 4 has 
+The facility in Sector     has 
 everything I need. 
 "
 
@@ -271,8 +271,8 @@ but feels hollow.
 Empty buildings that no one 
 built. Echoes of a world that 
 never was.
-The lab is close, just 2 miles 
-north of here.
+The lab is close, just    miles 
+East of here.
  The machine should be there.
 "
 
@@ -303,7 +303,7 @@ no one ever opened them in
 this timeline.
 Everything I need should be 
 inside. The security clearance
-is Level 0, so I can bypass the
+is Level   , so I can bypass the
  locks easily.
 The safe inside has the 
 important document. 
@@ -338,7 +338,7 @@ to help around the lab, but
 it's dormant without 
 activation protocols.
 The safe is in the main 
-research hall, row 6, it has the
+research hall, row   , it has the
 activation manual and other
 important document. I'm 
 running out of time. The
@@ -358,6 +358,7 @@ text = "6
 "
 
 [node name="Paper5" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
 texture = ExtResource("10_nhhkk")
 
@@ -374,7 +375,7 @@ If I could activate the robot in
 a stable timeline with the 
 blueprints and manual. It will 
 build what I couldn't.
-Well in 7 days I couldn’t do it… 
+Well in    days I couldn’t do it… 
 I’m sorry everyone.
 
 Sean C"

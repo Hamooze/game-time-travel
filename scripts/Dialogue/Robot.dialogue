@@ -6,6 +6,7 @@ AEON: Do you have a blueprint?
 - Yes
 	if has_bp == true:
 		AEON: This task will take around 127 years, Ill get to work now.
+		set future = true
 		set in_dialogue = false
 	else:
 		AEON: Come back when you have a blueprint

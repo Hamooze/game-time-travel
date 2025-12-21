@@ -239,6 +239,7 @@ shape = SubResource("CapsuleShape2D_yqv4f")
 zoom = Vector2(1.5, 1.5)
 limit_left = -32
 limit_top = -48
+limit_right = 944
 limit_bottom = 384
 position_smoothing_enabled = true
 

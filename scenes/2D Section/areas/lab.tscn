@@ -1,16 +1,26 @@
-[gd_scene load_steps=15 format=4 uid="uid://bjwp5ba00i2di"]
+[gd_scene load_steps=32 format=4 uid="uid://bjwp5ba00i2di"]
 
+[ext_resource type="Script" path="res://scenes/2D Section/areas/lab.gd" id="1_c20xf"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_mdb2s"]
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="2_0g6tg"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="2_4h470"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="3_i7763"]
+[ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="3_mtrn4"]
 [ext_resource type="Script" path="res://scripts/Papers/paper5.gd" id="3_tqmar"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="4_o1cfd"]
 [ext_resource type="Script" path="res://scripts/Papers/paper4.gd" id="4_shore"]
+[ext_resource type="Script" path="res://scripts/Papers/paper3.gd" id="5_rylad"]
 [ext_resource type="Texture2D" uid="uid://cant5p6foffev" path="res://assets/Robot/south.png" id="6_teesr"]
 [ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="7_jw084"]
 [ext_resource type="Resource" uid="uid://jalls03cj6w" path="res://scripts/Dialogue/Robot.dialogue" id="8_brev0"]
 [ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="9_area_transition"]
+[ext_resource type="Script" path="res://scripts/global/npc2.gd" id="13_5mapp"]
+[ext_resource type="Texture2D" uid="uid://c1054k1smf66d" path="res://assets/walking-4-frames/south/pixil-frame-0.png" id="13_fcb4q"]
+[ext_resource type="Texture2D" uid="uid://ca0t380xmsmey" path="res://assets/walking-4-frames/east/pixil-frame-0.png" id="14_shccb"]
+[ext_resource type="Texture2D" uid="uid://bdujsu5m1vv18" path="res://assets/walking-4-frames/east/pixil-frame-1.png" id="15_2x3nb"]
+[ext_resource type="Texture2D" uid="uid://cibkbregvb1hu" path="res://assets/walking-4-frames/east/pixil-frame-2.png" id="16_3kdsm"]
+[ext_resource type="Texture2D" uid="uid://c78bm2miwj6g6" path="res://assets/walking-4-frames/east/pixil-frame-3.png" id="17_jrven"]
+[ext_resource type="Resource" uid="uid://bc2tyh5sipma1" path="res://scripts/Dialogue/Future.dialogue" id="19_cd5rm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
 radius = 27.1448
@@ -18,10 +28,62 @@ radius = 27.1448
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nujgt"]
 size = Vector2(13, 12)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gji1p"]
+atlas = ExtResource("13_fcb4q")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eirwl"]
+atlas = ExtResource("14_shccb")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4vrx"]
+atlas = ExtResource("15_2x3nb")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8u25"]
+atlas = ExtResource("16_3kdsm")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jksvv"]
+atlas = ExtResource("17_jrven")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pmtbg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gji1p")
+}],
+"loop": false,
+"name": &"front_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eirwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4vrx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8u25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jksvv")
+}],
+"loop": true,
+"name": &"side_walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_orpu4"]
+radius = 34.5073
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_fcc7b"]
 radius = 23.1038
 
 [node name="Lab" type="Node2D"]
+script = ExtResource("1_c20xf")
 
 [node name="Tiles" type="Node2D" parent="."]
 
@@ -38,9 +100,22 @@ scale = Vector2(0.3, 0.3)
 tile_map_data = PackedByteArray("AAAFAP3/DgAjACwAAAAKAP3/DgAYACwAAAATAP3/DgAZACgAAAAWAP3/DgAZACgAAABEAA8AEAAOACcAAABEAAgAEAAOACcAAABEAAEAEAAOACcAAAAMAPn/EQAeAAMAAAAMAPr/EQAeAAQAAAAMAPv/EQAeAAUAAAAMAPz/EQAeAAYAAAANAPn/EQAfAAMAAAANAPr/EQAfAAQAAAANAPv/EQAfAAUAAAANAPz/EQAfAAYAAAAOAPn/EQAgAAMAAAAOAPr/EQAgAAQAAAAPAPn/EQAhAAMAAAAPAPr/EQAhAAQAAAAQAPn/EQAiAAMAAAAQAPr/EQAiAAQAAAAQAPv/EQAiAAUAAAAQAPz/EQAiAAYAAAARAPn/EQAjAAMAAAARAPr/EQAjAAQAAAARAPv/EQAjAAUAAAARAPz/EQAjAAYAAABBAA8AEAAJACkAAABBAAIAEAAJACkAAABAAAkAEAAGACkAAAA=")
 tile_set = ExtResource("1_mdb2s")
 
+[node name="paper3" type="Sprite2D" parent="."]
+position = Vector2(31, 12.3205)
+scale = Vector2(0.192308, 0.19691)
+texture = ExtResource("3_mtrn4")
+
+[node name="CollectableComponent" parent="paper3" instance=ExtResource("3_i7763")]
+y_sort_enabled = true
+script = ExtResource("5_rylad")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="paper3/CollectableComponent"]
+position = Vector2(-1.13043, 3.71933e-05)
+shape = SubResource("CircleShape2D_m3cg5")
+
 [node name="paper4" type="Sprite2D" parent="."]
-position = Vector2(133.411, 85.5641)
-scale = Vector2(0.0489091, 0.0420775)
+position = Vector2(135.07, 5)
+scale = Vector2(0.189628, 0.179487)
 texture = ExtResource("2_0g6tg")
 
 [node name="CollectableComponent" parent="paper4" instance=ExtResource("3_i7763")]
@@ -76,6 +151,27 @@ player_spawn_position = Vector2(-40, 10)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(72, -20)
 shape = SubResource("RectangleShape2D_nujgt")
+
+[node name="Npc" type="CharacterBody2D" parent="."]
+position = Vector2(181, 44)
+scale = Vector2(0.348958, 0.348958)
+script = ExtResource("13_5mapp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Npc"]
+visible = false
+position = Vector2(0, -37)
+sprite_frames = SubResource("SpriteFrames_pmtbg")
+animation = &"front_idle"
+autoplay = "front_idle"
+frame_progress = 1.0
+
+[node name="Actionable" parent="Npc/AnimatedSprite2D" instance=ExtResource("7_jw084")]
+position = Vector2(0, 37)
+dialogue_resource = ExtResource("19_cd5rm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Npc/AnimatedSprite2D/Actionable"]
+position = Vector2(2.86567, -28.6567)
+shape = SubResource("CircleShape2D_orpu4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(253, 36)

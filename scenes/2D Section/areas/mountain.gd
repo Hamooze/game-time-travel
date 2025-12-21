@@ -5,6 +5,8 @@ extends Node2D
 @export var fixed_bridge: TileMapLayer
 @export var broke_bridge: TileMapLayer
 
+@onready var paper2: Sprite2D = $paper2
+
 var player: CharacterBody2D = null
 
 func _ready():
@@ -15,13 +17,31 @@ func _ready():
 	else:
 		print("Mountain scene: Player2 found at position: ", player.global_position)
 	
+	# Find bridge layers if not assigned
+	if fixed_bridge == null:
+		fixed_bridge = find_child("FixedBridge2", true, false)
+	if broke_bridge == null:
+		broke_bridge = find_child("Bridge2", true, false)
+	
 	# Spawn tree if plant was planted in the past
 	if Global.plant_planted_position != Vector2.ZERO:
 		var tree_instance = tree_scene.instantiate()
 		tree_instance.global_position = Global.plant_planted_position
 		add_child(tree_instance)
-		fixed_bridge.visible = true
-		broke_bridge.queue_free()
+		if fixed_bridge != null:
+			fixed_bridge.visible = true
+			fixed_bridge.collision_enabled = true  # Enable collision on fixed bridge
+		if broke_bridge != null:
+			broke_bridge.visible = false
+			broke_bridge.collision_enabled = false  # Disable collision on broken bridge
+	else:
+		# Plant not planted yet - ensure broken bridge has collision and fixed bridge doesn't
+		if broke_bridge != null:
+			broke_bridge.visible = true
+			broke_bridge.collision_enabled = true  # Enable collision on broken bridge
+		if fixed_bridge != null:
+			fixed_bridge.visible = false
+			fixed_bridge.collision_enabled = false  # Disable collision on fixed bridge
 	
 	# Spawn plant if not collected yet
 	if not Global.plant_collected and plant_scene:
@@ -52,3 +72,9 @@ func _physics_process(_delta):
 			AreaManager.transition_to_scene("MountainPast", player_position)
 			travel_cooldown = false
 		)
+		
+func _process(delta: float) -> void:
+	if Global.paper2_up:
+		if paper2.visible == true:
+			paper2.visible = false
+	
