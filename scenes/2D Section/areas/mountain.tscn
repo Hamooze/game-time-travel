@@ -1,12 +1,15 @@
-[gd_scene load_steps=40 format=4 uid="uid://ddifrcts5g1yx"]
+[gd_scene load_steps=44 format=4 uid="uid://ddifrcts5g1yx"]
 
 [ext_resource type="Script" path="res://scenes/2D Section/areas/mountain.gd" id="1_3snc4"]
 [ext_resource type="PackedScene" uid="uid://y6g56wbmmlie" path="res://scenes/objects/tree_2d.tscn" id="1_ai5wx"]
+[ext_resource type="AudioStream" uid="uid://ovymkm81sqxq" path="res://assets/Ninja Adventure/Audio/Sounds/Alert/Alert4.wav" id="5_vuxhu"]
+[ext_resource type="AudioStream" uid="uid://c6lhbf3vm1xj" path="res://assets/Ninja Adventure/Audio/Sounds/Elemental/Grass.wav" id="6_lbmq3"]
 [ext_resource type="PackedScene" uid="uid://dbena8yitr3qt" path="res://scenes/objects/plant.tscn" id="10_4imja"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="13_nv75f"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="15_0mf34"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="16_8jo3j"]
 [ext_resource type="Script" path="res://scenes/2D Section/areas/player_2.gd" id="16_f1y5y"]
+[ext_resource type="Script" path="res://scenes/2D Section/areas/walking_to_mountain.gd" id="16_v8u5n"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="17_nq5d4"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="18_l0q4u"]
 [ext_resource type="Texture2D" uid="uid://ba2ehvswy5jao" path="res://assets/Papers/Note1_EMT_Text_White.png" id="19_mckha"]
@@ -204,16 +207,23 @@ height = 40.0
 radius = 12.0
 height = 48.0
 
-[node name="mountain" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flprn"]
+size = Vector2(33, 90)
+
+[node name="mountain" type="Node2D" node_paths=PackedStringArray("fixed_bridge", "broke_bridge")]
 script = ExtResource("1_3snc4")
 tree_scene = ExtResource("1_ai5wx")
 plant_scene = ExtResource("10_4imja")
+fixed_bridge = NodePath("Node2D/FixedBridge")
+broke_bridge = NodePath("Node2D/Bridge")
 
 [node name="Player2" type="CharacterBody2D" parent="."]
 z_index = 3
 position = Vector2(93, 5)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("16_f1y5y")
+travel_sfx = ExtResource("5_vuxhu")
+plant_sfx = ExtResource("6_lbmq3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player2"]
 position = Vector2(0, -37)
@@ -229,7 +239,7 @@ shape = SubResource("CapsuleShape2D_jscvo")
 zoom = Vector2(2, 2)
 limit_left = -200
 limit_top = -160
-limit_right = 450
+limit_right = 440
 limit_bottom = 160
 position_smoothing_enabled = true
 
@@ -290,3 +300,14 @@ tile_set = ExtResource("13_nv75f")
 z_index = 1
 tile_map_data = PackedByteArray("AAAVAAEABAADAA4AAAAWAAEABAADAA4AAAAXAAEABAADAA4AAAAYAAEABAADAA4AAAAZAAEABAADAA4AAAAaAAEABAADAA4AAAAVAP//BAADAAwAAAAVAAAABAADAA0AAAAWAP//BAADAAwAAAAWAAAABAAAABAAAAAXAP//BAADAAwAAAAXAAAABAADAA0AAAAYAP//BAAAABAAAAAYAAAABAADAA0AAAAZAP//BAADAAwAAAAZAAAABAAAABAAAAAaAP//BAADAAwAAAAaAAAABAADAA0AAAAbAP//BAADAAwAAAAbAAAABAAAABAAAAAbAAEABAADAA4AAAA=")
 tile_set = ExtResource("13_nv75f")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 3
+position = Vector2(-60, -8)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("16_v8u5n")
+target_scene = "Pre car"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(998.5, 29)
+shape = SubResource("RectangleShape2D_flprn")
