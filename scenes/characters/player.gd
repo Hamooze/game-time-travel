@@ -12,6 +12,7 @@ var plant_sfx_player: AudioStreamPlayer
 @export var plant_sfx: AudioStream
 
 
+
 @export var plant_scene: PackedScene
 @onready var actionable_finder:Area2D = $ActionableFinder
 
