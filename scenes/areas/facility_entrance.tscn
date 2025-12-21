@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://ctkri8wgr7flm"]
+[gd_scene load_steps=45 format=4 uid="uid://ctkri8wgr7flm"]
 
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_foygf"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="2_wj7nl"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="12_interaction_prompt"]
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="15_1imgi"]
 [ext_resource type="PackedScene" uid="uid://cyv1en0nmigeg" path="res://scenes/objects/BoxCollectable.tscn" id="15_m88i8"]
+[ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="16_rvxgq"]
+[ext_resource type="Script" path="res://scenes/components/conditional_lab_transition.gd" id="17_lab_transition"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("3_kp7g2")
@@ -207,6 +209,12 @@ height = 28.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_11cya"]
 size = Vector2(91.6666, 53.3333)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fta7f"]
+size = Vector2(94, 502)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lab_transition"]
+size = Vector2(50, 80)
+
 [node name="FacilityEntrance" type="Node2D"]
 script = ExtResource("4_facility")
 metadata/_edit_horizontal_guides_ = [-48.0, 384.0]
@@ -341,3 +349,25 @@ y_sort_enabled = true
 
 [node name="CollectableBox" parent="Box" instance=ExtResource("15_m88i8")]
 position = Vector2(584, 112)
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 5
+position = Vector2(440, 152)
+collision_layer = 4
+script = ExtResource("16_rvxgq")
+target_scene = "FacilityEntrance"
+player_spawn_position = Vector2(100, 100)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3415, 22)
+shape = SubResource("RectangleShape2D_fta7f")
+
+[node name="LabTransition" type="Area2D" parent="."]
+z_index = 5
+position = Vector2(95, 50)
+collision_layer = 4
+script = ExtResource("17_lab_transition")
+player_spawn_position = Vector2(38, 49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LabTransition"]
+shape = SubResource("RectangleShape2D_lab_transition")
