@@ -67,6 +67,9 @@ func _deferred_transition_to_scene(next_scene_path: String, spawn_position: Vect
 	get_tree().root.add_child(next_scene)
 	get_tree().current_scene = next_scene
 	
+	# Wait a frame to ensure the scene is fully loaded
+	await get_tree().process_frame
+	
 	# Find the player in the new scene and set its position
 	# Try "Player" first, then "Player2" (mountain scene uses Player2)
 	var player = next_scene.find_child("Player", true, false)
@@ -80,10 +83,16 @@ func _deferred_transition_to_scene(next_scene_path: String, spawn_position: Vect
 		# Clear any movement restrictions when transitioning scenes
 		if player.has_method("clear_movement_restrictions"):
 			player.clear_movement_restrictions()
+			print("Cleared movement restrictions via method")
 		elif "restricted_directions" in player:
 			player.restricted_directions = {}
-			player.movement_restricted = false
-			print("Cleared movement restrictions")
+			if "movement_restricted" in player:
+				player.movement_restricted = false
+			print("Cleared movement restrictions via property")
+		
+		# Ensure player velocity is reset
+		if "velocity" in player:
+			player.velocity = Vector2.ZERO
 	
 	current_scene = scene_name
 	print("Transition complete to: ", scene_name)

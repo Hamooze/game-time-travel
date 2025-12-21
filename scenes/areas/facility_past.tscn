@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/areas/facility_past.gd" id="1_eyh3b"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_b5sdx"]
-[ext_resource type="PackedScene" path="res://scenes/objects/BoxCollectable.tscn" id="3_qqitj"]
+[ext_resource type="PackedScene" uid="uid://cyv1en0nmigeg" path="res://scenes/objects/BoxCollectable.tscn" id="3_qqitj"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="4_hukc1"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="5_4l4jj"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="6_p2r3g"]
