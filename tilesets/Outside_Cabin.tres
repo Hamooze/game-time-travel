@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=26 format=3 uid="uid://cxejwlnbeygf1"]
+[gd_resource type="TileSet" load_steps=30 format=3 uid="uid://cxejwlnbeygf1"]
 
 [ext_resource type="Texture2D" uid="uid://de3gs43t47qsy" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetField.png" id="1_4jrlh"]
 [ext_resource type="Texture2D" uid="uid://5bvljnl1y84d" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloor.png" id="2_ascnr"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://7nd7elstboh2" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_94_MV.png" id="7_1qvjf"]
 [ext_resource type="Texture2D" uid="uid://bw0qqad7da440" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_86_MV.png" id="8_5omxw"]
 [ext_resource type="Texture2D" uid="uid://bh65eyf3w3jb" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_7_MV.png" id="9_l02vi"]
+[ext_resource type="Texture2D" uid="uid://cl0k2eicia7vi" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_126_MV.png" id="13_yfqo8"]
+[ext_resource type="Texture2D" uid="uid://lhunksecqgjv" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Animations/!$Condo_door_2.png" id="14_posd3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xxvb8"]
 texture = ExtResource("1_4jrlh")
@@ -5398,6 +5400,22 @@ texture = ExtResource("4_p251x")
 18:14/0 = 0
 18:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 12, -7, 12, -7, 14, -6, 14, -6, 15, -4, 15, -4, 15.5, -4, 15.5, -4, 16, 4, 16, 4, 15, 6, 15, 6, 14, 7, 14, 7, 12, 8, 12, 8, -2, 7, -2, 7, -3, 6, -3, 6, -4, 5, -4, 5, -5, 3, -5, 3, -6, -3, -6, -3, -5, -5, -5, -5, -4, -6, -4, -6, -3.5, -6, -3, -7, -3, -7, -2, -8, -2)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tbbv3"]
+texture = ExtResource("13_yfqo8")
+24:12/size_in_atlas = Vector2i(24, 33)
+24:12/0 = 0
+24:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(182.5, 247.5, 172, 257, 157, 259.5, 87.5, 262.5, 86, 222.5, -56, 222.5, -55, 264, -147, 256, -153.5, 225, -179, 221.5, -181, 199, -174, 196.5, -174.5, 146, -190, 145, -189.5, 80.5, -186.5, 58.5, -175, 60.5, -174, -30, -153, -50.5, -152, -119.5, -128, -134, 174, -130, 182, -115)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vihos"]
+texture = ExtResource("14_posd3")
+6:12/size_in_atlas = Vector2i(6, 6)
+6:12/0 = 0
+0:0/size_in_atlas = Vector2i(6, 6)
+0:0/0 = 0
+0:18/size_in_atlas = Vector2i(6, 6)
+0:18/0 = 0
+8:5/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
@@ -5418,3 +5436,5 @@ sources/14 = SubResource("TileSetAtlasSource_op7vo")
 sources/16 = SubResource("TileSetAtlasSource_6klwp")
 sources/17 = SubResource("TileSetAtlasSource_fhxr7")
 sources/18 = SubResource("TileSetAtlasSource_s8e1u")
+sources/6 = SubResource("TileSetAtlasSource_tbbv3")
+sources/7 = SubResource("TileSetAtlasSource_vihos")
