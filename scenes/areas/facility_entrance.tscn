@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="11_5uwi6"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="12_interaction_prompt"]
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="15_1imgi"]
-[ext_resource type="PackedScene" uid="uid://cyv1en0nmigeg" path="res://scenes/objects/BoxCollectable.tscn" id="15_m88i8"]
+[ext_resource type="PackedScene" path="res://scenes/objects/BoxCollectable.tscn" id="15_m88i8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("3_kp7g2")

@@ -1,6 +1,5 @@
 ~ start
 set in_dialogue = true
-Saun Combs: Bomboclat
-
+Sean C: Bomboclat
 set in_dialogue = false
 => END

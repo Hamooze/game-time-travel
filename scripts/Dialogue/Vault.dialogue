@@ -3,7 +3,6 @@ set in_dialogue = true
 Vault: Please Enter Blueprint Access Code
 Vault: Enter First Number:
 - 3
-	=> start
 - 7
 - 2
 - 4
@@ -16,7 +15,12 @@ Vault: Enter First Number:
 			Vault: Enter Fourth Number:
 			- 6
 				Vault: Enter Fifth Number:
-				
+				- 9
+				- 7
+					Vault: Opening Blueprint Vault!
+					set has_bp = true
+				- 3
+				- 4
 			- 1
 			- 0
 			- 7
