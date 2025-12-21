@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbrd3ovjvnr7u"
-path="res://.godot/imported/south-east.png-42571aa5a7d66fb9de0c5b181e654b5b.ctex"
+uid="uid://bdujsu5m1vv18"
+path="res://.godot/imported/pixil-frame-1.png-5a85a75d0266cfa2fd2c64b8afc304d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/rotations/south-east.png"
-dest_files=["res://.godot/imported/south-east.png-42571aa5a7d66fb9de0c5b181e654b5b.ctex"]
+source_file="res://assets/walking-4-frames/east/pixil-frame-1.png"
+dest_files=["res://.godot/imported/pixil-frame-1.png-5a85a75d0266cfa2fd2c64b8afc304d4.ctex"]
 
 [params]
 

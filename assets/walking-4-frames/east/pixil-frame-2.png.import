@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl5ed1eicscp"
-path="res://.godot/imported/frame_003.png-f73d44de7cc6c03cf59a1b1799bf6658.ctex"
+uid="uid://cibkbregvb1hu"
+path="res://.godot/imported/pixil-frame-2.png-e2099ac3bef546065a181c5541805beb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wearing_hoodie_over_head_red_hoodie_dark_blue_jean/animations/walking-4-frames/south/frame_003.png"
-dest_files=["res://.godot/imported/frame_003.png-f73d44de7cc6c03cf59a1b1799bf6658.ctex"]
+source_file="res://assets/walking-4-frames/east/pixil-frame-2.png"
+dest_files=["res://.godot/imported/pixil-frame-2.png-e2099ac3bef546065a181c5541805beb.ctex"]
 
 [params]
 
