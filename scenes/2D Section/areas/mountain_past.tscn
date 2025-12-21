@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://cbvaf1fx4cuf3"]
+[gd_scene load_steps=44 format=4 uid="uid://cbvaf1fx4cuf3"]
 
 [ext_resource type="Script" path="res://scenes/2D Section/areas/mountain_past.gd" id="1_ikg6p"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="5_yfvjn"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="14_qonjx"]
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="15_kbvkb"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="16_h4vrr"]
+[ext_resource type="AudioStream" uid="uid://b50i7h7fnl31k" path="res://assets/Music_final/Music_final/time_freeze.mp3" id="16_rbol5"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6osp5"]
 shader = ExtResource("11_egn4a")
@@ -316,3 +317,6 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(192, -24)
 shape = SubResource("WorldBoundaryShape2D_0b3n6")
 one_way_collision = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_rbol5")

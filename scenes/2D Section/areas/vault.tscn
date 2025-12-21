@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_hkso4"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="2_xatvl"]
-[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="3_ppsko"]
+[ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="3_ppsko"]
 [ext_resource type="Resource" uid="uid://bepe8pdui5o1r" path="res://scripts/Dialogue/Vault.dialogue" id="4_xak1a"]
 [ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="5_area_transition"]
 

@@ -20,12 +20,19 @@ var rewind_start_position = Vector2.ZERO  # Position when rewind started
 var rewind_target_position = Vector2.ZERO  # Position to rewind to
 var rewind_history = []  # Positions to animate through during rewind
 var crt_effect_node: Node = null  # Reference to CRT effect node (CanvasLayer)
+var music_player: AudioStreamPlayer = null  # Main music player
+var reverse_music_player: AudioStreamPlayer = null  # Reverse music player
+
+const MAIN_MUSIC_PATH = "res://assets/Music_final/Music_final/car_play.mp3"
+const REVERSE_MUSIC_PATH = "res://assets/Music_final/Music_final/car_play_reverse.mp3"
 
 func _ready():
 	# Find the CRT effect node in the scene tree
 	find_crt_effect()
 	# Connect animation finished signal
 	$AnimatedSprite2D.animation_finished.connect(_on_animation_finished)
+	# Setup audio players
+	setup_audio()
 
 func find_crt_effect():
 	# Look for CanvasLayer node in the scene tree
@@ -120,6 +127,8 @@ func on_crash():
 	velocity = Vector2.ZERO
 	# Play crash animation and keep it looping during delay
 	$AnimatedSprite2D.play("crash")
+	# Switch to reverse music when crash happens
+	switch_to_reverse_music()
 
 func handle_rewind_delay(_delta):
 	# Wait 1 second before starting rewind
@@ -277,6 +286,9 @@ func finish_rewind():
 	
 	# Disable CRT effect
 	disable_crt_effect()
+	
+	# Switch back to normal music when rewind ends
+	switch_to_main_music()
 
 func _on_animation_finished():
 	# Handle animation finished signal
@@ -302,3 +314,43 @@ func disable_crt_effect():
 	if crt_effect_node != null:
 		crt_effect_node.visible = false
 		print("CRT effect disabled")
+
+func setup_audio():
+	# Create main music player
+	music_player = AudioStreamPlayer.new()
+	add_child(music_player)
+	var main_music = load(MAIN_MUSIC_PATH)
+	if main_music:
+		music_player.stream = main_music
+		music_player.volume_db = 0.0
+		music_player.play()
+		print("Main music started")
+	else:
+		print("ERROR: Could not load main music: ", MAIN_MUSIC_PATH)
+	
+	# Create reverse music player
+	reverse_music_player = AudioStreamPlayer.new()
+	add_child(reverse_music_player)
+	var reverse_music = load(REVERSE_MUSIC_PATH)
+	if reverse_music:
+		reverse_music_player.stream = reverse_music
+		reverse_music_player.volume_db = 0.0
+		print("Reverse music loaded")
+	else:
+		print("ERROR: Could not load reverse music: ", REVERSE_MUSIC_PATH)
+
+func switch_to_reverse_music():
+	# Stop main music and play reverse music
+	if music_player and music_player.playing:
+		music_player.stop()
+	if reverse_music_player:
+		reverse_music_player.play()
+		print("Switched to reverse music")
+
+func switch_to_main_music():
+	# Stop reverse music and play main music
+	if reverse_music_player and reverse_music_player.playing:
+		reverse_music_player.stop()
+	if music_player:
+		music_player.play()
+		print("Switched back to main music")

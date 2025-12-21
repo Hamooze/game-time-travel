@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://bxocro7om86il"]
+[gd_scene load_steps=46 format=4 uid="uid://bxocro7om86il"]
 
 [ext_resource type="Script" path="res://scenes/areas/facility_past.gd" id="1_eyh3b"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_b5sdx"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="14_kca6d"]
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="15_sogr2"]
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="16_77heq"]
+[ext_resource type="AudioStream" uid="uid://b50i7h7fnl31k" path="res://assets/Music_final/Music_final/time_freeze.mp3" id="17_shhhb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("4_hukc1")
@@ -360,3 +361,8 @@ z_index = 2
 y_sort_enabled = true
 position = Vector2(790, 25)
 shape = SubResource("RectangleShape2D_vda1c")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="TimeFreeze" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("17_shhhb")

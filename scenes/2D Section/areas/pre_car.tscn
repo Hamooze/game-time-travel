@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://knd3133nsnfw"]
+[gd_scene load_steps=42 format=4 uid="uid://knd3133nsnfw"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_5due8"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_63vqi"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dh3nyeekbxyw3" path="res://assets/Papers/Empty/Note5_EMT.png" id="12_m05wo"]
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="12_qv686"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="13_interaction_prompt"]
+[ext_resource type="AudioStream" uid="uid://cvdsv10damif6" path="res://assets/Music_final/Music_final/tran_to_car.mp3" id="15_735ax"]
 [ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="15_mgvsk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
@@ -474,6 +475,12 @@ anchor_right = 0.5
 offset_top = -50.0
 offset_bottom = 0.0
 grow_horizontal = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
+
+[node name="TranToCar" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("15_735ax")
 
 [connection signal="body_entered" from="Car/StaticBody2D/Area2D" to="Player" method="_on_body_entered"]
 [connection signal="body_exited" from="Car/StaticBody2D/Area2D" to="Player" method="_on_body_exited"]

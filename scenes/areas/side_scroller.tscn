@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=4 uid="uid://c6aydqjioely1"]
+[gd_scene load_steps=11 format=4 uid="uid://c6aydqjioely1"]
 
 [ext_resource type="PackedScene" uid="uid://den8ous0esgey" path="res://scenes/characters/car.tscn" id="1_h6qur"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_qyit3"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="2_50qsv"]
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="3_6xnon"]
 [ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="5_area_transition"]
+[ext_resource type="AudioStream" uid="uid://berw75y4pa1ra" path="res://assets/Music_final/Music_final/car_play.mp3" id="6_i1wa5"]
+[ext_resource type="AudioStream" uid="uid://8jmpaxfsbck3" path="res://assets/Music_final/Music_final/car_play_reverse.mp3" id="7_kby7l"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_io760"]
 shader = ExtResource("3_6xnon")
@@ -82,3 +84,12 @@ player_spawn_position = Vector2(100, 100)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(3415, 22)
 shape = SubResource("RectangleShape2D_5ls2o")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
+
+[node name="CarPlay" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("6_i1wa5")
+
+[node name="CarPlayReverse" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("7_kby7l")

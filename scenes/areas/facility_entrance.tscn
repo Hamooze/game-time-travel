@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://ctkri8wgr7flm"]
+[gd_scene load_steps=44 format=4 uid="uid://ctkri8wgr7flm"]
 
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_foygf"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="2_wj7nl"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="12_interaction_prompt"]
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="15_1imgi"]
 [ext_resource type="PackedScene" uid="uid://cyv1en0nmigeg" path="res://scenes/objects/BoxCollectable.tscn" id="15_m88i8"]
+[ext_resource type="AudioStream" uid="uid://c8ngju86ekv7" path="res://assets/Music_final/Music_final/2_theme.mp3" id="17_jy5c6"]
 [ext_resource type="Script" path="res://scenes/components/conditional_lab_transition.gd" id="17_lab_transition"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
@@ -357,3 +358,10 @@ player_spawn_position = Vector2(38, 49)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(567, 29)
 shape = SubResource("RectangleShape2D_8dcwi")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_jy5c6")
+autoplay = true
+
+[node name="2Theme" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("17_jy5c6")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://dkrhg1ohp5ffm"]
+[gd_scene load_steps=40 format=4 uid="uid://dkrhg1ohp5ffm"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_xbr3c"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_56vh1"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="10_yiun8"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="11_52ofc"]
 [ext_resource type="Script" path="res://scenes/2D Section/areas/walking_to_mountain.gd" id="12_m502m"]
+[ext_resource type="AudioStream" uid="uid://dc8poko4vtfkx" path="res://assets/Music_final/Music_final/Beg_theme.mp3" id="13_mahwf"]
+[ext_resource type="Script" path="res://scenes/components/beg_theme_player.gd" id="14_beg_theme"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("3_54bm6")
@@ -293,5 +295,11 @@ spawn_position = Vector2(93, 5)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1005, 25.5)
 shape = SubResource("RectangleShape2D_vukcu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_mahwf")
+autoplay = true
+script = ExtResource("14_beg_theme")
+offset_time = 6.0
 
 [connection signal="body_entered" from="Player/ActionableFinder" to="Player" method="_on_actionable_finder_body_entered"]

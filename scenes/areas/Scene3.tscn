@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://bcgten0x0wvpr"]
+[gd_scene load_steps=48 format=4 uid="uid://bcgten0x0wvpr"]
 
 [ext_resource type="Script" path="res://scenes/areas/scene_3.gd" id="1_ps4ee"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="4_0rc83"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="5_ff1w4"]
 [ext_resource type="Script" path="res://scripts/Papers/paper1.gd" id="5_jpams"]
-[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="6_06k03"]
+[ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="6_06k03"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="6_ckwa7"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="8_ciric"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="9_hso7u"]
@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="15_kij7s"]
 [ext_resource type="Texture2D" uid="uid://djpkg7g3u3ouv" path="res://assets/Papers/Empty/Note4_Taped_EMT.png" id="16_lpui2"]
 [ext_resource type="Texture2D" uid="uid://dh3nyeekbxyw3" path="res://assets/Papers/Empty/Note5_EMT.png" id="17_5o7om"]
+[ext_resource type="AudioStream" uid="uid://dc8poko4vtfkx" path="res://assets/Music_final/Music_final/Beg_theme.mp3" id="19_lkp8o"]
+[ext_resource type="Script" path="res://scenes/components/beg_theme_player.gd" id="20_beg_theme"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
 radius = 6.58966
@@ -373,5 +375,12 @@ player_spawn_position = Vector2(543, 26)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(6.25, 1)
 shape = SubResource("RectangleShape2D_1pu1a")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="BegTheme" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("19_lkp8o")
+autoplay = true
+script = ExtResource("20_beg_theme")
 
 [connection signal="area_entered" from="Actionable" to="Actionable" method="_on_area_entered"]
