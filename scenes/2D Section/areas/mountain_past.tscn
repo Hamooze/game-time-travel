@@ -226,7 +226,7 @@ position = Vector2(-3, 0)
 mesh = SubResource("QuadMesh_2etfo")
 
 [node name="Player" type="CharacterBody2D" parent="."]
-z_index = 2
+z_index = 4
 position = Vector2(-175, 21)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("7_u2dus")
@@ -293,7 +293,6 @@ tile_map_data = PackedByteArray("AAAWAPb/AAAAAAAAAAAWAPf/AAAAAAAAAAAWAPj/AAAAAAA
 tile_set = ExtResource("6_r70wd")
 
 [node name="Bridge" type="TileMapLayer" parent="Node2D"]
-visible = false
 z_index = 1
 tile_map_data = PackedByteArray("AAAVAAEABAADAA4AAAAWAAEABAADAA4AAAAXAAEABAADAA4AAAAYAAEABAADAA4AAAAZAAEABAADAA4AAAAaAAEABAADAA4AAAAVAP//BAADAAwAAAAVAAAABAADAA0AAAAWAP//BAADAAwAAAAWAAAABAAAABAAAAAXAP//BAADAAwAAAAXAAAABAADAA0AAAAYAP//BAAAABAAAAAYAAAABAADAA0AAAAZAP//BAADAAwAAAAZAAAABAAAABAAAAAaAP//BAADAAwAAAAaAAAABAADAA0AAAAbAP//BAADAAwAAAAbAAAABAAAABAAAAAbAAEABAADAA4AAAA=")
 tile_set = ExtResource("5_yfvjn")

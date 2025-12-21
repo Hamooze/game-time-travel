@@ -24,6 +24,12 @@ func transition_to_scene(scene_name: String, spawn_position: Vector2 = Vector2.Z
 			next_scene_path = "res://scenes/areas/facility_past.tscn"
 		"FacilityEntrance":
 			next_scene_path = "res://scenes/areas/facility_entrance.tscn"
+		"Mountain":
+			next_scene_path = "res://scenes/2D Section/areas/mountain.tscn"
+		"walking":
+			next_scene_path = "res://scenes/2D Section/areas/walking.tscn"
+		"Pre car":
+			next_scene_path = "res://scenes/2D Section/areas/pre_car.tscn"
 		_:
 			print("Unknown scene name: ", scene_name)
 			return

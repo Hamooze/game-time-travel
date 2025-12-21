@@ -36,13 +36,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Menu" type="VBoxContainer" parent="UI/Root/Center"]
+[node name="Menu" type="VBoxContainer" parent="UI"]
 custom_minimum_size = Vector2(420, 0)
-layout_mode = 2
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -420.0
+offset_top = -324.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
 theme_override_constants/separation = 12
 alignment = 1
 
-[node name="TitleTexture" type="TextureRect" parent="UI/Root/Center/Menu"]
+[node name="TitleTexture" type="TextureRect" parent="UI/Menu"]
 custom_minimum_size = Vector2(420, 160)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -52,14 +61,14 @@ texture = ExtResource("2")
 expand_mode = 2
 stretch_mode = 6
 
-[node name="PlayButton" type="Button" parent="UI/Root/Center/Menu"]
+[node name="PlayButton" type="Button" parent="UI/Menu"]
 custom_minimum_size = Vector2(420, 70)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 36
 text = "Play"
 
-[node name="QuitButton" type="Button" parent="UI/Root/Center/Menu"]
+[node name="QuitButton" type="Button" parent="UI/Menu"]
 custom_minimum_size = Vector2(420, 70)
 layout_mode = 2
 size_flags_horizontal = 3

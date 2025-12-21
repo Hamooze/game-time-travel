@@ -6,8 +6,8 @@ extends Node2D
 
 @onready var anim: AnimatedSprite2D = $Background/SpriteA
 @onready var _viewport := get_viewport()
-@onready var play_button: BaseButton = $UI/Root/Center/Menu/PlayButton
-@onready var quit_button: BaseButton = $UI/Root/Center/Menu/QuitButton
+@onready var play_button: BaseButton = $UI/Menu/PlayButton
+@onready var quit_button: BaseButton = $UI/Menu/QuitButton
 
 var _frame_count := 0
 
