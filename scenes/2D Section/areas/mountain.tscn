@@ -204,12 +204,10 @@ height = 40.0
 radius = 12.0
 height = 48.0
 
-[node name="mountain" type="Node2D" node_paths=PackedStringArray("fixed_bridge", "broke_bridge")]
+[node name="mountain" type="Node2D"]
 script = ExtResource("1_3snc4")
 tree_scene = ExtResource("1_ai5wx")
 plant_scene = ExtResource("10_4imja")
-fixed_bridge = NodePath("Node2D/FixedBridge")
-broke_bridge = NodePath("Node2D/Bridge")
 
 [node name="Player2" type="CharacterBody2D" parent="."]
 z_index = 3
