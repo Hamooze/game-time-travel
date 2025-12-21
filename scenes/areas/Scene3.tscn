@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=44 format=4 uid="uid://bcgten0x0wvpr"]
+=======
+[gd_scene load_steps=43 format=4 uid="uid://bcgten0x0wvpr"]
+>>>>>>> Stashed changes
 
+[ext_resource type="Script" path="res://scenes/areas/scene_3.gd" id="1_ps4ee"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_rqomm"]
 [ext_resource type="PackedScene" uid="uid://b0go2qe2nudg3" path="res://scenes/characters/npc.tscn" id="3_4gpwp"]
@@ -7,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="4_0rc83"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="5_ff1w4"]
 [ext_resource type="Script" path="res://scripts/Papers/paper1.gd" id="5_jpams"]
-[ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="6_06k03"]
+[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="6_06k03"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="6_ckwa7"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="8_ciric"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="9_hso7u"]
@@ -215,6 +220,7 @@ radius = 12.0
 size = Vector2(20, 55)
 
 [node name="Scene3" type="Node2D"]
+script = ExtResource("1_ps4ee")
 
 [node name="Tiles" type="Node2D" parent="."]
 
