@@ -1,10 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbena8yitr3qt"]
+[gd_scene load_steps=7 format=3 uid="uid://bobwccdgk5ke2"]
 
 [ext_resource type="Texture2D" uid="uid://cjj7uumk1mcdh" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloorDetail.png" id="1_cs3rh"]
 [ext_resource type="Script" path="res://scenes/objects/plant_pickup.gd" id="2_plant_pickup"]
 [ext_resource type="PackedScene" uid="uid://hgkikyq4o5i4" path="res://scenes/components/interactable_component.tscn" id="3_interactable"]
+[ext_resource type="Script" path="res://scenes/components/dialogue_show.gd" id="4_dialogue_show"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_plant_interact"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iyqj6"]
+radius = 25.02
 
 [node name="Plant" type="Sprite2D"]
 texture = ExtResource("1_cs3rh")
@@ -16,3 +20,11 @@ script = ExtResource("2_plant_pickup")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
 shape = SubResource("CircleShape2D_plant_interact")
+
+[node name="DialogueShow" type="Area2D" parent="."]
+collision_layer = 0
+script = ExtResource("4_dialogue_show")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueShow"]
+shape = SubResource("CircleShape2D_iyqj6")
+debug_color = Color(0.838373, 0.321663, 0.551999, 0.42)

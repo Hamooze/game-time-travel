@@ -28,10 +28,11 @@ func _on_body_entered(body: Node2D) -> void:
 		print("AreaTransition: Transition cooldown active, ignoring")
 		return
 	
-	# Check if body is specifically the Player (by name and type)
+	# Check if body is specifically the Player or Car (by name and type)
 	# Player nodes are always named "Player" or "Player2" (in mountain scenes)
-	if body is CharacterBody2D and (body.name == "Player" or body.name == "Player2"):
-		print("AreaTransition: Player detected! (", body.name, ")")
+	# Car is used in the side scroller scene
+	if body is CharacterBody2D and (body.name == "Player" or body.name == "Player2" or body.name == "Car"):
+		print("AreaTransition: Valid character detected! (", body.name, ")")
 		transition_cooldown = true
 		
 		# If no specific spawn position is set, use the transition area's position plus an offset
@@ -43,7 +44,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print("Transition to: " + target_scene + " at position: " + str(actual_spawn_position))
 		call_deferred("_deferred_transition", target_scene, actual_spawn_position)
 	else:
-		print("AreaTransition: Body is not Player (name: ", body.name, ", type: ", body.get_class(), "), ignoring")
+		print("AreaTransition: Body is not Player/Car (name: ", body.name, ", type: ", body.get_class(), "), ignoring")
 
 
 # New method for deferred transition

@@ -1,10 +1,10 @@
-[gd_scene load_steps=44 format=4 uid="uid://ddifrcts5g1yx"]
+[gd_scene load_steps=45 format=4 uid="uid://ddifrcts5g1yx"]
 
 [ext_resource type="Script" path="res://scenes/2D Section/areas/mountain.gd" id="1_3snc4"]
 [ext_resource type="PackedScene" uid="uid://y6g56wbmmlie" path="res://scenes/objects/tree_2d.tscn" id="1_ai5wx"]
 [ext_resource type="AudioStream" uid="uid://ovymkm81sqxq" path="res://assets/Ninja Adventure/Audio/Sounds/Alert/Alert4.wav" id="5_vuxhu"]
 [ext_resource type="AudioStream" uid="uid://c6lhbf3vm1xj" path="res://assets/Ninja Adventure/Audio/Sounds/Elemental/Grass.wav" id="6_lbmq3"]
-[ext_resource type="PackedScene" path="res://scenes/objects/plant.tscn" id="10_4imja"]
+[ext_resource type="PackedScene" uid="uid://bobwccdgk5ke2" path="res://scenes/objects/plant.tscn" id="10_4imja"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="13_nv75f"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="15_0mf34"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="16_8jo3j"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="22_3uy5h"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="23_unapj"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="24_tn364"]
+[ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="25_interaction_prompt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("15_0mf34")
@@ -311,3 +312,13 @@ target_scene = "Pre car"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(998.5, 29)
 shape = SubResource("RectangleShape2D_flprn")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="InteractionPrompt" parent="UI" instance=ExtResource("25_interaction_prompt")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = -50.0
+offset_bottom = 0.0
+grow_horizontal = 2
