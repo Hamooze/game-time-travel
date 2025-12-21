@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=24 format=3 uid="uid://cxejwlnbeygf1"]
+[gd_resource type="TileSet" load_steps=26 format=3 uid="uid://cxejwlnbeygf1"]
 
 [ext_resource type="Texture2D" uid="uid://de3gs43t47qsy" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetField.png" id="1_4jrlh"]
 [ext_resource type="Texture2D" uid="uid://5bvljnl1y84d" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloor.png" id="2_ascnr"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://ch7j1kkca1lop" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_105_MV.png" id="6_aru5w"]
 [ext_resource type="Texture2D" uid="uid://7nd7elstboh2" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_94_MV.png" id="7_1qvjf"]
 [ext_resource type="Texture2D" uid="uid://bw0qqad7da440" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_86_MV.png" id="8_5omxw"]
+[ext_resource type="Texture2D" uid="uid://bh65eyf3w3jb" path="res://assets/Modern_Exteriors_RPG_Maker_MV_v42.3/Modern_Exteriors_RPG_Maker_MV/Tileset_7_MV.png" id="9_l02vi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xxvb8"]
 texture = ExtResource("1_4jrlh")
@@ -4047,6 +4048,19 @@ texture = ExtResource("8_5omxw")
 45:47/0 = 0
 46:47/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s8e1u"]
+texture = ExtResource("9_l02vi")
+14:43/size_in_atlas = Vector2i(7, 5)
+14:43/0 = 0
+14:43/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49.8903, 12.4726, -53.4539, -44.5449, 67.7083, -44.5449, 60.5811, 8.909, 48.1085, 35.636, -28.5088, 32.0724)
+12:36/size_in_atlas = Vector2i(9, 7)
+12:36/0 = 0
+21:43/size_in_atlas = Vector2i(2, 5)
+21:43/0 = 0
+21:43/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49.8903, 12.4726, -53.4539, -44.5449, 67.7083, -44.5449, 60.5811, 8.909, 48.1085, 35.636, -28.5088, 32.0724)
+21:40/size_in_atlas = Vector2i(2, 3)
+21:40/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lot25"]
 texture = ExtResource("3_foiiy")
 0:0/0 = 0
@@ -5403,3 +5417,4 @@ sources/13 = SubResource("TileSetAtlasSource_nbry7")
 sources/14 = SubResource("TileSetAtlasSource_op7vo")
 sources/16 = SubResource("TileSetAtlasSource_6klwp")
 sources/17 = SubResource("TileSetAtlasSource_fhxr7")
+sources/18 = SubResource("TileSetAtlasSource_s8e1u")

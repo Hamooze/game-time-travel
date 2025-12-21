@@ -4,7 +4,6 @@ extends CharacterBody2D
 const speed = 75
 var current_dir = "none"
 var has_plant: bool = false
-var movement_locked = 0  # Use counter to avoid race conditions
 var viewing_papers = false
 var current_paper_index = 0
 var available_papers = []
@@ -132,8 +131,8 @@ func _physics_process(_delta):
 			print("Left arrow pressed - previous paper")
 			previous_paper()
 	else:
-		# Only allow movement when not viewing papers
-		if movement_locked == 0:
+		# Only allow movement when not viewing papers, not in dialogue, and movement not locked
+		if not Global.tab_papers and not Global.in_dialogue:
 			player_movement(_delta)
 
 func toggle_paper_view():
@@ -141,9 +140,8 @@ func toggle_paper_view():
 		# Exit paper view
 		print("Exiting paper view")
 		viewing_papers = false
-		movement_locked -= 1
+		Global.tab_papers = false
 		hide_all_papers()
-		print("Movement locked counter: ", movement_locked)
 	else:
 		# Enter paper view - check which papers are available
 		print("Entering paper view - checking available papers")
@@ -152,10 +150,9 @@ func toggle_paper_view():
 		if available_papers.size() > 0:
 			print("Available papers: ", available_papers.size())
 			viewing_papers = true
-			movement_locked += 1
+			Global.tab_papers = true
 			current_paper_index = 0
 			show_current_paper()
-			print("Movement locked counter: ", movement_locked)
 		else:
 			print("No papers available to view!")
 

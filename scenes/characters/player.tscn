@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="3_4gv10"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="5_n1kfi"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="5_ywm7l"]
-[ext_resource type="Texture2D" uid="uid://ba2ehvswy5jao" path="res://assets/Papers/Note1_EMT_Text_White.png" id="6_jagbw"]
-[ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="7_fe88y"]
-[ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="8_7ylf1"]
-[ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="9_nxs2a"]
-[ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="10_0ud48"]
+[ext_resource type="Texture2D" uid="uid://l14cltfsxkba" path="res://assets/Papers/Empty/Note1_EMT.png" id="6_ru2om"]
+[ext_resource type="Texture2D" uid="uid://cq3y2ixonadi5" path="res://assets/Papers/Empty/Note2_EMT.png" id="7_oh1xr"]
+[ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="8_7pa8e"]
+[ext_resource type="Texture2D" uid="uid://djpkg7g3u3ouv" path="res://assets/Papers/Empty/Note4_Taped_EMT.png" id="9_8yga8"]
+[ext_resource type="Texture2D" uid="uid://dh3nyeekbxyw3" path="res://assets/Papers/Empty/Note5_EMT.png" id="10_nhhkk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("2_iwnse")
@@ -200,7 +200,7 @@ radius = 12.0
 height = 28.0
 
 [node name="Player" type="CharacterBody2D"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_ipa5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -218,27 +218,60 @@ zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [node name="Papers" type="Node2D" parent="Camera2D"]
-visible = false
+z_index = 20
+scale = Vector2(2, 2)
 
 [node name="Paper1" type="Sprite2D" parent="Camera2D/Papers"]
 scale = Vector2(4, 4)
-texture = ExtResource("6_jagbw")
+texture = ExtResource("6_ru2om")
+
+[node name="Label" type="Label" parent="Camera2D/Papers/Paper1"]
+offset_left = -18.5
+offset_top = -29.0
+offset_right = 797.5
+offset_bottom = 202.0
+scale = Vector2(0.18, 0.18)
+text = "Day 47. 
+The temporal displacem
+went wrong. Everyone's 
+gone. Erased from this 
+timeline like we never existed.
+I'm heading to the laboratory. 
+If the equations are right, I 
+can still fix this.
+The facility in Sector 4 has 
+everything I need. 
+"
+
+[node name="Label2" type="Label" parent="Camera2D/Papers/Paper1"]
+z_index = 100
+offset_left = 10.5
+offset_top = 8.0
+offset_right = 20.5
+offset_bottom = 31.0
+scale = Vector2(0.19, 0.19)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "4"
 
 [node name="Paper2" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("7_fe88y")
+texture = ExtResource("7_oh1xr")
 
 [node name="Paper3" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("8_7ylf1")
+texture = ExtResource("8_7pa8e")
 
 [node name="Paper4" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("9_nxs2a")
+texture = ExtResource("9_8yga8")
 
 [node name="Paper5" type="Sprite2D" parent="Camera2D/Papers"]
+visible = false
 scale = Vector2(4, 4)
-texture = ExtResource("10_0ud48")
+texture = ExtResource("10_nhhkk")
 
 [node name="ActionableFinder" type="Area2D" parent="."]
 collision_layer = 0

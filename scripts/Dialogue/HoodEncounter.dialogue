@@ -1,4 +1,6 @@
 ~ start
+set in_dialogue = true
 Saun Combs: Bomboclat
 
+set in_dialogue = false
 => END

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://bjwp5ba00i2di"]
+[gd_scene load_steps=7 format=4 uid="uid://bjwp5ba00i2di"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_mdb2s"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="2_4h470"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="3_i7763"]
+[ext_resource type="Script" path="res://scripts/Papers/paper5.gd" id="3_tqmar"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="4_o1cfd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
@@ -32,12 +33,11 @@ texture = ExtResource("2_4h470")
 
 [node name="CollectableComponent" parent="paper5" instance=ExtResource("3_i7763")]
 y_sort_enabled = true
-collectable_name = "egg"
+script = ExtResource("3_tqmar")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="paper5/CollectableComponent"]
 position = Vector2(-1.13043, 3.71933e-05)
 shape = SubResource("CircleShape2D_m3cg5")
 
 [node name="Player" parent="." instance=ExtResource("4_o1cfd")]
-position = Vector2(41, 77)
-scale = Vector2(0.3, 0.3)
+position = Vector2(38, 49)
