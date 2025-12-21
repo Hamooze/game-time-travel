@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://y6g56wbmmlie" path="res://scenes/objects/tree_2d.tscn" id="1_ai5wx"]
 [ext_resource type="AudioStream" uid="uid://ovymkm81sqxq" path="res://assets/Ninja Adventure/Audio/Sounds/Alert/Alert4.wav" id="5_vuxhu"]
 [ext_resource type="AudioStream" uid="uid://c6lhbf3vm1xj" path="res://assets/Ninja Adventure/Audio/Sounds/Elemental/Grass.wav" id="6_lbmq3"]
-[ext_resource type="PackedScene" uid="uid://dbena8yitr3qt" path="res://scenes/objects/plant.tscn" id="10_4imja"]
+[ext_resource type="PackedScene" uid="uid://bobwccdgk5ke2" path="res://scenes/objects/plant.tscn" id="10_4imja"]
 [ext_resource type="Texture2D" uid="uid://l14cltfsxkba" path="res://assets/Papers/Empty/Note1_EMT.png" id="11_g7umi"]
 [ext_resource type="Texture2D" uid="uid://cq3y2ixonadi5" path="res://assets/Papers/Empty/Note2_EMT.png" id="12_sajkn"]
 [ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="13_8ujjv"]

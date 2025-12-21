@@ -34,6 +34,8 @@ func transition_to_scene(scene_name: String, spawn_position: Vector2 = Vector2.Z
 			next_scene_path = "res://scenes/2D Section/areas/pre_car.tscn"
 		"Lab":
 			next_scene_path = "res://scenes/2D Section/areas/lab.tscn"
+		"Vault":
+			next_scene_path = "res://scenes/2D Section/areas/vault.tscn"
 		_:
 			print("Unknown scene name: ", scene_name)
 			return
@@ -67,7 +69,8 @@ func _deferred_transition_to_scene(next_scene_path: String, spawn_position: Vect
 	get_tree().root.add_child(next_scene)
 	get_tree().current_scene = next_scene
 	
-	# Wait a frame to ensure the scene is fully loaded
+	# Wait for scene to fully load
+	await get_tree().process_frame
 	await get_tree().process_frame
 	
 	# Find the player in the new scene and set its position
