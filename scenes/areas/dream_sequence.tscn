@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=4 uid="uid://d1jrvdtboj38j"]
+[gd_scene load_steps=12 format=4 uid="uid://d1jrvdtboj38j"]
 
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="1_sq25h"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_t8yj0"]
+[ext_resource type="Script" path="res://scenes/areas/scene_3.gd" id="1_tyabk"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="1_y5q8d"]
 [ext_resource type="PackedScene" uid="uid://dwi8miivcudpi" path="res://scenes/objects/SpecialItem.tscn" id="3_i6wja"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="4_interaction_prompt"]
+[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="7_5y3ex"]
+[ext_resource type="Resource" uid="uid://b40chqvseh5l3" path="res://scripts/Dialogue/Dream.dialogue" id="8_opyk6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gvxlq"]
 shader = ExtResource("1_sq25h")
@@ -13,7 +16,11 @@ shader = ExtResource("1_sq25h")
 size = Vector2(640, 360)
 center_offset = Vector3(320, 180, 0)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_yl1x1"]
+radius = 14.0357
+
 [node name="DreamSequence" type="Node2D"]
+script = ExtResource("1_tyabk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -71,3 +78,9 @@ y_sort_enabled = true
 z_index = 1
 position = Vector2(523, -7)
 scale = Vector2(0.4, 0.4)
+
+[node name="Actionable" parent="." instance=ExtResource("7_5y3ex")]
+dialogue_resource = ExtResource("8_opyk6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
+shape = SubResource("CircleShape2D_yl1x1")

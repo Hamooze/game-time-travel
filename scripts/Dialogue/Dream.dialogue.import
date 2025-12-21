@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b40chqvseh5l3"
+path="res://.godot/imported/Dream.dialogue-e806bee23cc71a0463994ad5589f6d2c.tres"
+
+[deps]
+
+source_file="res://scripts/Dialogue/Dream.dialogue"
+dest_files=["res://.godot/imported/Dream.dialogue-e806bee23cc71a0463994ad5589f6d2c.tres"]
+
+[params]
+
+defaults=true

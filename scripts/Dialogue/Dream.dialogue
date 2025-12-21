@@ -1,0 +1,11 @@
+~ start
+set in_dialogue = true
+
+Sean C: Huh? Where am I?
+Sean C: Huh, where am I?
+Sean C: Oh I must be in another of those weird dreams I’ve been getting lately... but this is new 
+Sean C: hmm what’s that over there..?
+Sean C: isn’t that the weird watch on tv?
+
+set in_dialogue = false
+=> END

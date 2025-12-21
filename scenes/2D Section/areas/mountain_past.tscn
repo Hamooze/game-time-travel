@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="9_omr7i"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="10_wagtk"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="11_c4lkd"]
-[ext_resource type="PackedScene" path="res://scenes/objects/plant.tscn" id="11_c66bs"]
+[ext_resource type="PackedScene" uid="uid://dbena8yitr3qt" path="res://scenes/objects/plant.tscn" id="11_c66bs"]
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="11_egn4a"]
 [ext_resource type="Texture2D" uid="uid://ba2ehvswy5jao" path="res://assets/Papers/Note1_EMT_Text_White.png" id="12_3t5yr"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="13_nvwmd"]

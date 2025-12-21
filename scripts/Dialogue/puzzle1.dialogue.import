@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://c1wcjlb0sxq17"
+path="res://.godot/imported/puzzle1.dialogue-d468740790865fde48ad3181ddc2fdbb.tres"
+
+[deps]
+
+source_file="res://scripts/Dialogue/puzzle1.dialogue"
+dest_files=["res://.godot/imported/puzzle1.dialogue-d468740790865fde48ad3181ddc2fdbb.tres"]
+
+[params]
+
+defaults=true

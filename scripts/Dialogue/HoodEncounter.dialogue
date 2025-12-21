@@ -1,5 +1,7 @@
 ~ start
 set in_dialogue = true
-Sean C: Bomboclat
+Sean C: Hey... who is that?
+Sean C: WAIT! Come back!
+Sean C: He's gone... where am I?
 set in_dialogue = false
 => END
