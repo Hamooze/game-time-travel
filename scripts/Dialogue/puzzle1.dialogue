@@ -1,0 +1,11 @@
+~ start
+set in_dialogue = true
+
+Sean C: Oh look over there, it's a bridge.
+Sean C: Seems like it wasn't build well.
+Sean C: Looks like maybe they didn't have enough material.
+Sean C: Maybe I can use this watch and that sapling.
+Game: Press (Q)
+
+set in_dialogue = false
+=> END
