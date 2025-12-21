@@ -125,6 +125,9 @@ func _load_frames(frames_dir: String) -> SpriteFrames:
 		return null
 
 	var sf := SpriteFrames.new()
+	# Ensure a clean animation set - check if default already exists
+	if sf.has_animation("default"):
+		sf.remove_animation("default")
 	sf.add_animation("default")
 	sf.set_animation_loop("default", false)
 	for f in files:
