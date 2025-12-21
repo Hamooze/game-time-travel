@@ -8,6 +8,8 @@ var paper5_up = false
 
 var tab_papers = false
 
+var has_bp = false
+
 var in_dialogue = false
 var has_plant: bool = false
 var plant_collected: bool = false

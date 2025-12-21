@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://jalls03cj6w"
+path="res://.godot/imported/Robot.dialogue-53b70b95b04d40cd435ea0665cd18203.tres"
+
+[deps]
+
+source_file="res://scripts/Dialogue/Robot.dialogue"
+dest_files=["res://.godot/imported/Robot.dialogue-53b70b95b04d40cd435ea0665cd18203.tres"]
+
+[params]
+
+defaults=true

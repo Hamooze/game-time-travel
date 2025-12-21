@@ -1,12 +1,12 @@
-[gd_scene load_steps=7 format=4 uid="uid://cngqlxoouugkx"]
+[gd_scene load_steps=7 format=4 uid="uid://b1n5sroghu0js"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_hkso4"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="2_xatvl"]
-[ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="3_ppsko"]
+[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="3_ppsko"]
 [ext_resource type="Resource" uid="uid://bepe8pdui5o1r" path="res://scripts/Dialogue/Vault.dialogue" id="4_xak1a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sqmtc"]
-radius = 20.025
+radius = 14.0357
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjjr2"]
 size = Vector2(18, 19)

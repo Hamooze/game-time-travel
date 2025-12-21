@@ -1,0 +1,17 @@
+~ start
+set in_dialogue = true
+Sean C: Whats this ... A robot?
+AEON: Hello, I am AEON, a Builder robot capable of all tasks, as long as a blueprint is provided.
+AEON: Do you have a blueprint?
+- Yes
+	if has_bp == true:
+		AEON: This task will take around 127 years, Ill get to work now.
+		set in_dialogue = false
+	else:
+		AEON: Come back when you have a blueprint
+		set in_dialogue = false
+		=> END
+- No
+
+set in_dialogue = false
+=> END
