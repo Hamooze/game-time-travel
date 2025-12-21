@@ -64,6 +64,14 @@ func _process(_delta):
 					set_custom_text(transition.prompt_text)
 				break
 	
+	# Check for dialogue show areas (like plant in mountain scene)
+	var dialogue_show_in_range = false
+	var dialogue_shows = get_tree().get_nodes_in_group("dialogue_show")
+	for dialogue_show in dialogue_shows:
+		if "player_in_range" in dialogue_show and dialogue_show.player_in_range:
+			dialogue_show_in_range = true
+			break
+	
 	# Clear custom text if no lab transition is active
 	if not lab_transition_in_range:
 		if has_custom_text:
@@ -71,7 +79,7 @@ func _process(_delta):
 	
 	# Update visibility based on all interaction types
 	# BoxCollectable uses InteractableComponent, so it's already included in interactables_in_range
-	var total_in_range = interactables_in_range + special_items_in_range + (1 if car_in_range else 0) + (1 if lab_transition_in_range else 0)
+	var total_in_range = interactables_in_range + special_items_in_range + (1 if car_in_range else 0) + (1 if lab_transition_in_range else 0) + (1 if dialogue_show_in_range else 0)
 	visible = total_in_range > 0 or has_custom_text
 	
 	# Update label text

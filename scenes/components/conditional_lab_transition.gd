@@ -21,12 +21,14 @@ func _ready() -> void:
 	check_door_state()
 
 func _on_body_entered(body: Node2D) -> void:
-	if body is CharacterBody2D and (body.name == "Player" or body.get_script() != null):
+	# Check if it's the player (Player or Player2)
+	if body is CharacterBody2D and (body.name == "Player" or body.name == "Player2"):
 		player_in_range = true
 		update_interaction_prompt()
 
 func _on_body_exited(body: Node2D) -> void:
-	if body is CharacterBody2D and (body.name == "Player" or body.get_script() != null):
+	# Check if it's the player (Player or Player2)
+	if body is CharacterBody2D and (body.name == "Player" or body.name == "Player2"):
 		player_in_range = false
 		update_interaction_prompt()
 
