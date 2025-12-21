@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=4 uid="uid://knd3133nsnfw"]
+[gd_scene load_steps=41 format=4 uid="uid://knd3133nsnfw"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_5due8"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_63vqi"]
@@ -14,8 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="12_qv686"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="13_interaction_prompt"]
 [ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="15_mgvsk"]
-[ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="16_3n8xo"]
-[ext_resource type="Script" path="res://scripts/Papers/paper3.gd" id="17_es7xm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("3_udxu7")
@@ -211,9 +209,6 @@ size = Vector2(91.6666, 53.3333)
 [sub_resource type="CircleShape2D" id="CircleShape2D_jaij1"]
 radius = 75.2957
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
-radius = 26.0268
-
 [node name="PreCar" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-145.0, 133.0]
 metadata/_edit_vertical_guides_ = [680.0, -70.0]
@@ -247,6 +242,7 @@ tile_map_data = PackedByteArray("AAAAAPv/BgAGAAEAAAAIAP7/BgAGAAEAAAAIAPr/BgAGAAE
 tile_set = ExtResource("1_63vqi")
 
 [node name="Player" type="CharacterBody2D" parent="."]
+visible = false
 z_index = 3
 y_sort_enabled = true
 position = Vector2(500, -60)
@@ -478,19 +474,6 @@ anchor_right = 0.5
 offset_top = -50.0
 offset_bottom = 0.0
 grow_horizontal = 2
-
-[node name="Egg" type="Sprite2D" parent="."]
-z_index = 2
-position = Vector2(538.5, -58.75)
-scale = Vector2(0.25, 0.211538)
-texture = ExtResource("15_mgvsk")
-
-[node name="CollectableComponent" parent="Egg" instance=ExtResource("16_3n8xo")]
-y_sort_enabled = true
-script = ExtResource("17_es7xm")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Egg/CollectableComponent"]
-shape = SubResource("CircleShape2D_m3cg5")
 
 [connection signal="body_entered" from="Car/StaticBody2D/Area2D" to="Player" method="_on_body_entered"]
 [connection signal="body_exited" from="Car/StaticBody2D/Area2D" to="Player" method="_on_body_exited"]

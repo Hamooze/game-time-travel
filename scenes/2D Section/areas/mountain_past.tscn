@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/2D Section/areas/mountain_past.gd" id="1_ikg6p"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="5_yfvjn"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="6_r70wd"]
-[ext_resource type="Script" path="res://scenes/2D Section/areas/player.gd" id="7_u2dus"]
+[ext_resource type="Script" path="res://scenes/2D Section/areas/PCP.gd" id="7_u2dus"]
 [ext_resource type="Texture2D" uid="uid://c76xppcjypaio" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/north.png" id="8_6xri6"]
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="9_omr7i"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="10_wagtk"]
