@@ -6,9 +6,10 @@
 [ext_resource type="Script" path="res://scenes/components/dialogue_show.gd" id="4_dialogue_show"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_plant_interact"]
+radius = 15.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iyqj6"]
-radius = 25.02
+radius = 15.0333
 
 [node name="Plant" type="Sprite2D"]
 texture = ExtResource("1_cs3rh")
