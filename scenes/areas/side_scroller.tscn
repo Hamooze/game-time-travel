@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://c6aydqjioely1"]
+[gd_scene load_steps=9 format=4 uid="uid://c6aydqjioely1"]
 
 [ext_resource type="PackedScene" uid="uid://den8ous0esgey" path="res://scenes/characters/car.tscn" id="1_h6qur"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_qyit3"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="2_50qsv"]
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="3_6xnon"]
+[ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="5_area_transition"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_io760"]
 shader = ExtResource("3_6xnon")
@@ -11,6 +12,9 @@ shader = ExtResource("3_6xnon")
 [sub_resource type="QuadMesh" id="QuadMesh_nhguq"]
 size = Vector2(640, 360)
 center_offset = Vector3(320, 180, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ls2o"]
+size = Vector2(94, 502)
 
 [node name="SideScroller" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-207.0, 238.0]
@@ -68,3 +72,13 @@ visible = false
 material = SubResource("ShaderMaterial_io760")
 position = Vector2(-3, -1)
 mesh = SubResource("QuadMesh_nhguq")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+script = ExtResource("5_area_transition")
+target_scene = "FacilityEntrance"
+player_spawn_position = Vector2(100, 100)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3415, 22)
+shape = SubResource("RectangleShape2D_5ls2o")

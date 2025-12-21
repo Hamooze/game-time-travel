@@ -14,8 +14,3 @@ func _play_travel_sfx():
 		
 		travel_sfx_player.play()
 		print("sound travel played")
-func _input(event):
-	if event.is_action_pressed("travel"):
-		_play_travel_sfx()
-		await get_tree().create_timer(0.15).timeout
-		get_tree().change_scene_to_file("res://scenes/2D Section/areas/mountain.tscn")

@@ -236,7 +236,7 @@ position = Vector2(0, -24)
 shape = SubResource("CapsuleShape2D_jscvo")
 
 [node name="Camera2D" type="Camera2D" parent="Player2"]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 limit_left = -200
 limit_top = -160
 limit_right = 440

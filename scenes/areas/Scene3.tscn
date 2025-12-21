@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://bcgten0x0wvpr"]
+[gd_scene load_steps=46 format=4 uid="uid://dovs3poelp82v"]
 
 [ext_resource type="Script" path="res://scenes/areas/scene_3.gd" id="1_ps4ee"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
@@ -8,10 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="4_0rc83"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="5_ff1w4"]
 [ext_resource type="Script" path="res://scripts/Papers/paper1.gd" id="5_jpams"]
-[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="6_06k03"]
+[ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="6_06k03"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="6_ckwa7"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="8_ciric"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="9_hso7u"]
+[ext_resource type="Script" path="res://scenes/components/area_transition.gd" id="10_area_transition"]
 [ext_resource type="Texture2D" uid="uid://l14cltfsxkba" path="res://assets/Papers/Empty/Note1_EMT.png" id="13_vnw4w"]
 [ext_resource type="Texture2D" uid="uid://cq3y2ixonadi5" path="res://assets/Papers/Empty/Note2_EMT.png" id="14_fux5l"]
 [ext_resource type="Texture2D" uid="uid://b6f87u8fkwgaj" path="res://assets/Papers/Empty/Note3_EMT.png" id="15_kij7s"]
@@ -364,6 +365,10 @@ shape = SubResource("CapsuleShape2D_0ad21")
 z_index = 7
 y_sort_enabled = true
 position = Vector2(53, 23)
+collision_layer = 4
+script = ExtResource("10_area_transition")
+target_scene = "walking"
+player_spawn_position = Vector2(543, 26)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(169.25, 5)

@@ -26,6 +26,8 @@ func transition_to_scene(scene_name: String, spawn_position: Vector2 = Vector2.Z
 			next_scene_path = "res://scenes/areas/facility_entrance.tscn"
 		"Mountain":
 			next_scene_path = "res://scenes/2D Section/areas/mountain.tscn"
+		"MountainPast":
+			next_scene_path = "res://scenes/2D Section/areas/mountain_past.tscn"
 		"walking":
 			next_scene_path = "res://scenes/2D Section/areas/walking.tscn"
 		"Pre car":
@@ -64,10 +66,22 @@ func _deferred_transition_to_scene(next_scene_path: String, spawn_position: Vect
 	get_tree().current_scene = next_scene
 	
 	# Find the player in the new scene and set its position
+	# Try "Player" first, then "Player2" (mountain scene uses Player2)
 	var player = next_scene.find_child("Player", true, false)
-	if player and spawn_position != Vector2.ZERO:
-		player.global_position = spawn_position
-		print("Set player position to: ", spawn_position)
+	if not player:
+		player = next_scene.find_child("Player2", true, false)
+	if player:
+		if spawn_position != Vector2.ZERO:
+			player.global_position = spawn_position
+			print("Set player position to: ", spawn_position)
+		
+		# Clear any movement restrictions when transitioning scenes
+		if player.has_method("clear_movement_restrictions"):
+			player.clear_movement_restrictions()
+		elif "restricted_directions" in player:
+			player.restricted_directions = {}
+			player.movement_restricted = false
+			print("Cleared movement restrictions")
 	
 	current_scene = scene_name
 	print("Transition complete to: ", scene_name)

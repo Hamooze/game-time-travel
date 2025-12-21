@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://bjwp5ba00i2di"]
+[gd_scene load_steps=8 format=4 uid="uid://dotlbgdybctn6"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_mdb2s"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="2_4h470"]

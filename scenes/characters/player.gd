@@ -445,6 +445,11 @@ func play_anim(movement):
 			anim.play("back_idle")
 			
 
+func clear_movement_restrictions() -> void:
+	"""Clear all movement restrictions - useful when transitioning scenes"""
+	restricted_directions = {}
+	movement_restricted = false
+
 func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var actionable = actionable_finder.get_overlapping_areas()
