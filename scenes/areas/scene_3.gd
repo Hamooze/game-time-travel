@@ -4,13 +4,15 @@ var dialogue_triggered = false
 
 func _ready() -> void:
 	print("=== LEVEL READY ===")
-	print("Waiting 0.2 seconds before auto-trigger...")
-	# Wait 0.2 seconds then press ui_accept
-	await get_tree().create_timer(0.2).timeout
+	# Wait for scene to fully load and player to be ready
+	await get_tree().process_frame
+	await get_tree().process_frame
+	
+	print("Waiting 0.5 seconds before auto-triggering dialogue...")
+	await get_tree().create_timer(0.5).timeout
 	
 	if not dialogue_triggered:
 		print("=== AUTO-TRIGGER STARTING ===")
-		print("Auto-pressing ui_accept")
 		dialogue_triggered = true
 		
 		# Set global dialogue state
@@ -18,19 +20,38 @@ func _ready() -> void:
 		Global.in_dialogue = true
 		print("Global.in_dialogue is now: ", Global.in_dialogue)
 		
-		# Lock player movement before triggering dialogue
-		var player = get_tree().get_first_node_in_group("player")
-		if player:
-			Global.in_dialogue = true
+		# Find the Actionable node and trigger dialogue directly
+		var actionable = find_child("Actionable", true, false)
+		if actionable:
+			print("Found Actionable node")
+			
+			# Ensure it has a dialogue resource - if not, try to load Dream.dialogue
+			if not actionable.dialogue_resource:
+				var dream_dialogue = load("res://scripts/Dialogue/Dream.dialogue")
+				if dream_dialogue:
+					actionable.dialogue_resource = dream_dialogue
+					print("Set Dream.dialogue resource on Actionable")
+			
+			if actionable.has_method("action"):
+				print("Triggering dialogue...")
+				actionable.action()
+				print("Dialogue triggered successfully!")
+			else:
+				print("ERROR: Actionable node doesn't have action() method")
 		else:
-			print("ERROR: Could not find player in group!")
+			print("ERROR: Could not find Actionable node!")
+			# Fallback: try to find it by checking all Area2D nodes
+			for node in get_children():
+				if node.name == "Actionable" and node.has_method("action"):
+					print("Found Actionable via fallback, triggering dialogue...")
+					# Ensure dialogue resource is set
+					if not node.dialogue_resource:
+						var dream_dialogue = load("res://scripts/Dialogue/Dream.dialogue")
+						if dream_dialogue:
+							node.dialogue_resource = dream_dialogue
+					node.action()
+					break
 		
-		# Create and trigger the input event
-		print("Creating and parsing ui_accept input event")
-		var event = InputEventAction.new()
-		event.action = "ui_accept"
-		event.pressed = true
-		Input.parse_input_event(event)
 		print("=== AUTO-TRIGGER COMPLETE ===")
 	else:
 		print("Dialogue already triggered, skipping auto-trigger")
