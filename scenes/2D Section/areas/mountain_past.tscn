@@ -1,6 +1,8 @@
-[gd_scene load_steps=43 format=4 uid="uid://cbvaf1fx4cuf3"]
+[gd_scene load_steps=45 format=4 uid="uid://cbvaf1fx4cuf3"]
 
 [ext_resource type="Script" path="res://scenes/2D Section/areas/mountain_past.gd" id="1_ikg6p"]
+[ext_resource type="AudioStream" uid="uid://c6lhbf3vm1xj" path="res://assets/Ninja Adventure/Audio/Sounds/Elemental/Grass.wav" id="5_c5a3s"]
+[ext_resource type="AudioStream" uid="uid://ovymkm81sqxq" path="res://assets/Ninja Adventure/Audio/Sounds/Alert/Alert4.wav" id="5_g0kff"]
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="5_yfvjn"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="6_r70wd"]
 [ext_resource type="Script" path="res://scenes/2D Section/areas/player.gd" id="7_u2dus"]
@@ -226,10 +228,12 @@ position = Vector2(-3, 0)
 mesh = SubResource("QuadMesh_2etfo")
 
 [node name="Player" type="CharacterBody2D" parent="."]
-z_index = 2
+z_index = 4
 position = Vector2(-175, 21)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("7_u2dus")
+travel_sfx = ExtResource("5_g0kff")
+plant_sfx = ExtResource("5_c5a3s")
 plant_scene = ExtResource("11_c66bs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
@@ -293,7 +297,6 @@ tile_map_data = PackedByteArray("AAAWAPb/AAAAAAAAAAAWAPf/AAAAAAAAAAAWAPj/AAAAAAA
 tile_set = ExtResource("6_r70wd")
 
 [node name="Bridge" type="TileMapLayer" parent="Node2D"]
-visible = false
 z_index = 1
 tile_map_data = PackedByteArray("AAAVAAEABAADAA4AAAAWAAEABAADAA4AAAAXAAEABAADAA4AAAAYAAEABAADAA4AAAAZAAEABAADAA4AAAAaAAEABAADAA4AAAAVAP//BAADAAwAAAAVAAAABAADAA0AAAAWAP//BAADAAwAAAAWAAAABAAAABAAAAAXAP//BAADAAwAAAAXAAAABAADAA0AAAAYAP//BAAAABAAAAAYAAAABAADAA0AAAAZAP//BAADAAwAAAAZAAAABAAAABAAAAAaAP//BAADAAwAAAAaAAAABAADAA0AAAAbAP//BAADAAwAAAAbAAAABAAAABAAAAAbAAEABAADAA4AAAA=")
 tile_set = ExtResource("5_yfvjn")

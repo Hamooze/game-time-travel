@@ -1,13 +1,16 @@
 class_name Player
 extends CharacterBody2D
 
-const speed = 60
+const speed = 75
 var current_dir = "none"
 var has_plant: bool = false
 var movement_locked = 0  # Use counter to avoid race conditions
 var viewing_papers = false
 var current_paper_index = 0
 var available_papers = []
+var plant_sfx_player: AudioStreamPlayer
+@export var plant_sfx: AudioStream
+
 
 @export var plant_scene: PackedScene
 @onready var actionable_finder:Area2D = $ActionableFinder
@@ -18,6 +21,8 @@ var movement_restricted = false
 var restricted_directions = {}
 
 func _ready():
+	plant_sfx_player = AudioStreamPlayer.new()
+	add_child(plant_sfx_player)
 	add_to_group("player")
 	print("=== PLAYER READY - SETTING UP PAPERS ===")
 	
@@ -81,6 +86,13 @@ func _ready():
 func collect_plant():
 	has_plant = true
 	print("Plant collected!")
+	
+func _play_plant_sfx():
+	print( plant_sfx)
+	if plant_sfx_player and plant_sfx:
+		plant_sfx_player.stream = plant_sfx
+		print("sound played")
+		plant_sfx_player.play()
 
 func plant():
 	if Global.has_plant:
@@ -94,6 +106,7 @@ func plant():
 			if plant_instance.has_method("set_pickup_enabled"):
 				plant_instance.call("set_pickup_enabled", false)
 			get_parent().add_child(plant_instance)
+			_play_plant_sfx()
 			print("planted")
 		else:
 			print("Plant scene not assigned!")

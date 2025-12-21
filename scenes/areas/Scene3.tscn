@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://bcgten0x0wvpr"]
+[gd_scene load_steps=44 format=4 uid="uid://bcgten0x0wvpr"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_tbu13"]
 [ext_resource type="Script" path="res://scenes/characters/player.gd" id="2_rqomm"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dk6e7jof1uyhg" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/spritesheet/spritesheet.png" id="4_0rc83"]
 [ext_resource type="Texture2D" uid="uid://bfaunwfgcu0o" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/south.png" id="5_ff1w4"]
 [ext_resource type="Script" path="res://scripts/Papers/paper1.gd" id="5_jpams"]
-[ext_resource type="PackedScene" uid="uid://dwtmc6ibi0ry" path="res://scenes/components/actionable.tscn" id="6_06k03"]
+[ext_resource type="PackedScene" path="res://scenes/components/actionable.tscn" id="6_06k03"]
 [ext_resource type="Texture2D" uid="uid://cj4w4nfn8gsk1" path="res://assets/Boy_red_hoodie_casual_city_life_black_hair_america/rotations/east.png" id="6_ckwa7"]
 [ext_resource type="Texture2D" uid="uid://5jsln8xk6i6e" path="res://assets/Papers/Note2_EMT_Text_White.png" id="8_ciric"]
 [ext_resource type="PackedScene" uid="uid://dicca3ednwrkw" path="res://scenes/components/collectable_component.tscn" id="9_hso7u"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://ctktkpxpc4ucd" path="res://assets/Papers/Note3_EMT_White.png" id="11_83v7c"]
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="12_81qss"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="13_qkvn4"]
+[ext_resource type="Script" path="res://scenes/2D Section/areas/walking_to_mountain.gd" id="16_enr2x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
 radius = 6.58966
@@ -210,6 +211,9 @@ height = 62.6667
 [sub_resource type="CircleShape2D" id="CircleShape2D_s8s7q"]
 radius = 12.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_scjf5"]
+size = Vector2(20, 55)
+
 [node name="Scene3" type="Node2D"]
 
 [node name="Tiles" type="Node2D" parent="."]
@@ -280,6 +284,7 @@ shape = SubResource("CapsuleShape2D_yqv4f")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 scale = Vector2(3, 3)
 zoom = Vector2(2, 2)
+limit_right = 215
 position_smoothing_enabled = true
 
 [node name="Papers" type="Node2D" parent="Player/Camera2D"]
@@ -319,6 +324,14 @@ position = Vector2(-113, 20)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
 position = Vector2(0, -26)
 shape = SubResource("CircleShape2D_s8s7q")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("16_enr2x")
+target_scene = "walking"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(219, 26)
+shape = SubResource("RectangleShape2D_scjf5")
 
 [connection signal="body_entered" from="Player/ActionableFinder" to="Player" method="_on_actionable_finder_body_entered"]
 [connection signal="area_entered" from="Actionable" to="Actionable" method="_on_area_entered"]

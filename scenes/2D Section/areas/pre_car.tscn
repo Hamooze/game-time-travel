@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://knd3133nsnfw"]
+[gd_scene load_steps=39 format=4 uid="uid://bgbxhbyh5q656"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_5due8"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_63vqi"]
