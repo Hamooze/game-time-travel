@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1rwsjm52t8m8"
+path="res://.godot/imported/time_freeze.mp3-215f126bc7ac18067156de2a765a14f4.mp3str"
+
+[deps]
+
+source_file="res://assets/Sprout Lands - Sprites - Basic pack/Objects/time_freeze.mp3"
+dest_files=["res://.godot/imported/time_freeze.mp3-215f126bc7ac18067156de2a765a14f4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

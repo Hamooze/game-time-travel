@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=4 uid="uid://d1jrvdtboj38j"]
+[gd_scene load_steps=9 format=4 uid="uid://d1jrvdtboj38j"]
 
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="1_sq25h"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_t8yj0"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="1_y5q8d"]
 [ext_resource type="PackedScene" uid="uid://dwi8miivcudpi" path="res://scenes/objects/SpecialItem.tscn" id="3_i6wja"]
 [ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="4_interaction_prompt"]
+[ext_resource type="AudioStream" uid="uid://cvyv2qh4n63qm" path="res://assets/Music_final/Music_final/dream.mp3" id="6_8ejsh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gvxlq"]
 shader = ExtResource("1_sq25h")
@@ -71,3 +72,10 @@ y_sort_enabled = true
 z_index = 1
 position = Vector2(523, -7)
 scale = Vector2(0.4, 0.4)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Dream" type="AudioStreamPlayer" parent="AudioStreamPlayer"]
+stream = ExtResource("6_8ejsh")
+volume_db = -1.874
+autoplay = true
