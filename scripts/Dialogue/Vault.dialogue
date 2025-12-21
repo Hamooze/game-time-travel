@@ -1,0 +1,30 @@
+~ start
+set in_dialogue = true
+Vault: Please Enter Blueprint Access Code
+Vault: Enter First Number:
+- 3
+	=> start
+- 7
+- 2
+- 4
+	Vault: Enter Second Number:
+	- 9
+	- 6
+	- 2
+		Vault: Enter Third Number:
+		- 0
+			Vault: Enter Fourth Number:
+			- 6
+				Vault: Enter Fifth Number:
+				
+			- 1
+			- 0
+			- 7
+			
+		- 3
+		- 9
+		- 1
+	- 0
+
+set in_dialogue = false
+=> END

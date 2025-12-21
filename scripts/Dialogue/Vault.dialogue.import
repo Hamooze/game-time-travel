@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bepe8pdui5o1r"
+path="res://.godot/imported/Vault.dialogue-a881f7eab5142597f8407502dd2d2636.tres"
+
+[deps]
+
+source_file="res://scripts/Dialogue/Vault.dialogue"
+dest_files=["res://.godot/imported/Vault.dialogue-a881f7eab5142597f8407502dd2d2636.tres"]
+
+[params]
+
+defaults=true
