@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://cyv1en0nmigeg"]
+
+[ext_resource type="Texture2D" uid="uid://4hh18wdb6wki" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetHouse.png" id="1_mvyc4"]
+[ext_resource type="PackedScene" uid="uid://hgkikyq4o5i4" path="res://scenes/components/interactable_component.tscn" id="2_interactable"]
+[ext_resource type="Script" path="res://scenes/objects/BoxCollectable.gd" id="3_box_collectable"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybk74"]
+atlas = ExtResource("1_mvyc4")
+region = Rect2(288, 232, 16, 24)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m3cg5"]
+radius = 17.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cu3gf"]
+radius = 9.0
+height = 20.0
+
+[node name="BoxCollectable" type="Sprite2D"]
+texture = SubResource("AtlasTexture_ybk74")
+script = ExtResource("3_box_collectable")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("2_interactable")]
+y_sort_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_m3cg5")
+debug_color = Color(0.97721, 0, 0.405895, 0.42)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_cu3gf")

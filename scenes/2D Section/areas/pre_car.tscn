@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://knd3133nsnfw"]
+[gd_scene load_steps=40 format=4 uid="uid://knd3133nsnfw"]
 
 [ext_resource type="TileSet" uid="uid://cxejwlnbeygf1" path="res://tilesets/Outside_Cabin.tres" id="1_5due8"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_63vqi"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bsn0upcwyfw06" path="res://assets/Papers/Note4_Taped.png" id="10_0me5r"]
 [ext_resource type="Texture2D" uid="uid://bpf1gkal36hif" path="res://assets/Papers/Note5_EMT_Text.png" id="11_xvw1p"]
 [ext_resource type="Texture2D" uid="uid://b3228vqd5ihi2" path="res://assets/CAROLD/pixil-frame-0.png" id="12_qv686"]
+[ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="13_interaction_prompt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnof2"]
 atlas = ExtResource("3_udxu7")
@@ -239,6 +240,7 @@ tile_set = ExtResource("1_63vqi")
 [node name="Player" type="CharacterBody2D" parent="."]
 z_index = 3
 y_sort_enabled = true
+position = Vector2(500, -60)
 scale = Vector2(0.4, 0.4)
 script = ExtResource("2_7w2lj")
 
@@ -303,6 +305,16 @@ collision_layer = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Car/StaticBody2D/Area2D"]
 shape = SubResource("CircleShape2D_jaij1")
 debug_color = Color(0.875006, 0.303041, 0.433075, 0.42)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="InteractionPrompt" parent="UI" instance=ExtResource("13_interaction_prompt")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = -50.0
+offset_bottom = 0.0
+grow_horizontal = 2
 
 [connection signal="body_entered" from="Car/StaticBody2D/Area2D" to="Player" method="_on_body_entered"]
 [connection signal="body_exited" from="Car/StaticBody2D/Area2D" to="Player" method="_on_body_exited"]

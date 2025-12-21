@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://d1jrvdtboj38j"]
+[gd_scene load_steps=8 format=4 uid="uid://d1jrvdtboj38j"]
 
 [ext_resource type="Shader" path="res://shaders/crt_effect.gdshader" id="1_sq25h"]
 [ext_resource type="TileSet" uid="uid://qsmhr00ow66q" path="res://tilesets/game_tile_set.tres" id="1_t8yj0"]
 [ext_resource type="PackedScene" uid="uid://sa0nnuy2uefd" path="res://scenes/characters/player.tscn" id="1_y5q8d"]
 [ext_resource type="PackedScene" uid="uid://dwi8miivcudpi" path="res://scenes/objects/SpecialItem.tscn" id="3_i6wja"]
+[ext_resource type="PackedScene" path="res://scenes/components/interaction_prompt.tscn" id="4_interaction_prompt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gvxlq"]
 shader = ExtResource("1_sq25h")
@@ -20,6 +21,14 @@ center_offset = Vector3(320, 180, 0)
 material = SubResource("ShaderMaterial_gvxlq")
 position = Vector2(-3, -1)
 mesh = SubResource("QuadMesh_28qgk")
+
+[node name="InteractionPrompt" parent="CanvasLayer" instance=ExtResource("4_interaction_prompt")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = -50.0
+offset_bottom = 0.0
+grow_horizontal = 2
 
 [node name="GameTileMap" type="Node2D" parent="."]
 y_sort_enabled = true

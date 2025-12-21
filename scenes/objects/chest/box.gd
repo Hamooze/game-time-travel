@@ -5,6 +5,7 @@ extends CharacterBody2D
 
 @export var push_distance: float = 50.0
 @export var move_speed: float = 100.0
+@export var max_interaction_distance: float = 60.0  # Maximum distance player can be to push box
 
 var is_moving = false
 
@@ -13,6 +14,15 @@ func _ready() -> void:
 
 func on_interacted() -> void:
 	if interactable_component.player_in_range and not is_moving:
+		# Check if player is close enough
+		var player = find_player_in_scene(get_tree().root)
+		if player == null:
+			return
+		
+		var distance_to_player = global_position.distance_to(player.global_position)
+		if distance_to_player > max_interaction_distance:
+			return  # Player is too far away
+		
 		# Only move if this box is the closest one to the player
 		if is_closest_box_to_player():
 			move_box()
