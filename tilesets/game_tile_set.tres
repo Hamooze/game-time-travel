@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=17 format=3 uid="uid://qsmhr00ow66q"]
+[gd_resource type="TileSet" load_steps=18 format=3 uid="uid://qsmhr00ow66q"]
 
 [ext_resource type="Texture2D" uid="uid://co7vy6d8kuh72" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_36g5x"]
 [ext_resource type="Texture2D" uid="uid://7btmdn5co4uc" path="res://assets/Ninja Adventure/Backgrounds/Tilesets/TilesetFloorB.png" id="2_kcy03"]
@@ -972,6 +972,15 @@ texture = ExtResource("1_36g5x")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqjsx"]
+texture = ExtResource("1_36g5x")
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.2
+0:0/animation_frame_2/duration = 0.2
+0:0/animation_frame_3/duration = 0.2
+0:0/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
@@ -992,3 +1001,4 @@ sources/3 = SubResource("TileSetAtlasSource_8b7hf")
 sources/6 = SubResource("TileSetAtlasSource_gif6t")
 sources/7 = SubResource("TileSetAtlasSource_fdwlb")
 sources/8 = SubResource("TileSetAtlasSource_i3i1d")
+sources/9 = SubResource("TileSetAtlasSource_bqjsx")
